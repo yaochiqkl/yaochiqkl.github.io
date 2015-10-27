@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  
+  <title>HeadFirstAjaxReadingNotes | 鱼池</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  
+    <meta name="author" content="yaochiqkl">
+  
+  
+    <meta name="description" content="Head First Ajax 读书笔记总的来说，延续了一贯的HeadFirst风格，文章诙谐幽默，不适令人忍俊不禁，难得一见的好书。
+AJAX ( Asynchronous JacaScript and XML )核心是XHR对象，以异步方式从服务器获取信息
+工具函数-创建请求对象（uils.js） 
+
+DRY原则1234567891011function createRequest()&amp;#12">
+  
+  <meta name="description" content="Head First Ajax 读书笔记总的来说，延续了一贯的HeadFirst风格，文章诙谐幽默，不适令人忍俊不禁，难得一见的好书。
+AJAX ( Asynchronous JacaScript and XML )核心是XHR对象，以异步方式从服务器获取信息
+工具函数-创建请求对象（uils.js） 
+
+DRY原则1234567891011function createRequest()&amp;#12">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HeadFirstAjaxReadingNotes">
+<meta property="og:url" content="http://yoursite.com/2015/10/27/AjaxReadingNotes/index.html">
+<meta property="og:site_name" content="鱼池">
+<meta property="og:description" content="Head First Ajax 读书笔记总的来说，延续了一贯的HeadFirst风格，文章诙谐幽默，不适令人忍俊不禁，难得一见的好书。
+AJAX ( Asynchronous JacaScript and XML )核心是XHR对象，以异步方式从服务器获取信息
+工具函数-创建请求对象（uils.js） 
+
+DRY原则1234567891011function createRequest()&amp;#12">
+<meta property="og:image" content="http://img3.douban.com/lpic/s4245583.jpg">
+<meta property="og:updated_time" content="2015-10-27T15:55:36.859Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HeadFirstAjaxReadingNotes">
+<meta name="twitter:description" content="Head First Ajax 读书笔记总的来说，延续了一贯的HeadFirst风格，文章诙谐幽默，不适令人忍俊不禁，难得一见的好书。
+AJAX ( Asynchronous JacaScript and XML )核心是XHR对象，以异步方式从服务器获取信息
+工具函数-创建请求对象（uils.js） 
+
+DRY原则1234567891011function createRequest()&amp;#12">
+  
+    <link rel="alternate" href="/atom.xml" title="鱼池" type="application/atom+xml">
+  
+  
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+  <div>
+
+</div>
+
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?3eb683cb9bda4b8648f1a5528fda4240";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header id="header">
+  <div class="title">
+    <h1><a href="/">鱼池</a></h1>
+    <p><a href="/">我的个人博客</a></p>
+  </div>
+  <nav class="nav">
+    <ul>
+      
+        <li><a href="/">主页</a></li>
+      
+        <li><a href="/archives">归档</a></li>
+      
+        <li><a href="/about">关于</a></li>
+      
+      
+        <li><a href="/atom.xml">RSS</a></li>
+      
+    </ul>
+    <div class="clearfix"></div>
+  </nav>
+  <div class="clearfix"></div>
+</header>
+    <div class="content"><article class="post">
+  <header>
+    
+      <div class="icon"></div>
+      <a href="/2015/10/27/AjaxReadingNotes/">
+  <time datetime="2015-10-27T14:36:49.000Z">
+    2015-10-27
+  </time>
+</a>
+    
+    
+  
+    <h1 class="title">HeadFirstAjaxReadingNotes</h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <h1 id="Head_First_Ajax_读书笔记">Head First Ajax 读书笔记</h1><p><img src="http://img3.douban.com/lpic/s4245583.jpg" alt="book"><br>总的来说，延续了一贯的HeadFirst风格，文章诙谐幽默，不适令人忍俊不禁，难得一见的好书。</p>
+<h2 id="AJAX_(_Asynchronous_JacaScript_and_XML_)">AJAX ( Asynchronous JacaScript and XML )</h2><p>核心是XHR对象，以异步方式从服务器获取信息</p>
+<p><strong>工具函数-创建请求对象（uils.js）</strong> </p>
+<blockquote>
+<p>DRY原则<br><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">createRequest</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">try</span>&#123;</span><br><span class="line">	request = <span class="keyword">new</span> XMLHttpRequest(); 兼容大多数非IE浏览器</span><br><span class="line">    &#125; <span class="keyword">catch</span> (tryMS) &#123;</span><br><span class="line">    request = <span class="keyword">new</span> ActiveXObject(<span class="string">"Msxm12.XMLHTTP"</span>); 兼容IE7以前的版本</span><br><span class="line">    &#125; <span class="keyword">catch</span> (OtherMS) &#123;</span><br><span class="line">    request = <span class="keyword">new</span> ActiveObject(<span class="string">"Microsoft.XMLHTTP"</span>);兼容IE7以前的版本</span><br><span class="line">    &#125; <span class="keyword">catch</span> (faild) &#123;</span><br><span class="line">    request = <span class="literal">null</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p><strong>XHR用法</strong><br><figure class="highlight vbscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">request</span>.open(<span class="string">"get"</span>,url,<span class="literal">false</span>); 调用请求</span><br><span class="line"><span class="built_in">request</span>.send(<span class="literal">null</span>);            发送请求</span><br><span class="line"><span class="built_in">request</span>.responseTest;</span><br><span class="line"><span class="built_in">request</span>.responseXML;</span><br><span class="line"></span><br><span class="line"><span class="built_in">request</span>.status;                <span class="number">1</span>、<span class="number">2</span>、<span class="number">3</span>、<span class="number">4</span></span><br><span class="line"><span class="built_in">request</span>.readyState;            HTTP状态码</span><br><span class="line"><span class="built_in">request</span>.onreadyStateChange;    回调函数</span><br></pre></td></tr></table></figure></p>
+<h2 id="XML_&amp;&amp;_JSON_(还有罕见的CSV)">XML &amp;&amp; JSON  (还有罕见的CSV)</h2><p><strong>XML</strong> (Extensive Markup Language)<br>创建无类型的XML-DOM树<br><strong>JSON</strong>（JavaScript Standard Object Notation)<br>对JavaScript友好，速度快，轻量级数据格式。创建标准的JS对象。</p>
+<h2 id="表单验证">表单验证</h2><p>正则表达式</p>
+<blockquote>
+<p>更详尽内容参考《精通正则表达式》</p>
+</blockquote>
+<h2 id="GET_&amp;&amp;_POST">GET &amp;&amp; POST</h2><p>GET  常用于查询信息。直接将数据追加到URL末尾，但必须经过正确的编码”encodeURIComponent()”。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">addURLparam</span>(<span class="params">url,name,value</span>)</span>&#123;</span><br><span class="line">    url += (url.indexOf(<span class="string">"?"</span>)) == -<span class="number">1</span> ? <span class="string">"?"</span> : <span class="string">"&amp;"</span> ); 问号是否存在</span><br><span class="line">    url += <span class="built_in">encodeURIComponent</span>(name) + <span class="string">"="</span> + <span class="built_in">encodeURIComponent</span>(value);</span><br><span class="line">    <span class="keyword">return</span> url;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>POST 常用于应被保存的数据。加密，在浏览器中编码，并在服务器上解码。传递到Request.send()之中。消耗资源比GET多。<br>额外添加<em>Content-Type</em>属性（名/值对时使用<strong>“application/x-www-form-urlencoded”</strong>。</p>
+<blockquote>
+<p>等详尽内容参考JS红宝书<br>后记：适合入门，循序渐进。提供的相关的例子很经典，值得揣摩。</p>
+</blockquote>
+
+    
+  </div>
+  <footer>
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">评论</h1>
+  <div class="ds-thread" data-title="HeadFirstAjaxReadingNotes">
+  </div>
+</section>
+</div>
+  </div>
+  <footer id="footer"><div class="copyright">
+  
+  &copy; 2015 <a href="/">yaochiqkl</a>
+  
+</div>
+<div class="theme-copyright">
+感谢访问
+</div>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
+<div class="clearfix"></div></footer>
+  <script src="//lib.sinaapp.com/js/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/scale.fix.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+<script type="text/javascript">
+  var duoshuoQuery = { short_name: 'yaochiqkl' };
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';
+    ds.async = true;
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+  (function($){
+    $('.fancybox').fancybox();
+  })(jQuery);
+</script>
+
+</body>
+</html>

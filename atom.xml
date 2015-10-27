@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我的个人博客]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-10-26T02:55:58.037Z</updated>
+  <updated>2015-10-27T14:29:55.688Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <link href="http://yoursite.com/2015/10/25/books/"/>
     <id>http://yoursite.com/2015/10/25/books/</id>
     <published>2015-10-25T13:45:35.000Z</published>
-    <updated>2015-10-26T02:55:58.037Z</updated>
-    <content type="html"><![CDATA[<h2 id="分享一下最近的书单">分享一下最近的书单</h2><h3 id="前端类">前端类</h3><p>Head First HTML&amp;CSS (已读完)<br>JavaScript DOM 编程艺术（2nd Edition)(已读完)<br>JavaScript 高级程序设计（3rd Edition)(正在研读)<br>Head First Ajax(正在读)<br>CSS权威指南（3rd Edition)<br>HTM5程序设计<br>精通正则表达式</p>
+    <updated>2015-10-27T14:29:55.688Z</updated>
+    <content type="html"><![CDATA[<h2 id="分享一下最近的书单">分享一下最近的书单</h2><h3 id="前端类">前端类</h3><p>Head First HTML&amp;CSS (已读完)<br>JavaScript DOM 编程艺术（2nd Edition)(已读完)<br>JavaScript 高级程序设计（3rd Edition)(正在研读)<br>Head First Ajax(已读完)<br>精通正则表达式（3rd Edition)（正在读）<br>CSS权威指南（3rd Edition)<br>HTM5程序设计</p>
 <p>深入浅出Node.js<br>锋利的jQuery<br>JavaScript语言精粹<br>JavaScript权威指南<br>HTTP权威指南<br>高性能网站建设指南</p>
 <hr>
 <h3 id="程序类">程序类</h3><p>编程之美 + 编程珠玑 + 算法导论 + 剑指offer【程序员必读经典】<br>（这几本还没来及看）</p>
@@ -90,8 +90,8 @@
   
   <entry>
     <title><![CDATA[期待国庆长假]]></title>
-    <link href="http://yoursite.com/2015/09/23/e6-9c-9f-e5-be-85-e5-9b-bd-e5-ba-86-e9-95-bf-e5-81-87/"/>
-    <id>http://yoursite.com/2015/09/23/e6-9c-9f-e5-be-85-e5-9b-bd-e5-ba-86-e9-95-bf-e5-81-87/</id>
+    <link href="http://yoursite.com/2015/09/23/WaitingForNationalHolidays/"/>
+    <id>http://yoursite.com/2015/09/23/WaitingForNationalHolidays/</id>
     <published>2015-09-23T13:47:06.000Z</published>
     <updated>2015-10-24T05:21:16.553Z</updated>
     <content type="html"><![CDATA[<p>考完了科三，拿到了本本，一心等着假期的到来。<br>正逢中秋佳节，前面有校运会，连着几天没课，翘掉国庆与中秋之间的两三天课，前后加起来有十几天的假期。我终于能回家了！<br>自从上了大学后，才怀念从前待在父母身边无忧无虑的时光。能回家的日子越来越少了，到现在，半年回一次都是正常的。<br>所以抓着机会多在家待会儿，待在我的房间的时间，总感觉要比在外面待的时间要断，那间房就一直空着，为在外求学的我。<br>这还是学生时代，不知道工作了之后，除了春节，哪还有什么暑假、长假回家啊，想想都不开心。<br>特别想我的小侄女悠悠，虽说暑假才在陕西相聚，但是没过几天我就又开始想起她的可爱的顽皮。<br>这学期课比较少，前方的路全靠自己自觉去走。努力培养自己的自制力，带几本书回去，不能让这个假期白白荒废。<br>好好珍惜所拥有的一切，好好对待父母，活在当下，做一个幸福的孩子！</p>
@@ -106,8 +106,8 @@
   
   <entry>
     <title><![CDATA[历尽千辛万苦个人网站终于建好了!]]></title>
-    <link href="http://yoursite.com/2015/09/18/e5-8e-86-e5-b0-bd-e5-8d-83-e8-be-9b-e4-b8-87-e8-8b-a6-e4-b8-aa-e4-ba-ba-e7-bd-91-e7-ab-99-e7-bb-88-e4-ba-8e-e5-bb-ba-e5-a5-bd-e4-ba-86/"/>
-    <id>http://yoursite.com/2015/09/18/e5-8e-86-e5-b0-bd-e5-8d-83-e8-be-9b-e4-b8-87-e8-8b-a6-e4-b8-aa-e4-ba-ba-e7-bd-91-e7-ab-99-e7-bb-88-e4-ba-8e-e5-bb-ba-e5-a5-bd-e4-ba-86/</id>
+    <link href="http://yoursite.com/2015/09/18/WordPressEstablished/"/>
+    <id>http://yoursite.com/2015/09/18/WordPressEstablished/</id>
     <published>2015-09-18T15:49:44.000Z</published>
     <updated>2015-10-24T05:21:16.552Z</updated>
     <content type="html"><![CDATA[<p>从开始形成建网站的想法到现在，不过数天。然此中辛酸难尽。</p>

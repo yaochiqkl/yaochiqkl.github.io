@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我的个人博客]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-10-27T15:55:36.859Z</updated>
+  <updated>2015-10-27T15:56:22.350Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,11 +15,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[HeadFirstAjaxReadingNotes]]></title>
+    <title><![CDATA[Head Firs tAjax Reading Notes]]></title>
     <link href="http://yoursite.com/2015/10/27/AjaxReadingNotes/"/>
     <id>http://yoursite.com/2015/10/27/AjaxReadingNotes/</id>
     <published>2015-10-27T14:36:49.000Z</published>
-    <updated>2015-10-27T15:55:36.859Z</updated>
+    <updated>2015-10-27T15:56:22.350Z</updated>
     <content type="html"><![CDATA[<h1 id="Head_First_Ajax_读书笔记">Head First Ajax 读书笔记</h1><p><img src="http://img3.douban.com/lpic/s4245583.jpg" alt="book"><br>总的来说，延续了一贯的HeadFirst风格，文章诙谐幽默，不适令人忍俊不禁，难得一见的好书。</p>
 <h2 id="AJAX_(_Asynchronous_JacaScript_and_XML_)">AJAX ( Asynchronous JacaScript and XML )</h2><p>核心是XHR对象，以异步方式从服务器获取信息</p>
 <p><strong>工具函数-创建请求对象（uils.js）</strong> </p>

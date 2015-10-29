@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我的个人博客]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-10-29T12:35:16.906Z</updated>
+  <updated>2015-10-29T12:38:35.817Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,16 +19,19 @@
     <link href="http://yoursite.com/2015/10/29/CSS-TheDefinitiveGuide/"/>
     <id>http://yoursite.com/2015/10/29/CSS-TheDefinitiveGuide/</id>
     <published>2015-10-29T12:05:39.000Z</published>
-    <updated>2015-10-29T12:35:16.906Z</updated>
-    <content type="html"><![CDATA[<p>CSS权威指南（第三版）<br><img src="http://img3.douban.com/lpic/s2921314.jpg" alt=""></p>
-<h2 id="选择器">选择器</h2><h3 id="属性选择器">属性选择器</h3><p>简单属性选择    h1[class]{color:silver;}<br>根据部分属性选择`    p[class~=”warning”]{font-weight:bold;}<br>(子串匹配属性选择器 [foo^=”bar”] \ [foo$=”bar” \ foo*=”bar”])</p>
+    <updated>2015-10-29T12:38:35.817Z</updated>
+    <content type="html"><![CDATA[<p>CSS权威指南（第三版）<br><img src="http://img3.douban.com/lpic/s2921314.jpg" alt="CSS:The Definitive Guide (The 3rd Edition)"></p>
+<h2 id="选择器">选择器</h2><h3 id="属性选择器">属性选择器</h3><p>简单属性选择    h1[class]{color:silver;}</p>
+<p>根据部分属性选择  p[class~=”warning”]{font-weight:bold;}<br>(子串匹配属性选择器 [foo^=”bar”] \ [foo$=”bar” \ foo*=”bar”])</p>
 <h3 id="选择相邻兄弟元素">选择相邻兄弟元素</h3><p>li+li{font-weight:bold;} 紧跟在一个li后面出现的所有兄弟li元素</p>
-<h3 id="伪类">伪类</h3><h4 id="选择第一个子元素_（将规则关联到前一个规则）">选择第一个子元素 （将规则关联到<strong>前一个</strong>规则）</h4><p>p:first-child{font-weight:bold;} <strong>作为第一个子元素的p元素</strong></p>
-<h4 id="伪元素选择器">伪元素选择器</h4><p>首字母样式 p:first-letter{color:red;}<br>第一行样式 p:first-line{color:blue;}<br>之前/之后样式 h2:before {content:”aa”;color:silver;} 插入生成内容</p>
-]]></content>
+<h3 id="伪类">伪类</h3><h4 id="选择第一个子元素">选择第一个子元素</h4><p>p:first-child{font-weight:bold;} <strong>作为第一个子元素的p元素</strong><br>（将规则关联到<strong>前一个</strong>规则）</p>
+<h4 id="伪元素选择器">伪元素选择器</h4><p>首字母样式 p:first-letter{color:red;}</p>
+<p>第一行样式 p:first-line{color:blue;}</p>
+<p>之前/之后样式 h2:before {content:”aa”;color:silver;} 插入生成内容</p>
+<h2 id="结构和层叠">结构和层叠</h2>]]></content>
     <summary type="html">
-    <![CDATA[<p>CSS权威指南（第三版）<br><img src="http://img3.douban.com/lpic/s2921314.jpg" alt=""></p>
-<h2 id="选择器">选择器</h2><h3 id="属性选择器">属性选择器</h3><p>简单属性选择  ]]>
+    <![CDATA[<p>CSS权威指南（第三版）<br><img src="http://img3.douban.com/lpic/s2921314.jpg" alt="CSS:The Definitive Guide (The 3rd Edition)"></p>
+<h2 id="选择器">选择]]>
     </summary>
     
   </entry>

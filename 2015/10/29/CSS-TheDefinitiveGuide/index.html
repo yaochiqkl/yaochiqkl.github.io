@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  
+  <title>CSS权威指南读书笔记 | 鱼池</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  
+    <meta name="author" content="yaochiqkl">
+  
+  
+    <meta name="description" content="CSS权威指南（第三版）
+选择器属性选择器简单属性选择    h1[class]{color:silver;}根据部分属性选择`    p[class~=”warning”]{font-weight:bold;}(子串匹配属性选择器 [foo^=”bar”] \ [foo$=”bar” \ foo*=”bar”])
+选择相邻兄弟元素li+li{font-weight:bold;} 紧跟在一个li后">
+  
+  <meta name="description" content="CSS权威指南（第三版）
+选择器属性选择器简单属性选择    h1[class]{color:silver;}根据部分属性选择`    p[class~=”warning”]{font-weight:bold;}(子串匹配属性选择器 [foo^=”bar”] \ [foo$=”bar” \ foo*=”bar”])
+选择相邻兄弟元素li+li{font-weight:bold;} 紧跟在一个li后">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS权威指南读书笔记">
+<meta property="og:url" content="http://yoursite.com/2015/10/29/CSS-TheDefinitiveGuide/index.html">
+<meta property="og:site_name" content="鱼池">
+<meta property="og:description" content="CSS权威指南（第三版）
+选择器属性选择器简单属性选择    h1[class]{color:silver;}根据部分属性选择`    p[class~=”warning”]{font-weight:bold;}(子串匹配属性选择器 [foo^=”bar”] \ [foo$=”bar” \ foo*=”bar”])
+选择相邻兄弟元素li+li{font-weight:bold;} 紧跟在一个li后">
+<meta property="og:image" content="http://img3.douban.com/lpic/s2921314.jpg">
+<meta property="og:updated_time" content="2015-10-29T12:35:16.906Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS权威指南读书笔记">
+<meta name="twitter:description" content="CSS权威指南（第三版）
+选择器属性选择器简单属性选择    h1[class]{color:silver;}根据部分属性选择`    p[class~=”warning”]{font-weight:bold;}(子串匹配属性选择器 [foo^=”bar”] \ [foo$=”bar” \ foo*=”bar”])
+选择相邻兄弟元素li+li{font-weight:bold;} 紧跟在一个li后">
+  
+    <link rel="alternate" href="/atom.xml" title="鱼池" type="application/atom+xml">
+  
+  
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+  <div>
+
+</div>
+
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?3eb683cb9bda4b8648f1a5528fda4240";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header id="header">
+  <div class="title">
+    <h1><a href="/">鱼池</a></h1>
+    <p><a href="/">我的个人博客</a></p>
+  </div>
+  <nav class="nav">
+    <ul>
+      
+        <li><a href="/">主页</a></li>
+      
+        <li><a href="/archives">归档</a></li>
+      
+        <li><a href="/about">关于</a></li>
+      
+      
+        <li><a href="/atom.xml">RSS</a></li>
+      
+    </ul>
+    <div class="clearfix"></div>
+  </nav>
+  <div class="clearfix"></div>
+</header>
+    <div class="content"><article class="post">
+  <header>
+    
+      <div class="icon"></div>
+      <a href="/2015/10/29/CSS-TheDefinitiveGuide/">
+  <time datetime="2015-10-29T12:05:39.000Z">
+    2015-10-29
+  </time>
+</a>
+    
+    
+  
+    <h1 class="title">CSS权威指南读书笔记</h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <p>CSS权威指南（第三版）<br><img src="http://img3.douban.com/lpic/s2921314.jpg" alt=""></p>
+<h2 id="选择器">选择器</h2><h3 id="属性选择器">属性选择器</h3><p>简单属性选择    h1[class]{color:silver;}<br>根据部分属性选择`    p[class~=”warning”]{font-weight:bold;}<br>(子串匹配属性选择器 [foo^=”bar”] \ [foo$=”bar” \ foo*=”bar”])</p>
+<h3 id="选择相邻兄弟元素">选择相邻兄弟元素</h3><p>li+li{font-weight:bold;} 紧跟在一个li后面出现的所有兄弟li元素</p>
+<h3 id="伪类">伪类</h3><h4 id="选择第一个子元素_（将规则关联到前一个规则）">选择第一个子元素 （将规则关联到<strong>前一个</strong>规则）</h4><p>p:first-child{font-weight:bold;} <strong>作为第一个子元素的p元素</strong></p>
+<h4 id="伪元素选择器">伪元素选择器</h4><p>首字母样式 p:first-letter{color:red;}<br>第一行样式 p:first-line{color:blue;}<br>之前/之后样式 h2:before {content:”aa”;color:silver;} 插入生成内容</p>
+
+    
+  </div>
+  <footer>
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">评论</h1>
+  <div class="ds-thread" data-title="CSS权威指南读书笔记">
+  </div>
+</section>
+</div>
+  </div>
+  <footer id="footer"><div class="copyright">
+  
+  &copy; 2015 <a href="/">yaochiqkl</a>
+  
+</div>
+<div class="theme-copyright">
+感谢访问
+</div>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
+<div class="clearfix"></div></footer>
+  <script src="//lib.sinaapp.com/js/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/scale.fix.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+<script type="text/javascript">
+  var duoshuoQuery = { short_name: 'yaochiqkl' };
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';
+    ds.async = true;
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+  (function($){
+    $('.fancybox').fancybox();
+  })(jQuery);
+</script>
+
+</body>
+</html>

@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我的个人博客]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-10-30T14:53:17.604Z</updated>
+  <updated>2015-10-30T17:19:38.437Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://yoursite.com/2015/10/29/CSS-TheDefinitiveGuide/"/>
     <id>http://yoursite.com/2015/10/29/CSS-TheDefinitiveGuide/</id>
     <published>2015-10-29T12:05:39.000Z</published>
-    <updated>2015-10-30T14:53:17.604Z</updated>
+    <updated>2015-10-30T17:19:38.437Z</updated>
     <content type="html"><![CDATA[<p>CSS权威指南（第三版）<br><img src="http://img3.douban.com/lpic/s2921314.jpg" alt="CSS:The Definitive Guide (The 3rd Edition)"></p>
 <h2 id="选择器">选择器</h2><h3 id="属性选择器">属性选择器</h3><p>简单属性选择    h1[class]{color:silver;}</p>
 <p>根据部分属性选择  p[class~=”warning”]{font-weight:bold;}<br>(子串匹配属性选择器 [foo^=”bar”] \ [foo$=”bar” \ foo*=”bar”])</p>
@@ -41,7 +41,7 @@
 <div style="border:2px solid black;background:#FFF;">&nbsp;1.样式表来源和重要性 创作人员&gt;读者&gt;用户代理（浏览器）【!important读者最强】<br>&nbsp;2.特殊性排序<br>&nbsp;3.出现的顺序排序<br></div>
 
 <blockquote>
-<p>LVHA规则: link visited hover active</p>
+<p>LVHA规则:  link visited hover active</p>
 </blockquote>
 ]]></content>
     <summary type="html">

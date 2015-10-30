@@ -99,14 +99,25 @@ var _hmt = _hmt || [];
 <p>根据部分属性选择  p[class~=”warning”]{font-weight:bold;}<br>(子串匹配属性选择器 [foo^=”bar”] \ [foo$=”bar” \ foo*=”bar”])</p>
 <h3 id="选择相邻兄弟元素">选择相邻兄弟元素</h3><p>li+li{font-weight:bold;} 紧跟在一个li后面出现的所有兄弟li元素</p>
 <h3 id="伪类">伪类</h3><h4 id="选择第一个子元素">选择第一个子元素</h4><p>p:first-child{font-weight:bold;} <strong>作为第一个子元素的p元素</strong><br>（将规则关联到<strong>前一个</strong>规则）</p>
-<h4 id="伪元素选择器">伪元素选择器</h4><p>首字母样式 p:first-letter{color:red;}</p>
+<blockquote>
+<p>:link :first-child …</p>
+</blockquote>
+<h3 id="伪元素">伪元素</h3><p>首字母样式 p:first-letter{color:red;}</p>
 <p>第一行样式 p:first-line{color:blue;}</p>
 <p>之前/之后样式 h2:before {content:”aa”;color:silver;} 插入生成内容</p>
+<blockquote>
+<p>:first-line :first-letter :before :after </p>
+</blockquote>
 <hr>
 <h2 id="结构和层叠">结构和层叠</h2><h3 id="特殊性">特殊性</h3><p>特殊性值表述为四个部分：[0 0 0 0]<br>分别对应着 <strong>内联样式 / ID属性 / 类、属性选择、伪类/元素、伪元素</strong><br>通配符<br>重要性 !important 放置声明之后</p>
 <h3 id="继承">继承</h3><p>继承值<strong>无</strong>特殊性<br>0特殊性 &gt; 无特殊性</p>
 <h3 id="层叠">层叠</h3><p>规则</p>
-<div style="border: 1px;"><br>1.样式表来源和重要性 创作人员&gt;读者&gt;用户代理（浏览器）【!important读者最强】<br>2.特殊性排序<br>3.出现的顺序排序<br></div>
+<div style="border:2px solid black;background:#FFF;">&nbsp;1.样式表来源和重要性 创作人员&gt;读者&gt;用户代理（浏览器）【!important读者最强】<br>&nbsp;2.特殊性排序<br>&nbsp;3.出现的顺序排序<br></div>
+
+<blockquote>
+<p>LVHA规则: link visited hover active</p>
+</blockquote>
+
     
   </div>
   <footer class="end-sep">

@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我的个人博客]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-10-30T17:19:38.437Z</updated>
+  <updated>2015-11-02T10:41:27.495Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://yoursite.com/2015/10/29/CSS-TheDefinitiveGuide/"/>
     <id>http://yoursite.com/2015/10/29/CSS-TheDefinitiveGuide/</id>
     <published>2015-10-29T12:05:39.000Z</published>
-    <updated>2015-10-30T17:19:38.437Z</updated>
+    <updated>2015-11-02T10:41:27.495Z</updated>
     <content type="html"><![CDATA[<p>CSS权威指南（第三版）<br><img src="http://img3.douban.com/lpic/s2921314.jpg" alt="CSS:The Definitive Guide (The 3rd Edition)"></p>
 <h2 id="选择器">选择器</h2><h3 id="属性选择器">属性选择器</h3><p>简单属性选择    h1[class]{color:silver;}</p>
 <p>根据部分属性选择  p[class~=”warning”]{font-weight:bold;}<br>(子串匹配属性选择器 [foo^=”bar”] \ [foo$=”bar” \ foo*=”bar”])</p>
@@ -43,6 +43,7 @@
 <blockquote>
 <p>LVHA规则:  link visited hover active</p>
 </blockquote>
+<p>第七章以后很多内容太枯燥、难以理解了。需要多动手实际操作，加深理解。</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>CSS权威指南（第三版）<br><img src="http://img3.douban.com/lpic/s2921314.jpg" alt="CSS:The Definitive Guide (The 3rd Edition)"></p>

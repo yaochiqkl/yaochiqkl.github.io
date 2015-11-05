@@ -48,7 +48,25 @@
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   
   <div>
-
+  <!-- lsz -->
+  <script src="js/trianglify.min.js"></script>
+  <script>
+  // set up the base pattern
+  var pattern = Trianglify({
+    height: window.innerHeight,
+    width: window.innerWidth,
+    cell_size: 30 + Math.random() * 100});
+  // canvas
+  //document.body.appendChild(pattern.canvas())
+  // svg
+  //document.body.appendChild(pattern.svg())
+  // png
+  var png = document.createElement('img');
+  png.src = pattern.png();
+  //document.body.appendChild(png);
+  document.body.style.backgroundImage="url("+png.src+")";
+  document.body.style.backgroundAttachment="fixed";
+  </script>
 </div>
 
 <script type="text/javascript">

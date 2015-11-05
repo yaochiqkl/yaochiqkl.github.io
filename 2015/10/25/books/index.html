@@ -57,14 +57,9 @@ JavaScript 高级程序设计（3rd Edition)(正在研读)精通正则表达式�
   document.body.style.backgroundImage="url("+pattern.png()+")";
   document.body.style.backgroundAttachment="fixed";
   window.onresize = function(){
-     var pattern = Trianglify({
-    height: window.innerHeight,
-    width: window.innerWidth,
-    cell_size: 30 + Math.random() * 100});
-    variance: Math.random()*0.5 +0.5 ;
-    var png = document.createElement('img');
+    var t = pattern.generate(window.innerWidth,window.innerHeight);
     document.body.style.backgroundImage="url("+pattern.png()+")";
-  };
+  }
   </script>
 </div>
 

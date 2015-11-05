@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我的个人博客]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-11-05T11:18:42.603Z</updated>
+  <updated>2015-11-05T11:28:57.097Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,11 +19,15 @@
     <link href="http://yoursite.com/2015/11/05/HTML5Programming/"/>
     <id>http://yoursite.com/2015/11/05/HTML5Programming/</id>
     <published>2015-11-05T11:04:52.000Z</published>
-    <updated>2015-11-05T11:18:42.603Z</updated>
+    <updated>2015-11-05T11:28:57.097Z</updated>
     <content type="html"><![CDATA[<p>HTML程序设计（第二版）<br><img src="http://img3.douban.com/lpic/s9066310.jpg" alt="Pro HTML% Programming"></p>
 <p>曾以为HTML5不过是多了几个语义化的标签，读了这部经典之作，改变了我对HTML5的看法。第一遍只是粗略地概览，并不深入，了解HTML5的新特性，体会到了HTML5提供的新的API的强大之处。</p>
-<h3 id="Summary">Summary</h3><p>What’s WHATWG<br>1.&lt;!DOCTYPE html&gt; <meta charset="utf-8"><br>2.Semantization tagments:<header><footer><section><article><aside><nav><br>3.</nav></aside></article></section></footer></header></p>
-<h3 id="Canvas_API">Canvas API</h3><h3 id="SVG">SVG</h3><h3 id="Audio_&amp;_Vidio">Audio &amp; Vidio</h3><h3 id="Geolocation_API">Geolocation API</h3><h3 id="Communication_API">Communication API</h3><h3 id="WebSockets_API">WebSockets API</h3><h3 id="Forms_API">Forms API</h3><h3 id="Drag">Drag</h3><h3 id="Web_Workers_API">Web Workers API</h3><h3 id="Web_Storage_API">Web Storage API</h3><p>###</p>
+<h3 id="Summary">Summary</h3><p>What’s WHATWG<br>1.&lt;!DOCTYPE html&gt; <meta charset="utf-8"><br>2.Semantization tagments:<header><footer><section><article><aside><nav><br>3.Selectors API : <strong>QuerySelector()</strong> **QuerySelectorALL()</nav></aside></article></section></footer></header></p>
+<h3 id="Canvas_API">Canvas API</h3><p>苹果公司提出的位图画布并按照W3C的免版税专利许可条款公开了专利。</p>
+<canvas>Your Bo</canvas>
+
+
+<h3 id="SVG">SVG</h3><h3 id="Audio_&amp;_Vidio">Audio &amp; Vidio</h3><h3 id="Geolocation_API">Geolocation API</h3><h3 id="Communication_API">Communication API</h3><h3 id="WebSockets_API">WebSockets API</h3><h3 id="Forms_API">Forms API</h3><h3 id="Drag">Drag</h3><h3 id="Web_Workers_API">Web Workers API</h3><h3 id="Web_Storage_API">Web Storage API</h3><p>###</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>HTML程序设计（第二版）<br><img src="http://img3.douban.com/lpic/s9066310.jpg" alt="Pro HTML% Programming"></p>

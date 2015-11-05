@@ -44,16 +44,21 @@ JavaScript 高级程序设计（3rd Edition)(正在研读)精通正则表达式�
     height: window.innerHeight,
     width: window.innerWidth,
     cell_size: 30 + Math.random() * 100});
+    variance: Math.random()*0.5 +0.5 ;
+    seed: 1;
   // canvas
   //document.body.appendChild(pattern.canvas())
   // svg
   //document.body.appendChild(pattern.svg())
   // png
   var png = document.createElement('img');
-  png.src = pattern.png();
+  //png.src = pattern.png();
   //document.body.appendChild(png);
-  document.body.style.backgroundImage="url("+png.src+")";
+  document.body.style.backgroundImage="url("+pattern.png()+")";
   document.body.style.backgroundAttachment="fixed";
+  window.onresize = function(){
+
+  };
   </script>
 </div>
 

@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我的个人博客]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-11-02T10:41:27.495Z</updated>
+  <updated>2015-11-05T11:18:42.603Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -13,6 +13,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[HTML5Programming]]></title>
+    <link href="http://yoursite.com/2015/11/05/HTML5Programming/"/>
+    <id>http://yoursite.com/2015/11/05/HTML5Programming/</id>
+    <published>2015-11-05T11:04:52.000Z</published>
+    <updated>2015-11-05T11:18:42.603Z</updated>
+    <content type="html"><![CDATA[<p>HTML程序设计（第二版）<br><img src="http://img3.douban.com/lpic/s9066310.jpg" alt="Pro HTML% Programming"></p>
+<p>曾以为HTML5不过是多了几个语义化的标签，读了这部经典之作，改变了我对HTML5的看法。第一遍只是粗略地概览，并不深入，了解HTML5的新特性，体会到了HTML5提供的新的API的强大之处。</p>
+<h3 id="Summary">Summary</h3><p>What’s WHATWG<br>1.&lt;!DOCTYPE html&gt; <meta charset="utf-8"><br>2.Semantization tagments:<header><footer><section><article><aside><nav><br>3.</nav></aside></article></section></footer></header></p>
+<h3 id="Canvas_API">Canvas API</h3><h3 id="SVG">SVG</h3><h3 id="Audio_&amp;_Vidio">Audio &amp; Vidio</h3><h3 id="Geolocation_API">Geolocation API</h3><h3 id="Communication_API">Communication API</h3><h3 id="WebSockets_API">WebSockets API</h3><h3 id="Forms_API">Forms API</h3><h3 id="Drag">Drag</h3><h3 id="Web_Workers_API">Web Workers API</h3><h3 id="Web_Storage_API">Web Storage API</h3><p>###</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>HTML程序设计（第二版）<br><img src="http://img3.douban.com/lpic/s9066310.jpg" alt="Pro HTML% Programming"></p>
+<p>曾以为HTML5不过是多了几个语义化的标签，读了这部经典之作，改]]>
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[CSS权威指南读书笔记]]></title>
@@ -112,9 +130,9 @@
     <link href="http://yoursite.com/2015/10/25/books/"/>
     <id>http://yoursite.com/2015/10/25/books/</id>
     <published>2015-10-25T13:45:35.000Z</published>
-    <updated>2015-10-31T17:19:14.100Z</updated>
+    <updated>2015-11-05T11:09:53.512Z</updated>
     <content type="html"><![CDATA[<h2 id="书单">书单</h2><h3 id="前端类">前端类</h3><p>Head First HTML&amp;CSS (已读完)<br>JavaScript DOM 编程艺术（2nd Edition)(已读完)<br>Head First Ajax(已读完)</p>
-<p>JavaScript 高级程序设计（3rd Edition)(正在研读)<br>精通正则表达式（3rd Edition)（在读）<br>CSS权威指南（3rd Edition)（在读）<br>HTM5高级程序设计（在读） [最新版：HTML5程序设计]<br>Node.js开发指南（在读）<br>HTML5与CSS3基础教程（7th Edition）[最新版：8th Edition]</p>
+<p>JavaScript 高级程序设计（3rd Edition)(正在研读)<br>精通正则表达式（3rd Edition)（在读）<br>CSS权威指南（3rd Edition)（在读）<br>HTM5程序设计（2nd Edition)（在读）<br>Node.js开发指南（在读）<br>HTML5与CSS3基础教程（7th Edition）[最新版：8th Edition]</p>
 <p>深入浅出Node.js<br>锋利的jQuery<br>JavaScript语言精粹<br>JavaScript权威指南<br>HTTP权威指南<br>高性能网站建设指南</p>
 <hr>
 <h3 id="程序类">程序类</h3><p>算法导论（在读）<br>编程之美 + 编程珠玑 + 算法导论 + 剑指offer【程序员必读经典】</p>

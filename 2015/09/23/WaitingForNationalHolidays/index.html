@@ -53,7 +53,13 @@
   document.body.style.backgroundImage="url("+pattern.png()+")";
   document.body.style.backgroundAttachment="fixed";
   window.onresize = function(){
-
+     var pattern = Trianglify({
+    height: window.innerHeight,
+    width: window.innerWidth,
+    cell_size: 30 + Math.random() * 100});
+    variance: Math.random()*0.5 +0.5 ;
+    var png = document.createElement('img');
+    document.body.style.backgroundImage="url("+pattern.png()+")";
   };
   </script>
 </div>

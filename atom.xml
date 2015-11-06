@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我的个人博客]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-11-06T11:22:48.160Z</updated>
+  <updated>2015-11-06T11:53:11.562Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,12 +19,12 @@
     <link href="http://yoursite.com/2015/11/06/HighPerfomanceWebSites/"/>
     <id>http://yoursite.com/2015/11/06/HighPerfomanceWebSites/</id>
     <published>2015-11-06T10:59:10.000Z</published>
-    <updated>2015-11-06T11:22:48.160Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://img4.douban.com/lpic/s5914296.jpg" alt="High Performance Web Sites"><br>高性能网站建设指南</p>
-<p>我真是太爱博文视点O’Reilly系列的书了，很幸运能在前端的领域有这样的一系列经典的书籍。<br>原来雅虎的14条前端优化准则尽在这本书中！</p>
+    <updated>2015-11-06T11:53:11.562Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://img4.douban.com/lpic/s5914296.jpg" alt="High Performance Web Sites"><br>高性能网站建设指南<br><a href="http://stevesouders.com/hpws/rules.php" target="_blank" rel="external">相关例子测试官网</a><br>我真是太爱博文视点O’Reilly系列的书了，很幸运能在前端的领域有这样的一系列经典的书籍。<br>原来雅虎的14条前端优化准则尽在这本书中！</p>
 <hr>
-<blockquote>
 <p>性能黄金法则：只有10%~20%的最终用户响应时间花在了下载HTML文档上。其余的80%~90%时间花在了下载页面中的所有组件上。</p>
+
+
 <hr>
 <h3 id="法则1：减少HTTP请求次数">法则1：减少HTTP请求次数</h3><p>1.图片地图 Image Map<br>2.雪碧图 CSS Sprites<br>3.内联图片  `` src=”data:image/gif;base64,R01···” ```<br>4.合并脚本、样式表</p>
 <hr>
@@ -34,12 +34,12 @@
 <hr>
 <h3 id="法则4：压缩组件">法则4：压缩组件</h3><p>这里的压缩不是指JS脚本文件的精简和并行，而指的是通过Web客户端在HTTP请求中通过的<strong>“Accept-Encoding”</strong>来指定压缩类型，让Web服务器发送编码后的文件，一般通过<strong>Gzip</strong>使内容减少70%。</p>
 <hr>
-<h3 id="法则5：样式表放头部">法则5：样式表放头部</h3><hr>
-<h3 id="法则6：脚本文件放底部">法则6：脚本文件放底部</h3></blockquote>
+<h3 id="法则5：样式表放头部">法则5：样式表放头部</h3><p>在IE中样式表放底部会导致白屏等问题，而其他浏览器会导致闪烁等糟糕的体验。<br><strong>使用LINK标签将样式表嵌入HEAD中</strong>，而@import则会使样式表最后加载。</p>
+<hr>
+<h3 id="法则6：脚本文件放底部">法则6：脚本文件放底部</h3><p>1.HTTP1.1规范建议浏览器从每个主机名并行下载两个组件，所以建议将组件分布在两个主机下。<br>2.脚本会<strong>阻塞</strong>下载，原因一等待其有可能的重新布局，其次保证脚本的顺序执行。</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p><img src="http://img4.douban.com/lpic/s5914296.jpg" alt="High Performance Web Sites"><br>高性能网站建设指南</p>
-<p>我真是太爱博文视点O’Reilly系列的书了，很幸运能在前端的]]>
+    <![CDATA[<p><img src="http://img4.douban.com/lpic/s5914296.jpg" alt="High Performance Web Sites"><br>高性能网站建设指南<br><a href="http://stevesouders.com/hp]]>
     </summary>
     
   </entry>

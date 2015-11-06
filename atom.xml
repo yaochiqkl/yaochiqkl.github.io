@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我的个人博客]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-11-05T11:28:57.097Z</updated>
+  <updated>2015-11-06T11:22:48.160Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,19 +15,50 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[高性能网站建设指南(雅虎优化前端14条准则)]]></title>
+    <link href="http://yoursite.com/2015/11/06/HighPerfomanceWebSites/"/>
+    <id>http://yoursite.com/2015/11/06/HighPerfomanceWebSites/</id>
+    <published>2015-11-06T10:59:10.000Z</published>
+    <updated>2015-11-06T11:22:48.160Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://img4.douban.com/lpic/s5914296.jpg" alt="High Performance Web Sites"><br>高性能网站建设指南</p>
+<p>我真是太爱博文视点O’Reilly系列的书了，很幸运能在前端的领域有这样的一系列经典的书籍。<br>原来雅虎的14条前端优化准则尽在这本书中！</p>
+<hr>
+<blockquote>
+<p>性能黄金法则：只有10%~20%的最终用户响应时间花在了下载HTML文档上。其余的80%~90%时间花在了下载页面中的所有组件上。</p>
+<hr>
+<h3 id="法则1：减少HTTP请求次数">法则1：减少HTTP请求次数</h3><p>1.图片地图 Image Map<br>2.雪碧图 CSS Sprites<br>3.内联图片  `` src=”data:image/gif;base64,R01···” ```<br>4.合并脚本、样式表</p>
+<hr>
+<h3 id="法则2：CDN_(Content_Delivery_Network)">法则2：CDN (Content Delivery Network)</h3><p>CDN是地理上分布的Web Server的集合<br>将占据主要带宽的静态资源通过CDN发布</p>
+<hr>
+<h3 id="法则3：增加Expires_Header">法则3：增加Expires Header</h3><p>通过Expires进行缓存，间接减少HTTP请求。<br>Cache-Control</p>
+<hr>
+<h3 id="法则4：压缩组件">法则4：压缩组件</h3><p>这里的压缩不是指JS脚本文件的精简和并行，而指的是通过Web客户端在HTTP请求中通过的<strong>“Accept-Encoding”</strong>来指定压缩类型，让Web服务器发送编码后的文件，一般通过<strong>Gzip</strong>使内容减少70%。</p>
+<hr>
+<h3 id="法则5：样式表放头部">法则5：样式表放头部</h3><hr>
+<h3 id="法则6：脚本文件放底部">法则6：脚本文件放底部</h3></blockquote>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://img4.douban.com/lpic/s5914296.jpg" alt="High Performance Web Sites"><br>高性能网站建设指南</p>
+<p>我真是太爱博文视点O’Reilly系列的书了，很幸运能在前端的]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[HTML5Programming]]></title>
     <link href="http://yoursite.com/2015/11/05/HTML5Programming/"/>
     <id>http://yoursite.com/2015/11/05/HTML5Programming/</id>
     <published>2015-11-05T11:04:52.000Z</published>
-    <updated>2015-11-05T11:28:57.097Z</updated>
+    <updated>2015-11-05T14:31:24.016Z</updated>
     <content type="html"><![CDATA[<p>HTML程序设计（第二版）<br><img src="http://img3.douban.com/lpic/s9066310.jpg" alt="Pro HTML% Programming"></p>
 <p>曾以为HTML5不过是多了几个语义化的标签，读了这部经典之作，改变了我对HTML5的看法。第一遍只是粗略地概览，并不深入，了解HTML5的新特性，体会到了HTML5提供的新的API的强大之处。</p>
 <h3 id="Summary">Summary</h3><p>What’s WHATWG<br>1.&lt;!DOCTYPE html&gt; <meta charset="utf-8"><br>2.Semantization tagments:<header><footer><section><article><aside><nav><br>3.Selectors API : <strong>QuerySelector()</strong> **QuerySelectorALL()</nav></aside></article></section></footer></header></p>
-<h3 id="Canvas_API">Canvas API</h3><p>苹果公司提出的位图画布并按照W3C的免版税专利许可条款公开了专利。</p>
-<canvas>Your Bo</canvas>
-
-
-<h3 id="SVG">SVG</h3><h3 id="Audio_&amp;_Vidio">Audio &amp; Vidio</h3><h3 id="Geolocation_API">Geolocation API</h3><h3 id="Communication_API">Communication API</h3><h3 id="WebSockets_API">WebSockets API</h3><h3 id="Forms_API">Forms API</h3><h3 id="Drag">Drag</h3><h3 id="Web_Workers_API">Web Workers API</h3><h3 id="Web_Storage_API">Web Storage API</h3><p>###</p>
+<h3 id="Canvas_API">Canvas API</h3><p>苹果公司提出的位图画布并按照W3C的免版税专利许可条款公开了专利。<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">canvas</span>&gt;</span>Your Bo<span class="tag">&lt;/<span class="title">canvas</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="SVG_–Scalable_Vector_Graphics">SVG –Scalable Vector Graphics</h3><p>标准矢量图形</p>
+<h3 id="Audio_&amp;_Vidio">Audio &amp; Vidio</h3><p>目前依然没有同意的编码器</p>
+<h3 id="Geolocation_API">Geolocation API</h3><p>强大的地理位置定位</p>
+<h3 id="Communication_API">Communication API</h3><h4 id="跨文档消息通信">跨文档消息通信</h4><h4 id="XHR_Level2">XHR Level2</h4><h3 id="WebSockets_API">WebSockets API</h3><p>全双工通信信道，仅通过一个Soket即可通信。</p>
+<h3 id="Forms_API">Forms API</h3><h3 id="Drag">Drag</h3><h3 id="Web_Workers_API">Web Workers API</h3><h3 id="Web_Storage_API">Web Storage API</h3><p>###</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>HTML程序设计（第二版）<br><img src="http://img3.douban.com/lpic/s9066310.jpg" alt="Pro HTML% Programming"></p>
@@ -134,10 +165,10 @@
     <link href="http://yoursite.com/2015/10/25/books/"/>
     <id>http://yoursite.com/2015/10/25/books/</id>
     <published>2015-10-25T13:45:35.000Z</published>
-    <updated>2015-11-05T11:09:53.512Z</updated>
+    <updated>2015-11-06T11:02:20.993Z</updated>
     <content type="html"><![CDATA[<h2 id="书单">书单</h2><h3 id="前端类">前端类</h3><p>Head First HTML&amp;CSS (已读完)<br>JavaScript DOM 编程艺术（2nd Edition)(已读完)<br>Head First Ajax(已读完)</p>
-<p>JavaScript 高级程序设计（3rd Edition)(正在研读)<br>精通正则表达式（3rd Edition)（在读）<br>CSS权威指南（3rd Edition)（在读）<br>HTM5程序设计（2nd Edition)（在读）<br>Node.js开发指南（在读）<br>HTML5与CSS3基础教程（7th Edition）[最新版：8th Edition]</p>
-<p>深入浅出Node.js<br>锋利的jQuery<br>JavaScript语言精粹<br>JavaScript权威指南<br>HTTP权威指南<br>高性能网站建设指南</p>
+<p>JavaScript 高级程序设计（3rd Edition)(正在研读)<br>精通正则表达式（3rd Edition)（在读）<br>CSS权威指南（3rd Edition)（在读）<br>HTM5程序设计（2nd Edition)（在读）<br>Node.js开发指南（在读）<br>HTML5与CSS3基础教程（7th Edition）[最新版：8th Edition]<br>高性能网站建设指南（在读）<br>锋利的jQuery（在读）</p>
+<p>深入浅出Node.js<br>JavaScript语言精粹<br>JavaScript权威指南<br>HTTP权威指南</p>
 <hr>
 <h3 id="程序类">程序类</h3><p>算法导论（在读）<br>编程之美 + 编程珠玑 + 算法导论 + 剑指offer【程序员必读经典】</p>
 <hr>

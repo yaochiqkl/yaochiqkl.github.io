@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  
+  <title>高性能网站建设指南(雅虎优化前端14条准则) | 鱼池</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  
+    <meta name="author" content="yaochiqkl">
+  
+  
+    <meta name="description" content="高性能网站建设指南
+我真是太爱博文视点O’Reilly系列的书了，很幸运能在前端的领域有这样的一系列经典的书籍。原来雅虎的14条前端优化准则尽在这本书中！
+
+
+性能黄金法则：只有10%~20%的最终用户响应时间花在了下载HTML文档上。其余的80%~90%时间花在了下载页面中的所有组件上。
+
+法则1：减少HTTP请求次数1.图片地图 Image Map2.雪碧图 CSS Sprites3.内联图片">
+  
+  <meta name="description" content="高性能网站建设指南
+我真是太爱博文视点O’Reilly系列的书了，很幸运能在前端的领域有这样的一系列经典的书籍。原来雅虎的14条前端优化准则尽在这本书中！
+
+
+性能黄金法则：只有10%~20%的最终用户响应时间花在了下载HTML文档上。其余的80%~90%时间花在了下载页面中的所有组件上。
+
+法则1：减少HTTP请求次数1.图片地图 Image Map2.雪碧图 CSS Sprites3.内联图片">
+<meta property="og:type" content="article">
+<meta property="og:title" content="高性能网站建设指南(雅虎优化前端14条准则)">
+<meta property="og:url" content="http://yoursite.com/2015/11/06/HighPerfomanceWebSites/index.html">
+<meta property="og:site_name" content="鱼池">
+<meta property="og:description" content="高性能网站建设指南
+我真是太爱博文视点O’Reilly系列的书了，很幸运能在前端的领域有这样的一系列经典的书籍。原来雅虎的14条前端优化准则尽在这本书中！
+
+
+性能黄金法则：只有10%~20%的最终用户响应时间花在了下载HTML文档上。其余的80%~90%时间花在了下载页面中的所有组件上。
+
+法则1：减少HTTP请求次数1.图片地图 Image Map2.雪碧图 CSS Sprites3.内联图片">
+<meta property="og:image" content="http://img4.douban.com/lpic/s5914296.jpg">
+<meta property="og:updated_time" content="2015-11-06T11:22:48.160Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="高性能网站建设指南(雅虎优化前端14条准则)">
+<meta name="twitter:description" content="高性能网站建设指南
+我真是太爱博文视点O’Reilly系列的书了，很幸运能在前端的领域有这样的一系列经典的书籍。原来雅虎的14条前端优化准则尽在这本书中！
+
+
+性能黄金法则：只有10%~20%的最终用户响应时间花在了下载HTML文档上。其余的80%~90%时间花在了下载页面中的所有组件上。
+
+法则1：减少HTTP请求次数1.图片地图 Image Map2.雪碧图 CSS Sprites3.内联图片">
+  
+    <link rel="alternate" href="/atom.xml" title="鱼池" type="application/atom+xml">
+  
+  
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+  <div>
+  <!-- lsz -->
+  <script src="js/trianglify.min.js"></script>
+  <script>
+  // set up the base pattern
+  var pattern = Trianglify({
+    height: window.innerHeight,
+    width: window.innerWidth,
+    cell_size: 30 + Math.random() * 100});
+    variance: Math.random()*0.5 +0.5 ;
+    seed: 1;
+  // canvas
+  //document.body.appendChild(pattern.canvas())
+  // svg
+  //document.body.appendChild(pattern.svg())
+  // png
+  var png = document.createElement('img');
+  //png.src = pattern.png();
+  //document.body.appendChild(png);
+  document.body.style.backgroundImage="url("+pattern.png()+")";
+  document.body.style.backgroundAttachment="fixed";
+/*  window.onresize = function(){
+    var t = pattern.generate(window.innerWidth,window.innerHeight);
+    document.body.style.backgroundImage="url("+t.dataUrl+")";
+  };*/
+  </script>
+</div>
+
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?3eb683cb9bda4b8648f1a5528fda4240";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header id="header">
+  <div class="title">
+    <h1><a href="/">鱼池</a></h1>
+    <p><a href="/">我的个人博客</a></p>
+  </div>
+  <nav class="nav">
+    <ul>
+      
+        <li><a href="/">主页</a></li>
+      
+        <li><a href="/archives">归档</a></li>
+      
+        <li><a href="/about">关于</a></li>
+      
+      
+        <li><a href="/atom.xml">RSS</a></li>
+      
+    </ul>
+    <div class="clearfix"></div>
+  </nav>
+  <div class="clearfix"></div>
+</header>
+    <div class="content"><article class="post">
+  <header>
+    
+      <div class="icon"></div>
+      <a href="/2015/11/06/HighPerfomanceWebSites/">
+  <time datetime="2015-11-06T10:59:10.000Z">
+    2015-11-06
+  </time>
+</a>
+    
+    
+  
+    <h1 class="title">高性能网站建设指南(雅虎优化前端14条准则)</h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <p><img src="http://img4.douban.com/lpic/s5914296.jpg" alt="High Performance Web Sites"><br>高性能网站建设指南</p>
+<p>我真是太爱博文视点O’Reilly系列的书了，很幸运能在前端的领域有这样的一系列经典的书籍。<br>原来雅虎的14条前端优化准则尽在这本书中！</p>
+<hr>
+<blockquote>
+<p>性能黄金法则：只有10%~20%的最终用户响应时间花在了下载HTML文档上。其余的80%~90%时间花在了下载页面中的所有组件上。</p>
+<hr>
+<h3 id="法则1：减少HTTP请求次数">法则1：减少HTTP请求次数</h3><p>1.图片地图 Image Map<br>2.雪碧图 CSS Sprites<br>3.内联图片  `` src=”data:image/gif;base64,R01···” ```<br>4.合并脚本、样式表</p>
+<hr>
+<h3 id="法则2：CDN_(Content_Delivery_Network)">法则2：CDN (Content Delivery Network)</h3><p>CDN是地理上分布的Web Server的集合<br>将占据主要带宽的静态资源通过CDN发布</p>
+<hr>
+<h3 id="法则3：增加Expires_Header">法则3：增加Expires Header</h3><p>通过Expires进行缓存，间接减少HTTP请求。<br>Cache-Control</p>
+<hr>
+<h3 id="法则4：压缩组件">法则4：压缩组件</h3><p>这里的压缩不是指JS脚本文件的精简和并行，而指的是通过Web客户端在HTTP请求中通过的<strong>“Accept-Encoding”</strong>来指定压缩类型，让Web服务器发送编码后的文件，一般通过<strong>Gzip</strong>使内容减少70%。</p>
+<hr>
+<h3 id="法则5：样式表放头部">法则5：样式表放头部</h3><hr>
+<h3 id="法则6：脚本文件放底部">法则6：脚本文件放底部</h3></blockquote>
+
+    
+  </div>
+  <footer>
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">评论</h1>
+  <div class="ds-thread" data-title="高性能网站建设指南(雅虎优化前端14条准则)">
+  </div>
+</section>
+</div>
+  </div>
+  <footer id="footer"><div class="copyright">
+  
+  &copy; 2015 <a href="/">yaochiqkl</a>
+  
+</div>
+<div class="theme-copyright">
+感谢访问
+</div>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
+<div class="clearfix"></div></footer>
+  <script src="//lib.sinaapp.com/js/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/scale.fix.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+<script type="text/javascript">
+  var duoshuoQuery = { short_name: 'yaochiqkl' };
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';
+    ds.async = true;
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+  (function($){
+    $('.fancybox').fancybox();
+  })(jQuery);
+</script>
+
+</body>
+</html>

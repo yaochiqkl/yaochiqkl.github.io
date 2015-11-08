@@ -36,25 +36,17 @@
     <link href="http://yoursite.com/2015/11/06/HighPerfomanceWebSites/"/>
     <id>http://yoursite.com/2015/11/06/HighPerfomanceWebSites/</id>
     <published>2015-11-06T10:59:10.000Z</published>
-    <updated>2015-11-06T12:00:48.398Z</updated>
+    <updated>2015-11-08T12:20:34.431Z</updated>
     <content type="html"><![CDATA[<p><img src="http://img4.douban.com/lpic/s5914296.jpg" alt="High Performance Web Sites"><br>高性能网站建设指南<br><a href="http://stevesouders.com/hpws/rules.php" target="_blank" rel="external">相关例子测试官网</a><br>我真是太爱博文视点O’Reilly系列的书了，很幸运能在前端的领域有这样的一系列经典的书籍。<br>原来雅虎的14条前端优化准则尽在这本书中！</p>
 <hr>
 <p><q>性能黄金法则：只有10%~20%的最终用户响应时间花在了下载HTML文档上。其余的80%~90%时间花在了下载页面中的所有组件上。</q></p>
 <hr>
-<h3 id="法则1：减少HTTP请求次数">法则1：减少HTTP请求次数</h3><p>1.图片地图 Image Map<br>2.雪碧图 CSS Sprites<br>3.内联图片  `` src=”data:image/gif;base64,R01···” ```<br>4.合并脚本、样式表</p>
+<h3 id="法则1：减少HTTP请求次数">法则1：减少HTTP请求次数</h3><p>1.图片地图 Image Map<br>2.雪碧图 CSS Sprites<br>3.内联图片  `` src=”data:image/gif;base64,R01···” <figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">4.合并脚本、样式表</span><br><span class="line"><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span></span><br><span class="line"><span class="comment">### 法则2：CDN (Content Delivery Network)</span></span><br><span class="line">CDN是地理上分布的Web Server的集合</span><br><span class="line">将占据主要带宽的静态资源通过CDN发布</span><br><span class="line"><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span></span><br><span class="line"><span class="comment">### 法则3：增加Expires Header</span></span><br><span class="line">通过Expires进行缓存，间接减少HTTP请求。</span><br><span class="line">Cache-Control</span><br><span class="line"><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span></span><br><span class="line"><span class="comment">### 法则4：压缩组件</span></span><br><span class="line">这里的压缩不是指JS脚本文件的精简和并行，而指的是通过Web客户端在HTTP请求中通过的<span class="keyword">*</span><span class="keyword">*</span><span class="string">"Accept-Encoding"</span><span class="keyword">*</span><span class="keyword">*</span>来指定压缩类型，让Web服务器发送编码后的文件，一般通过<span class="keyword">*</span><span class="keyword">*</span>Gzip<span class="keyword">*</span><span class="keyword">*</span>使内容减少70%。</span><br><span class="line"><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span></span><br><span class="line"><span class="comment">### 法则5：样式表放头部</span></span><br><span class="line">在IE中样式表放底部会导致白屏等问题，而其他浏览器会导致闪烁等糟糕的体验。</span><br><span class="line"><span class="keyword">*</span><span class="keyword">*</span>使用LINK标签将样式表嵌入HEAD中<span class="keyword">*</span><span class="keyword">*</span>，而<span class="comment">@import则会使样式表最后加载。</span></span><br><span class="line"><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span></span><br><span class="line"><span class="comment">### 法则6：脚本文件放底部</span></span><br><span class="line">1.HTTP1.1规范建议浏览器从每个主机名并行下载两个组件，所以建议将组件分布在两个主机下。</span><br><span class="line">2.脚本会<span class="keyword">*</span><span class="keyword">*</span>阻塞<span class="keyword">*</span><span class="keyword">*</span>下载，原因一等待其有可能的重新布局，其次保证脚本的顺序执行。</span><br><span class="line">3.使用defer延迟脚本：异步加载 延迟执行，而asyn则是异步加载，立即执行。</span><br><span class="line"><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span></span><br><span class="line"><span class="comment">### 法则7：避免CSS表达式</span></span><br><span class="line">或者用一次性表达式，CSS表达式执行次数过多。</span><br><span class="line"><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span></span><br><span class="line"><span class="comment">### 法则8：使用外部JS和CSS文件</span></span><br><span class="line">使用外部的文件可以将之缓存，而HTML页面不会缓存。但是也要视情况而定，内嵌方式可以取得更快的响应时间，因为会减少HTTP请求数量。</span><br><span class="line"><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span></span><br><span class="line"><span class="comment">### 法则9：减少DNS查询次数</span></span><br><span class="line">设置DNS缓存，减少主机名可减少DNS查询次数</span><br><span class="line">折中的方法是将内容分布在2-4个主机上，同时能到提高并行下载的数量。HTTP1.1规范<span class="keyword">*</span><span class="keyword">*</span>建议<span class="keyword">*</span><span class="keyword">*</span>：从每个主机名并行下载的数量不应该超过两个。</span><br><span class="line"><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span></span><br><span class="line"><span class="comment">### 法则10：精简、混淆JS</span></span><br><span class="line">在压缩之前精简，可以达到更优的效果</span><br><span class="line"><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span></span><br><span class="line"><span class="comment">### 法则11：避免重定向</span></span><br><span class="line">浏览器自动重定向请求到Location指定的URL上</span><br><span class="line">URL最后缺少“/”也会造成该问题</span><br><span class="line"><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span></span><br><span class="line"><span class="comment">### 法则12：删除重复的脚本</span></span><br><span class="line">使用模块系统建立脚本管理模块</span><br><span class="line"><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span></span><br><span class="line"><span class="comment">### 法则13：配置ETags</span></span><br><span class="line">ETag用于唯一标示元素版本的字符串</span><br></pre></td></tr></table></figure></p>
+<p>　　　HTTP/1.1 200 OK<br>　　　Last-Modified: Tue, 12 Dec 2006 03:03:59 GMT<br>　　　ETag: “10c24bc-4ab-457e1c1f”<br>　　　Content-Length: 12195<br>```</p>
 <hr>
-<h3 id="法则2：CDN_(Content_Delivery_Network)">法则2：CDN (Content Delivery Network)</h3><p>CDN是地理上分布的Web Server的集合<br>将占据主要带宽的静态资源通过CDN发布</p>
+<h3 id="法则14：缓存Ajax">法则14：缓存Ajax</h3><p>为Ajax请求的url增加一个时间戳</p>
 <hr>
-<h3 id="法则3：增加Expires_Header">法则3：增加Expires Header</h3><p>通过Expires进行缓存，间接减少HTTP请求。<br>Cache-Control</p>
-<hr>
-<h3 id="法则4：压缩组件">法则4：压缩组件</h3><p>这里的压缩不是指JS脚本文件的精简和并行，而指的是通过Web客户端在HTTP请求中通过的<strong>“Accept-Encoding”</strong>来指定压缩类型，让Web服务器发送编码后的文件，一般通过<strong>Gzip</strong>使内容减少70%。</p>
-<hr>
-<h3 id="法则5：样式表放头部">法则5：样式表放头部</h3><p>在IE中样式表放底部会导致白屏等问题，而其他浏览器会导致闪烁等糟糕的体验。<br><strong>使用LINK标签将样式表嵌入HEAD中</strong>，而@import则会使样式表最后加载。</p>
-<hr>
-<h3 id="法则6：脚本文件放底部">法则6：脚本文件放底部</h3><p>1.HTTP1.1规范建议浏览器从每个主机名并行下载两个组件，所以建议将组件分布在两个主机下。<br>2.脚本会<strong>阻塞</strong>下载，原因一等待其有可能的重新布局，其次保证脚本的顺序执行。<br>3.使用defer延迟脚本：异步加载 延迟执行，而asyn则是异步加载，立即执行。</p>
-<hr>
-<h3 id="法则7：避免CSS表达式">法则7：避免CSS表达式</h3><hr>
-<p>（未完待续）</p>
+<p>更多进阶内容：《高性能网站建设进阶指南》</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p><img src="http://img4.douban.com/lpic/s5914296.jpg" alt="High Performance Web Sites"><br>高性能网站建设指南<br><a href="http://stevesouders.com/hp]]>
@@ -183,18 +175,17 @@
     <link href="http://yoursite.com/2015/10/25/books/"/>
     <id>http://yoursite.com/2015/10/25/books/</id>
     <published>2015-10-25T13:45:35.000Z</published>
-    <updated>2015-11-06T12:28:30.504Z</updated>
-    <content type="html"><![CDATA[<h2 id="书单">书单</h2><h3 id="前端类">前端类</h3><p>Head First HTML&amp;CSS (已读完)<br>JavaScript DOM 编程艺术（2E)(已读完)<br>Head First Ajax(已读完)</p>
-<p>JavaScript 高级程序设计（3E)(正在研读)<br>精通正则表达式（3E)（在读）<br>CSS权威指南（3E)（在读）<br>HTM5程序设计（2E)（在读）<br>Node.js开发指南（在读）<br>HTML5与CSS3基础教程（7E）[最新版：8E]<br>高性能网站建设指南（在读）<br>锋利的jQuery（2E)（在读）<br>PHP和MySQLWeb开发（3E）（在读）</p>
-<p>深入浅出Node.js<br>JavaScript语言精粹<br>JavaScript权威指南<br>HTTP权威指南</p>
+    <updated>2015-11-08T12:04:48.957Z</updated>
+    <content type="html"><![CDATA[<h2 id="书单">书单</h2><h3 id="前端类">前端类</h3><p>Head First HTML&amp;CSS (已读完)<br>JavaScript DOM 编程艺术（2E)(已读完)<br>Head First Ajax(已读完)<br>高性能网站建设指南（已读完）</p>
+<p>JavaScript 高级程序设计（3E)(反复研读)<br>精通正则表达式（3E)（在读）<br>CSS权威指南（3E)（在读）<br>HTM5程序设计（2E)（在读）<br>Node.js开发指南（在读）<br>HTML5与CSS3基础教程（7E）[最新版：8E]<br>锋利的jQuery（2E)（在读）<br>PHP和MySQLWeb开发（3E）（在读）<br>深入浅出Node.js（在读）</p>
+<p>JavaScript语言精粹<br>JavaScript权威指南<br>HTTP权威指南</p>
 <hr>
 <h3 id="程序类">程序类</h3><p>算法导论（在读）<br>编程之美 + 编程珠玑 + 算法导论 + 剑指offer【程序员必读经典】</p>
 <hr>
 <h3 id="人文类">人文类</h3><p>围城（已读完）<br>白夜行（在读）<br>自控力（在读）</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h2 id="书单">书单</h2><h3 id="前端类">前端类</h3><p>Head First HTML&amp;CSS (已读完)<br>JavaScript DOM 编程艺术（2E)(已读完)<br>Head First Ajax(已读完)</p>
-<p>Java]]>
+    <![CDATA[<h2 id="书单">书单</h2><h3 id="前端类">前端类</h3><p>Head First HTML&amp;CSS (已读完)<br>JavaScript DOM 编程艺术（2E)(已读完)<br>Head First Ajax(已读完)<br>高性能网站建设指]]>
     </summary>
     
   </entry>

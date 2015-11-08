@@ -25,7 +25,7 @@
 <meta property="og:image" content="http://yoursite.com/images/1.jpg">
 <meta property="og:image" content="http://yoursite.com/images/2.jpg">
 <meta property="og:image" content="http://yoursite.com/images/3.jpg">
-<meta property="og:updated_time" content="2015-11-08T12:59:28.552Z">
+<meta property="og:updated_time" content="2015-11-08T13:13:46.815Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="锋利的jQuery">
 <meta name="twitter:description" content="每天都在图书馆查这本书，这两天终于等到别人还过来了，这几天借的书还不少，有十本，都快达上限了，就不能借一本自习看一本么！？想起之前在一家IT公司实习的时候用jQuery的随意，殊不知jQuery是如此这般强大！看了两天图书馆已然有人归还第二版，速速换之。书中很多实例很有趣，很值得自己去实现。
@@ -43,6 +43,7 @@
   <!-- lsz -->
   <script src="js/trianglify.min.js"></script>
   <script>
+  window.onload=function(){
   // set up the base pattern
   var pattern = Trianglify({
     height: window.innerHeight,
@@ -64,6 +65,7 @@
     var t = pattern.generate(window.innerWidth,window.innerHeight);
     document.body.style.backgroundImage="url("+t.dataUrl+")";
   };*/
+};
   </script>
 </div>
 
@@ -119,20 +121,6 @@ var _hmt = _hmt || [];
     <h1 class="title">锋利的jQuery</h1>
   
 
-<script src="js/trianglify.min.js"></script>
-  <script>
-  var pattern = Trianglify({
-    height: window.innerHeight,
-    width: window.innerWidth,
-    cell_size: 30 + Math.random() * 100});
-    variance: Math.random()*0.5 +0.5 ;
-    seed: 1;
-  var png = document.createElement('img');
-
-  document.body.style.backgroundImage="url("+pattern.png()+")";
-  document.body.style.backgroundAttachment="fixed";
- </script>
- <script src="js/jquery.min.js"></script>
   </header>
   
   <div class="entry">
@@ -157,7 +145,7 @@ var _hmt = _hmt || [];
 <p>5.stop() &amp; delay()<br>停止动画 stop()<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">stop</span><span class="params">(ClearQueue,gotoEnd)</span></span></span><br><span class="line">Boolean值，前者清空队列，后者跳到当前动画的末状态</span><br></pre></td></tr></table></figure></p>
 <p>延迟动画 delay()<br>后借时间，单位<strong>ms</strong><br>6.<strong>其他</strong><br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">toggle</span><span class="params">()</span></span></span><br><span class="line"><span class="function"><span class="title">slideToggle</span><span class="params">()</span></span></span><br><span class="line"><span class="function"><span class="title">fadeTo</span><span class="params">()</span></span></span><br><span class="line"><span class="function"><span class="title">fageToggle</span><span class="params">()</span></span></span><br></pre></td></tr></table></figure></p>
 <p><div class="a"><br>    <a href="/images/1.jpg" class="tip" title="Prompt1"><img src="/images/1.jpg" style="heiht:100px;width:200px;"></a><br><br>    <a href="/images/2.jpg" class="tip" title="Prompt2"><img src="/images/2.jpg" style="heiht:100px;width:200px;"></a><br><br>    <a href="/images/3.jpg" class="tip" title="Prompt3"><img src="/images/3.jpg" style="heiht:100px;width:200px;"></a><br></div></p>
-<script type="text/javascript" src="/jquery.min.js"></script>
+<script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
 <script type="text/javascript">
 $(function(){
     var x = 10;

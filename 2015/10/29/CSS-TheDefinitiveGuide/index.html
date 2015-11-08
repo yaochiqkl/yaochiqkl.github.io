@@ -48,6 +48,7 @@
   <!-- lsz -->
   <script src="js/trianglify.min.js"></script>
   <script>
+  window.onload=function(){
   // set up the base pattern
   var pattern = Trianglify({
     height: window.innerHeight,
@@ -69,6 +70,7 @@
     var t = pattern.generate(window.innerWidth,window.innerHeight);
     document.body.style.backgroundImage="url("+t.dataUrl+")";
   };*/
+};
   </script>
 </div>
 
@@ -124,20 +126,6 @@ var _hmt = _hmt || [];
     <h1 class="title">CSS权威指南读书笔记</h1>
   
 
-<script src="js/trianglify.min.js"></script>
-  <script>
-  var pattern = Trianglify({
-    height: window.innerHeight,
-    width: window.innerWidth,
-    cell_size: 30 + Math.random() * 100});
-    variance: Math.random()*0.5 +0.5 ;
-    seed: 1;
-  var png = document.createElement('img');
-
-  document.body.style.backgroundImage="url("+pattern.png()+")";
-  document.body.style.backgroundAttachment="fixed";
- </script>
- <script src="js/jquery.min.js"></script>
   </header>
   
   <div class="entry">

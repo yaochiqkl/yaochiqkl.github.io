@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我的个人博客]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-11-08T12:59:28.552Z</updated>
+  <updated>2015-11-08T13:13:46.815Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://yoursite.com/2015/11/06/SharpJQuery/"/>
     <id>http://yoursite.com/2015/11/06/SharpJQuery/</id>
     <published>2015-11-06T12:12:02.000Z</published>
-    <updated>2015-11-08T12:59:28.552Z</updated>
+    <updated>2015-11-08T13:13:46.815Z</updated>
     <content type="html"><![CDATA[<p><img src="http://img4.douban.com/lpic/s28026858.jpg" alt="锋利的jQuery"><br>每天都在图书馆查这本书，这两天终于等到别人还过来了，这几天借的书还不少，有十本，都快达上限了，就不能借一本自习看一本么！？<br>想起之前在一家IT公司实习的时候用jQuery的随意，殊不知jQuery是如此这般强大！看了两天图书馆已然有人归还第二版，速速换之。<br>书中很多实例很有趣，很值得自己去实现。</p>
 <h2 id="选择器">选择器</h2><p>1.基本选择器<br>2.层次选择器 &gt; + ~<br>3.过滤选择器<br>    1.基本过滤 :first :not() :qe() :qt() :animated<br>    2.内容过滤 :contains(text) :empty :has() :parent<br>    3.可见性过滤 :hidden :visible<br>    4.属性过滤 [attribute] [attribute^=value]<br>    5.子元素过滤 nth-child(index) :first-child<br>    6.表单对象过滤 :enabled :disabled<br>4.表单选择器 :input(input+button+textarea) :hidden</p>
 <hr>
@@ -40,7 +40,7 @@
 <p>5.stop() &amp; delay()<br>停止动画 stop()<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">stop</span><span class="params">(ClearQueue,gotoEnd)</span></span></span><br><span class="line">Boolean值，前者清空队列，后者跳到当前动画的末状态</span><br></pre></td></tr></table></figure></p>
 <p>延迟动画 delay()<br>后借时间，单位<strong>ms</strong><br>6.<strong>其他</strong><br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">toggle</span><span class="params">()</span></span></span><br><span class="line"><span class="function"><span class="title">slideToggle</span><span class="params">()</span></span></span><br><span class="line"><span class="function"><span class="title">fadeTo</span><span class="params">()</span></span></span><br><span class="line"><span class="function"><span class="title">fageToggle</span><span class="params">()</span></span></span><br></pre></td></tr></table></figure></p>
 <p><div class="a"><br>    <a href="/images/1.jpg" class="tip" title="Prompt1"><img src="/images/1.jpg" style="heiht:100px;width:200px;"></a><br><br>    <a href="/images/2.jpg" class="tip" title="Prompt2"><img src="/images/2.jpg" style="heiht:100px;width:200px;"></a><br><br>    <a href="/images/3.jpg" class="tip" title="Prompt3"><img src="/images/3.jpg" style="heiht:100px;width:200px;"></a><br></div></p>
-<script type="text/javascript" src="/jquery.min.js"></script>
+<script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
 <script type="text/javascript">
 $(function(){
     var x = 10;

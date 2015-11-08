@@ -32,6 +32,7 @@
   <!-- lsz -->
   <script src="js/trianglify.min.js"></script>
   <script>
+  window.onload=function(){
   // set up the base pattern
   var pattern = Trianglify({
     height: window.innerHeight,
@@ -53,6 +54,7 @@
     var t = pattern.generate(window.innerWidth,window.innerHeight);
     document.body.style.backgroundImage="url("+t.dataUrl+")";
   };*/
+};
   </script>
 </div>
 
@@ -114,20 +116,6 @@ var _hmt = _hmt || [];
     <h1 class="title"><a href="/2015/11/06/SharpJQuery/">锋利的jQuery</a></h1>
   
 
-<script src="js/trianglify.min.js"></script>
-  <script>
-  var pattern = Trianglify({
-    height: window.innerHeight,
-    width: window.innerWidth,
-    cell_size: 30 + Math.random() * 100});
-    variance: Math.random()*0.5 +0.5 ;
-    seed: 1;
-  var png = document.createElement('img');
-
-  document.body.style.backgroundImage="url("+pattern.png()+")";
-  document.body.style.backgroundAttachment="fixed";
- </script>
- <script src="js/jquery.min.js"></script>
   </header>
   
   <div class="entry">
@@ -152,7 +140,7 @@ var _hmt = _hmt || [];
 <p>5.stop() &amp; delay()<br>停止动画 stop()<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">stop</span><span class="params">(ClearQueue,gotoEnd)</span></span></span><br><span class="line">Boolean值，前者清空队列，后者跳到当前动画的末状态</span><br></pre></td></tr></table></figure></p>
 <p>延迟动画 delay()<br>后借时间，单位<strong>ms</strong><br>6.<strong>其他</strong><br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">toggle</span><span class="params">()</span></span></span><br><span class="line"><span class="function"><span class="title">slideToggle</span><span class="params">()</span></span></span><br><span class="line"><span class="function"><span class="title">fadeTo</span><span class="params">()</span></span></span><br><span class="line"><span class="function"><span class="title">fageToggle</span><span class="params">()</span></span></span><br></pre></td></tr></table></figure></p>
 <p><div class="a"><br>    <a href="/images/1.jpg" class="tip" title="Prompt1"><img src="/images/1.jpg" style="heiht:100px;width:200px;"></a><br><br>    <a href="/images/2.jpg" class="tip" title="Prompt2"><img src="/images/2.jpg" style="heiht:100px;width:200px;"></a><br><br>    <a href="/images/3.jpg" class="tip" title="Prompt3"><img src="/images/3.jpg" style="heiht:100px;width:200px;"></a><br></div></p>
-<script type="text/javascript" src="/jquery.min.js"></script>
+<script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
 <script type="text/javascript">
 $(function(){
     var x = 10;
@@ -209,20 +197,6 @@ $(function(){
     <h1 class="title"><a href="/2015/11/06/HighPerfomanceWebSites/">高性能网站建设指南(雅虎优化前端14条准则)</a></h1>
   
 
-<script src="js/trianglify.min.js"></script>
-  <script>
-  var pattern = Trianglify({
-    height: window.innerHeight,
-    width: window.innerWidth,
-    cell_size: 30 + Math.random() * 100});
-    variance: Math.random()*0.5 +0.5 ;
-    seed: 1;
-  var png = document.createElement('img');
-
-  document.body.style.backgroundImage="url("+pattern.png()+")";
-  document.body.style.backgroundAttachment="fixed";
- </script>
- <script src="js/jquery.min.js"></script>
   </header>
   
   <div class="entry">
@@ -290,20 +264,6 @@ $(function(){
     <h1 class="title"><a href="/2015/11/05/HTML5Programming/">HTML5Programming</a></h1>
   
 
-<script src="js/trianglify.min.js"></script>
-  <script>
-  var pattern = Trianglify({
-    height: window.innerHeight,
-    width: window.innerWidth,
-    cell_size: 30 + Math.random() * 100});
-    variance: Math.random()*0.5 +0.5 ;
-    seed: 1;
-  var png = document.createElement('img');
-
-  document.body.style.backgroundImage="url("+pattern.png()+")";
-  document.body.style.backgroundAttachment="fixed";
- </script>
- <script src="js/jquery.min.js"></script>
   </header>
   
   <div class="entry">
@@ -346,20 +306,6 @@ $(function(){
     <h1 class="title"><a href="/2015/10/29/CSS-TheDefinitiveGuide/">CSS权威指南读书笔记</a></h1>
   
 
-<script src="js/trianglify.min.js"></script>
-  <script>
-  var pattern = Trianglify({
-    height: window.innerHeight,
-    width: window.innerWidth,
-    cell_size: 30 + Math.random() * 100});
-    variance: Math.random()*0.5 +0.5 ;
-    seed: 1;
-  var png = document.createElement('img');
-
-  document.body.style.backgroundImage="url("+pattern.png()+")";
-  document.body.style.backgroundAttachment="fixed";
- </script>
- <script src="js/jquery.min.js"></script>
   </header>
   
   <div class="entry">
@@ -417,20 +363,6 @@ $(function(){
     <h1 class="title"><a href="/2015/10/28/Node_js_DevelopmentGuides/">Node.js开发指南读书笔记</a></h1>
   
 
-<script src="js/trianglify.min.js"></script>
-  <script>
-  var pattern = Trianglify({
-    height: window.innerHeight,
-    width: window.innerWidth,
-    cell_size: 30 + Math.random() * 100});
-    variance: Math.random()*0.5 +0.5 ;
-    seed: 1;
-  var png = document.createElement('img');
-
-  document.body.style.backgroundImage="url("+pattern.png()+")";
-  document.body.style.backgroundAttachment="fixed";
- </script>
- <script src="js/jquery.min.js"></script>
   </header>
   
   <div class="entry">
@@ -471,20 +403,6 @@ $(function(){
     <h1 class="title"><a href="/2015/10/27/AjaxReadingNotes/">Head First Ajax 读书笔记</a></h1>
   
 
-<script src="js/trianglify.min.js"></script>
-  <script>
-  var pattern = Trianglify({
-    height: window.innerHeight,
-    width: window.innerWidth,
-    cell_size: 30 + Math.random() * 100});
-    variance: Math.random()*0.5 +0.5 ;
-    seed: 1;
-  var png = document.createElement('img');
-
-  document.body.style.backgroundImage="url("+pattern.png()+")";
-  document.body.style.backgroundAttachment="fixed";
- </script>
- <script src="js/jquery.min.js"></script>
   </header>
   
   <div class="entry">
@@ -538,20 +456,6 @@ $(function(){
     <h1 class="title"><a href="/2015/10/25/books/">书单</a></h1>
   
 
-<script src="js/trianglify.min.js"></script>
-  <script>
-  var pattern = Trianglify({
-    height: window.innerHeight,
-    width: window.innerWidth,
-    cell_size: 30 + Math.random() * 100});
-    variance: Math.random()*0.5 +0.5 ;
-    seed: 1;
-  var png = document.createElement('img');
-
-  document.body.style.backgroundImage="url("+pattern.png()+")";
-  document.body.style.backgroundAttachment="fixed";
- </script>
- <script src="js/jquery.min.js"></script>
   </header>
   
   <div class="entry">
@@ -592,20 +496,6 @@ $(function(){
     <h1 class="title"><a href="/2015/10/23/初入江湖之前端有感/">初入江湖之前端有感</a></h1>
   
 
-<script src="js/trianglify.min.js"></script>
-  <script>
-  var pattern = Trianglify({
-    height: window.innerHeight,
-    width: window.innerWidth,
-    cell_size: 30 + Math.random() * 100});
-    variance: Math.random()*0.5 +0.5 ;
-    seed: 1;
-  var png = document.createElement('img');
-
-  document.body.style.backgroundImage="url("+pattern.png()+")";
-  document.body.style.backgroundAttachment="fixed";
- </script>
- <script src="js/jquery.min.js"></script>
   </header>
   
   <div class="entry">
@@ -643,20 +533,6 @@ $(function(){
     <h1 class="title"><a href="/2015/10/22/Hexo Finished/">基于Hexo的个人博客终于建成了！</a></h1>
   
 
-<script src="js/trianglify.min.js"></script>
-  <script>
-  var pattern = Trianglify({
-    height: window.innerHeight,
-    width: window.innerWidth,
-    cell_size: 30 + Math.random() * 100});
-    variance: Math.random()*0.5 +0.5 ;
-    seed: 1;
-  var png = document.createElement('img');
-
-  document.body.style.backgroundImage="url("+pattern.png()+")";
-  document.body.style.backgroundAttachment="fixed";
- </script>
- <script src="js/jquery.min.js"></script>
   </header>
   
   <div class="entry">
@@ -694,20 +570,6 @@ $(function(){
     <h1 class="title"><a href="/2015/09/23/WaitingForNationalHolidays/">期待国庆长假</a></h1>
   
 
-<script src="js/trianglify.min.js"></script>
-  <script>
-  var pattern = Trianglify({
-    height: window.innerHeight,
-    width: window.innerWidth,
-    cell_size: 30 + Math.random() * 100});
-    variance: Math.random()*0.5 +0.5 ;
-    seed: 1;
-  var png = document.createElement('img');
-
-  document.body.style.backgroundImage="url("+pattern.png()+")";
-  document.body.style.backgroundAttachment="fixed";
- </script>
- <script src="js/jquery.min.js"></script>
   </header>
   
   <div class="entry">
@@ -742,20 +604,6 @@ $(function(){
     <h1 class="title"><a href="/2015/09/18/WordPressEstablished/">历尽千辛万苦个人网站终于建好了!</a></h1>
   
 
-<script src="js/trianglify.min.js"></script>
-  <script>
-  var pattern = Trianglify({
-    height: window.innerHeight,
-    width: window.innerWidth,
-    cell_size: 30 + Math.random() * 100});
-    variance: Math.random()*0.5 +0.5 ;
-    seed: 1;
-  var png = document.createElement('img');
-
-  document.body.style.backgroundImage="url("+pattern.png()+")";
-  document.body.style.backgroundAttachment="fixed";
- </script>
- <script src="js/jquery.min.js"></script>
   </header>
   
   <div class="entry">

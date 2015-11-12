@@ -12,37 +12,25 @@
   
     <meta name="description" content="Reading Notes
 总的来说，延续了一贯的HeadFirst风格，文章诙谐幽默，不适令人忍俊不禁，难得一见的好书。
-AJAX ( Asynchronous JacaScript and XML )核心是XHR对象，以异步方式从服务器获取信息
-工具函数-创建请求对象（uils.js） 
-
-DRY原则1234567891011function createRequest()&amp;#123;	try">
+AJAX ( Asynchronous JacaScript and XML )核心是XHR对象，以异步方式从服务器获取信息">
   
   <meta name="description" content="Reading Notes
 总的来说，延续了一贯的HeadFirst风格，文章诙谐幽默，不适令人忍俊不禁，难得一见的好书。
-AJAX ( Asynchronous JacaScript and XML )核心是XHR对象，以异步方式从服务器获取信息
-工具函数-创建请求对象（uils.js） 
-
-DRY原则1234567891011function createRequest()&amp;#123;	try">
+AJAX ( Asynchronous JacaScript and XML )核心是XHR对象，以异步方式从服务器获取信息">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Head First Ajax 读书笔记">
 <meta property="og:url" content="http://yoursite.com/2015/10/27/AjaxReadingNotes/index.html">
 <meta property="og:site_name" content="鱼池">
 <meta property="og:description" content="Reading Notes
 总的来说，延续了一贯的HeadFirst风格，文章诙谐幽默，不适令人忍俊不禁，难得一见的好书。
-AJAX ( Asynchronous JacaScript and XML )核心是XHR对象，以异步方式从服务器获取信息
-工具函数-创建请求对象（uils.js） 
-
-DRY原则1234567891011function createRequest()&amp;#123;	try">
+AJAX ( Asynchronous JacaScript and XML )核心是XHR对象，以异步方式从服务器获取信息">
 <meta property="og:image" content="http://img3.douban.com/lpic/s4245583.jpg">
-<meta property="og:updated_time" content="2015-10-28T15:56:14.639Z">
+<meta property="og:updated_time" content="2015-11-12T14:37:31.159Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Head First Ajax 读书笔记">
 <meta name="twitter:description" content="Reading Notes
 总的来说，延续了一贯的HeadFirst风格，文章诙谐幽默，不适令人忍俊不禁，难得一见的好书。
-AJAX ( Asynchronous JacaScript and XML )核心是XHR对象，以异步方式从服务器获取信息
-工具函数-创建请求对象（uils.js） 
-
-DRY原则1234567891011function createRequest()&amp;#123;	try">
+AJAX ( Asynchronous JacaScript and XML )核心是XHR对象，以异步方式从服务器获取信息">
   
     <link rel="alternate" href="/atom.xml" title="鱼池" type="application/atom+xml">
   
@@ -140,8 +128,7 @@ var _hmt = _hmt || [];
     
       <p>Reading Notes</p>
 <h1 id=""><img src="http://img3.douban.com/lpic/s4245583.jpg" alt="Head First Ajax"></h1><p>总的来说，延续了一贯的HeadFirst风格，文章诙谐幽默，不适令人忍俊不禁，难得一见的好书。</p>
-<h2 id="AJAX_(_Asynchronous_JacaScript_and_XML_)">AJAX ( Asynchronous JacaScript and XML )</h2><p>核心是XHR对象，以异步方式从服务器获取信息</p>
-<p><strong>工具函数-创建请求对象（uils.js）</strong> </p>
+<h2 id="AJAX_(_Asynchronous_JacaScript_and_XML_)">AJAX ( Asynchronous JacaScript and XML )</h2><p>核心是XHR对象，以异步方式从服务器获取信息<br><a id="more"></a><br><strong>工具函数-创建请求对象（uils.js）</strong> </p>
 <blockquote>
 <p>DRY原则<br><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">createRequest</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">try</span>&#123;</span><br><span class="line">	request = <span class="keyword">new</span> XMLHttpRequest(); 兼容大多数非IE浏览器</span><br><span class="line">    &#125; <span class="keyword">catch</span> (tryMS) &#123;</span><br><span class="line">    request = <span class="keyword">new</span> ActiveXObject(<span class="string">"Msxm12.XMLHTTP"</span>); 兼容IE7以前的版本</span><br><span class="line">    &#125; <span class="keyword">catch</span> (OtherMS) &#123;</span><br><span class="line">    request = <span class="keyword">new</span> ActiveObject(<span class="string">"Microsoft.XMLHTTP"</span>);兼容IE7以前的版本</span><br><span class="line">    &#125; <span class="keyword">catch</span> (faild) &#123;</span><br><span class="line">    request = <span class="literal">null</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 </blockquote>

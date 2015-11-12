@@ -120,59 +120,15 @@ var _hmt = _hmt || [];
   
   <div class="entry">
     
-      <p><img src="http://img4.douban.com/lpic/s28026858.jpg" alt="锋利的jQuery"><br>每天都在图书馆查这本书，这两天终于等到别人还过来了，这几天借的书还不少，有十本，都快达上限了，就不能借一本自习看一本么！？<br>想起之前在一家IT公司实习的时候用jQuery的随意，殊不知jQuery是如此这般强大！看了两天图书馆已然有人归还第二版，速速换之。<br>书中很多实例很有趣，很值得自己去实现。</p>
-<h2 id="选择器">选择器</h2><p>1.基本选择器<br>2.层次选择器 &gt; + ~<br>3.过滤选择器<br>    1.基本过滤 :first :not() :qe() :qt() :animated<br>    2.内容过滤 :contains(text) :empty :has() :parent<br>    3.可见性过滤 :hidden :visible<br>    4.属性过滤 [attribute] [attribute^=value]<br>    5.子元素过滤 nth-child(index) :first-child<br>    6.表单对象过滤 :enabled :disabled<br>4.表单选择器 :input(input+button+textarea) :hidden</p>
-<hr>
-<h2 id="DOM操作">DOM操作</h2><p>1.节点操作<br>    1.创建节点<br>    2.插入节点 append() prepend() apendTo() after() before()<br>    3.删除节点 remove() empty()<br>    4.复制节点 clone()<br>    5.替换节点 replaceWith() replaceAll()<br>    6.包裹节点 wrap()<br>2.属性操作 attr() removeAttr()<br>3.样式操作 addClass() removeClass() toggleClass() hasClass()</p>
-<hr>
-<h2 id="事件">事件</h2><p>1.DOM就绪后执行<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(ducument).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;) </span><br><span class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;)</span><br><span class="line">$().ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;)</span><br></pre></td></tr></table></figure></p>
-<p>2.事件绑定<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#a"</span>).bind(<span class="string">"mouseover"</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;);</span><br><span class="line">$(<span class="string">"#a"</span>).mouseover(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;); 简写</span><br></pre></td></tr></table></figure></p>
-<p>可以<strong>一次性绑定多个事件</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#a"</span>).bind(<span class="string">"mouseover mouseout"</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	$(<span class="keyword">this</span>).toggleClass(<span class="string">"over"</span>);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
-<p>3.合成事件<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">hover</span><span class="params">(enter,leave)</span></span></span><br><span class="line"><span class="function"><span class="title">toggle</span><span class="params">(f1,f2,...)</span></span></span><br></pre></td></tr></table></figure></p>
-<p>4.事件冒泡 </p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'span'</span>).bind(<span class="string">"click"</span>,<span class="function"><span class="keyword">function</span>(<span class="params">event</span>)</span>&#123;</span><br><span class="line">	event.stopPropagation(); 停止事件冒泡</span><br><span class="line">	event.preventDefault();  阻止默认行为（如超链接的跳转）</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<p>5.事件对象<br>event.type<br>event.target<br>event.pageX  获取光标的坐标<br>event.which 鼠标单击的左中右键<br>6.移除事件<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'button'</span>).unbind();</span><br><span class="line">最好在事件绑定时指定变量 </span><br><span class="line">$(<span class="string">'button'</span>).bind(<span class="string">"click"</span>,myFun1=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	...</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
-<p>One方法：触发一次，立即解绑<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'button'</span>).one(<span class="string">"click"</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	...</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
-<p>7.模拟操作 触发函数<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'button'</span>).<span class="function"><span class="title">trigger</span><span class="params">(<span class="string">"click"</span>)</span></span></span><br></pre></td></tr></table></figure></p>
-<p><strong>△添加命名空间 </strong>方便管理<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'button'</span>).bind(<span class="string">"click.plugin"</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	..</span><br><span class="line">&#125;);</span><br><span class="line">$(<span class="string">'button'</span>).unbind(<span class="string">".plugin"</span>);</span><br></pre></td></tr></table></figure></p>
-<hr>
-<h2 id="动画">动画</h2><p>1.show() &amp; hide()<br>2.fadeIn() &amp; fadeOut()<br>3.slideUp() &amp; slideDown()<br>4.<strong>animate()</strong><br><figure class="highlight sqf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">animate</span>(<span class="built_in">params</span>,<span class="built_in">speed</span>,callback);</span><br></pre></td></tr></table></figure></p>
-<p>5.stop() &amp; delay()<br>停止动画 stop()<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">stop</span><span class="params">(ClearQueue,gotoEnd)</span></span></span><br><span class="line">Boolean值，前者清空队列，后者跳到当前动画的末状态</span><br></pre></td></tr></table></figure></p>
-<p>延迟动画 delay()<br>后借时间，单位<strong>ms</strong><br>6.<strong>其他</strong><br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">toggle</span><span class="params">()</span></span></span><br><span class="line"><span class="function"><span class="title">slideToggle</span><span class="params">()</span></span></span><br><span class="line"><span class="function"><span class="title">fadeTo</span><span class="params">()</span></span></span><br><span class="line"><span class="function"><span class="title">fageToggle</span><span class="params">()</span></span></span><br></pre></td></tr></table></figure></p>
-<p><div class="a"><br>    <a href="/images/1.jpg" class="tip" title="Prompt1"><img src="/images/1.jpg" style="heiht:100px;width:200px;"></a><br><br>    <a href="/images/2.jpg" class="tip" title="Prompt2"><img src="/images/2.jpg" style="heiht:100px;width:200px;"></a><br><br>    <a href="/images/3.jpg" class="tip" title="Prompt3"><img src="/images/3.jpg" style="heiht:100px;width:200px;"></a><br></div></p>
-<script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
-<script type="text/javascript">
-$(function(){
-    var x = 10;
-    var y = 20;
-    $(".tip").mouseover(function(e){
-        this.myTitle = this.title;
-        this.title = "";
-        var imgTitle = this.myTitle? "<br/>this.myTitle":"";
-        var tip = "<div id='tip'><img src='"+this.href+"' alt='fuckme'>"+imgTitle+"</div>";
-        $("body").append(tip);
-        $("#tip").css({
-                "top":(e.pageY+y)+"px",
-                "left":(e.pageX+x)+"px",
-                "border":"1px solid black",
-                "blackground":"yellow",
-                "position":"absolute"
-            }).show("slow");
-    }).mouseout(function(){
-        this.title = this.myTitle;
-        $("#tip").remove();
-    }).mousemove(function(e){
-        $("#tip").css({
-            "top":(e.pageY+y)+"px",
-            "left":(e.pageX+x)+"px"
-        });
-    });
-});
-</script>
+      <p><img src="http://img4.douban.com/lpic/s28026858.jpg" alt="锋利的jQuery"><br>每天都在图书馆查这本书，这两天终于等到别人还过来了，这几天借的书还不少，有十本，都快达上限了，就不能借一本自习看一本么！？<br>想起之前在一家IT公司实习的时候用jQuery的随意，殊不知jQuery是如此这般强大！看了两天图书馆已然有人归还第二版，速速换之。<br>书中很多实例很有趣，很值得自己去实现。<br>
     
   </div>
   <footer class="end-sep">
     
+      
+        <div class="alignleft">
+          <a href="/2015/11/06/SharpJQuery/#more" class="more-link">阅读全文</a>
+        </div>
       
       
     
@@ -201,45 +157,17 @@ $(function(){
   
   <div class="entry">
     
-      <p><img src="http://img4.douban.com/lpic/s5914296.jpg" alt="High Performance Web Sites"><br>高性能网站建设指南<br><a href="http://stevesouders.com/hpws/rules.php" target="_blank" rel="external">相关例子测试官网</a><br>我真是太爱博文视点O’Reilly系列的书了，很幸运能在前端的领域有这样的一系列经典的书籍。<br>原来雅虎的14条前端优化准则尽在这本书中！</p>
+      <p><img src="http://img4.douban.com/lpic/s5914296.jpg" alt="High Performance Web Sites"><br>高性能网站建设指南<br><a href="http://stevesouders.com/hpws/rules.php">相关例子测试官网</a><br>我真是太爱博文视点O’Reilly系列的书了，很幸运能在前端的领域有这样的一系列经典的书籍。<br>原来雅虎的14条前端优化准则尽在这本书中！</p>
 <hr>
-<p><q>性能黄金法则：只有10%~20%的最终用户响应时间花在了下载HTML文档上。其余的80%~90%时间花在了下载页面中的所有组件上。</q></p>
-<hr>
-<h3 id="法则1：减少HTTP请求次数">法则1：减少HTTP请求次数</h3><p>1.图片地图 Image Map<br>2.雪碧图 CSS Sprites<br>3.内联图片<br><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="setting">src=<span class="value"><span class="string">"data:image/gif;base64,R01···"</span></span></span></span><br></pre></td></tr></table></figure></p>
-<p>4.合并脚本、样式表</p>
-<hr>
-<h3 id="法则2：CDN_(Content_Delivery_Network)">法则2：CDN (Content Delivery Network)</h3><p>CDN是地理上分布的Web Server的集合<br>将占据主要带宽的静态资源通过CDN发布</p>
-<hr>
-<h3 id="法则3：增加Expires_Header">法则3：增加Expires Header</h3><p>通过Expires进行缓存，间接减少HTTP请求。<br>Cache-Control</p>
-<hr>
-<h3 id="法则4：压缩组件">法则4：压缩组件</h3><p>这里的压缩不是指JS脚本文件的精简和并行，而指的是通过Web客户端在HTTP请求中通过的<strong>“Accept-Encoding”</strong>来指定压缩类型，让Web服务器发送编码后的文件，一般通过<strong>Gzip</strong>使内容减少70%。</p>
-<hr>
-<h3 id="法则5：样式表放头部">法则5：样式表放头部</h3><p>在IE中样式表放底部会导致白屏等问题，而其他浏览器会导致闪烁等糟糕的体验。<br><strong>使用LINK标签将样式表嵌入HEAD中</strong>，而@import则会使样式表最后加载。</p>
-<hr>
-<h3 id="法则6：脚本文件放底部">法则6：脚本文件放底部</h3><p>1.HTTP1.1规范建议浏览器从每个主机名并行下载两个组件，所以建议将组件分布在两个主机下。<br>2.脚本会<strong>阻塞</strong>下载，原因一等待其有可能的重新布局，其次保证脚本的顺序执行。<br>3.使用defer延迟脚本：异步加载 延迟执行，而asyn则是异步加载，立即执行。</p>
-<hr>
-<h3 id="法则7：避免CSS表达式">法则7：避免CSS表达式</h3><p>或者用一次性表达式，CSS表达式执行次数过多。</p>
-<hr>
-<h3 id="法则8：使用外部JS和CSS文件">法则8：使用外部JS和CSS文件</h3><p>使用外部的文件可以将之缓存，而HTML页面不会缓存。但是也要视情况而定，内嵌方式可以取得更快的响应时间，因为会减少HTTP请求数量。</p>
-<hr>
-<h3 id="法则9：减少DNS查询次数">法则9：减少DNS查询次数</h3><p>设置DNS缓存，减少主机名可减少DNS查询次数<br>折中的方法是将内容分布在2-4个主机上，同时能到提高并行下载的数量。HTTP1.1规范<strong>建议</strong>：从每个主机名并行下载的数量不应该超过两个。</p>
-<hr>
-<h3 id="法则10：精简、混淆JS">法则10：精简、混淆JS</h3><p>在压缩之前精简，可以达到更优的效果</p>
-<hr>
-<h3 id="法则11：避免重定向">法则11：避免重定向</h3><p>浏览器自动重定向请求到Location指定的URL上<br>URL最后缺少“/”也会造成该问题</p>
-<hr>
-<h3 id="法则12：删除重复的脚本">法则12：删除重复的脚本</h3><p>使用模块系统建立脚本管理模块</p>
-<hr>
-<h3 id="法则13：配置ETags">法则13：配置ETags</h3><p>ETag用于唯一标示元素版本的字符串<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">　　　HTTP/<span class="number">1.1</span> <span class="number">200</span> OK </span><br><span class="line">　　　Last-Modified: Tue, <span class="number">12</span> Dec <span class="number">2006</span> <span class="number">03</span>:<span class="number">03</span>:<span class="number">59</span> GMT </span><br><span class="line">　　　ETag: <span class="string">"10c24bc-4ab-457e1c1f"</span> </span><br><span class="line">　　　Content-Length: <span class="number">12195</span></span><br></pre></td></tr></table></figure></p>
-<hr>
-<h3 id="法则14：缓存Ajax">法则14：缓存Ajax</h3><p>为Ajax请求的url增加一个时间戳</p>
-<hr>
-<p>更多进阶内容：<strong>《高性能网站建设进阶指南》</strong></p>
-
+<p><q>性能黄金法则：只有10%~20%的最终用户响应时间花在了下载HTML文档上。其余的80%~90%时间花在了下载页面中的所有组件上。</q><br>
     
   </div>
   <footer class="end-sep">
     
+      
+        <div class="alignleft">
+          <a href="/2015/11/06/HighPerfomanceWebSites/#more" class="more-link">阅读全文</a>
+        </div>
       
       
     
@@ -269,19 +197,15 @@ $(function(){
   <div class="entry">
     
       <p>HTML程序设计（第二版）<br><img src="http://img3.douban.com/lpic/s9066310.jpg" alt="Pro HTML% Programming"></p>
-<p>曾以为HTML5不过是多了几个语义化的标签，读了这部经典之作，改变了我对HTML5的看法。第一遍只是粗略地概览，并不深入，了解HTML5的新特性，体会到了HTML5提供的新的API的强大之处。</p>
-<h3 id="Summary">Summary</h3><p>What’s WHATWG<br>1.&lt;!DOCTYPE html&gt; <meta charset="utf-8"><br>2.Semantization tagments:<header><footer><section><article><aside><nav><br>3.Selectors API : <strong>QuerySelector()</strong> **QuerySelectorALL()</nav></aside></article></section></footer></header></p>
-<h3 id="Canvas_API">Canvas API</h3><p>苹果公司提出的位图画布并按照W3C的免版税专利许可条款公开了专利。<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">canvas</span>&gt;</span>Your Bo<span class="tag">&lt;/<span class="title">canvas</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="SVG_–Scalable_Vector_Graphics">SVG –Scalable Vector Graphics</h3><p>标准矢量图形</p>
-<h3 id="Audio_&amp;_Vidio">Audio &amp; Vidio</h3><p>目前依然没有同意的编码器</p>
-<h3 id="Geolocation_API">Geolocation API</h3><p>强大的地理位置定位</p>
-<h3 id="Communication_API">Communication API</h3><h4 id="跨文档消息通信">跨文档消息通信</h4><h4 id="XHR_Level2">XHR Level2</h4><h3 id="WebSockets_API">WebSockets API</h3><p>全双工通信信道，仅通过一个Soket即可通信。</p>
-<h3 id="Forms_API">Forms API</h3><h3 id="Drag">Drag</h3><h3 id="Web_Workers_API">Web Workers API</h3><h3 id="Web_Storage_API">Web Storage API</h3><p>###</p>
-
+<p>曾以为HTML5不过是多了几个语义化的标签，读了这部经典之作，改变了我对HTML5的看法。第一遍只是粗略地概览，并不深入，了解HTML5的新特性，体会到了HTML5提供的新的API的强大之处。<br>
     
   </div>
   <footer class="end-sep">
     
+      
+        <div class="alignleft">
+          <a href="/2015/11/05/HTML5Programming/#more" class="more-link">阅读全文</a>
+        </div>
       
       
     
@@ -312,33 +236,15 @@ $(function(){
     
       <p>CSS权威指南（第三版）<br><img src="http://img3.douban.com/lpic/s2921314.jpg" alt="CSS:The Definitive Guide (The 3rd Edition)"></p>
 <h2 id="选择器">选择器</h2><h3 id="属性选择器">属性选择器</h3><p>简单属性选择    h1[class]{color:silver;}</p>
-<p>根据部分属性选择  p[class~=”warning”]{font-weight:bold;}<br>(子串匹配属性选择器 [foo^=”bar”] \ [foo$=”bar” \ foo*=”bar”])</p>
-<h3 id="选择相邻兄弟元素">选择相邻兄弟元素</h3><p>li+li{font-weight:bold;} 紧跟在一个li后面出现的所有兄弟li元素</p>
-<h3 id="伪类">伪类</h3><h4 id="选择第一个子元素">选择第一个子元素</h4><p>p:first-child{font-weight:bold;} <strong>作为第一个子元素的p元素</strong><br>（将规则关联到<strong>前一个</strong>规则）</p>
-<blockquote>
-<p>:link :first-child …</p>
-</blockquote>
-<h3 id="伪元素">伪元素</h3><p>首字母样式 p:first-letter{color:red;}</p>
-<p>第一行样式 p:first-line{color:blue;}</p>
-<p>之前/之后样式 h2:before {content:”aa”;color:silver;} 插入生成内容</p>
-<blockquote>
-<p>:first-line :first-letter :before :after </p>
-</blockquote>
-<hr>
-<h2 id="结构和层叠">结构和层叠</h2><h3 id="特殊性">特殊性</h3><p>特殊性值表述为四个部分：[0 0 0 0]<br>分别对应着 <strong>内联样式 / ID属性 / 类、属性选择、伪类/元素、伪元素</strong><br>通配符<br>重要性 !important 放置声明之后</p>
-<h3 id="继承">继承</h3><p>继承值<strong>无</strong>特殊性<br>0特殊性 &gt; 无特殊性</p>
-<h3 id="层叠">层叠</h3><p>规则</p>
-<div style="border:2px solid black;background:#FFF;">&nbsp;1.样式表来源和重要性 创作人员&gt;读者&gt;用户代理（浏览器）【!important读者最强】<br>&nbsp;2.特殊性排序<br>&nbsp;3.出现的顺序排序<br></div>
-
-<blockquote>
-<p>LVHA规则:  link visited hover active</p>
-</blockquote>
-<p>第七章以后很多内容太枯燥、难以理解了。需要多动手实际操作，加深理解。</p>
-
+<p>根据部分属性选择  p[class~=”warning”]{font-weight:bold;}<br>(子串匹配属性选择器 [foo^=”bar”] \ [foo$=”bar” \ foo*=”bar”])<br>
     
   </div>
   <footer class="end-sep">
     
+      
+        <div class="alignleft">
+          <a href="/2015/10/29/CSS-TheDefinitiveGuide/#more" class="more-link">阅读全文</a>
+        </div>
       
       
     
@@ -369,16 +275,15 @@ $(function(){
     
       <p>Node.js开发指南-BYVoid</p>
 <h1 id=""><img src="http://img3.doubanio.com/lpic/s10307479.jpg" alt="Node.js开发指南"></h1><p>本打算看朴灵的《深入浅出Node.js》，无奈已被借走，查阅过后找到了这本书。</p>
-<p>前四章干货多，难以消化，国内教材的通病，后面的实际例子很不错，最让我惊喜的是关于JS高级特性的附录，讲解很到位，解决了我之前一直困扰许久的疑惑。<br>网上查了相关资料，才知道作者BYVoid有多牛逼，这本书是他在清华大二时编著的，我不想说什么了，只叹牛人处处有，唯我是闲人。</p>
-<p>编程更迭太快，之前的工具可能都已更新，书中案例已无法使用。在豆瓣评论上找到别人写的例子。有空自己尝试搭建迷你博客。<br><a href="https://github.com/lizijie1993/microblog" target="_blank" rel="external">最新实例</a></p>
-<blockquote>
-<p><strong>附录A JavaSript高级特性</strong> 摘录<br>1.函数作用域：JS的静态作用域（词法作用域）决定了函数作用域的嵌套关系由定义时决定，而非调用时决定。<br>2.上下文对象：被调用函数所处环境，即是this指针。JS的任何函数都是被某个对象所调用。此之外有call() apply() bind()更改作用域。<br>3.对象的深浅拷贝：（待完成）</p>
-</blockquote>
-
+<p>前四章干货多，难以消化，国内教材的通病，后面的实际例子很不错，最让我惊喜的是关于JS高级特性的附录，讲解很到位，解决了我之前一直困扰许久的疑惑。<br>网上查了相关资料，才知道作者BYVoid有多牛逼，这本书是他在清华大二时编著的，我不想说什么了，只叹牛人处处有，唯我是闲人。<br>
     
   </div>
   <footer class="end-sep">
     
+      
+        <div class="alignleft">
+          <a href="/2015/10/28/Node_js_DevelopmentGuides/#more" class="more-link">阅读全文</a>
+        </div>
       
       
     
@@ -409,29 +314,15 @@ $(function(){
     
       <p>Reading Notes</p>
 <h1 id=""><img src="http://img3.douban.com/lpic/s4245583.jpg" alt="Head First Ajax"></h1><p>总的来说，延续了一贯的HeadFirst风格，文章诙谐幽默，不适令人忍俊不禁，难得一见的好书。</p>
-<h2 id="AJAX_(_Asynchronous_JacaScript_and_XML_)">AJAX ( Asynchronous JacaScript and XML )</h2><p>核心是XHR对象，以异步方式从服务器获取信息</p>
-<p><strong>工具函数-创建请求对象（uils.js）</strong> </p>
-<blockquote>
-<p>DRY原则<br><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">createRequest</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">try</span>&#123;</span><br><span class="line">	request = <span class="keyword">new</span> XMLHttpRequest(); 兼容大多数非IE浏览器</span><br><span class="line">    &#125; <span class="keyword">catch</span> (tryMS) &#123;</span><br><span class="line">    request = <span class="keyword">new</span> ActiveXObject(<span class="string">"Msxm12.XMLHTTP"</span>); 兼容IE7以前的版本</span><br><span class="line">    &#125; <span class="keyword">catch</span> (OtherMS) &#123;</span><br><span class="line">    request = <span class="keyword">new</span> ActiveObject(<span class="string">"Microsoft.XMLHTTP"</span>);兼容IE7以前的版本</span><br><span class="line">    &#125; <span class="keyword">catch</span> (faild) &#123;</span><br><span class="line">    request = <span class="literal">null</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<p><strong>XHR用法</strong><br><figure class="highlight vbscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">request</span>.open(<span class="string">"get"</span>,url,<span class="literal">false</span>); 调用请求</span><br><span class="line"><span class="built_in">request</span>.send(<span class="literal">null</span>);            发送请求</span><br><span class="line"><span class="built_in">request</span>.responseTest;</span><br><span class="line"><span class="built_in">request</span>.responseXML;</span><br><span class="line"></span><br><span class="line"><span class="built_in">request</span>.status;                <span class="number">1</span>、<span class="number">2</span>、<span class="number">3</span>、<span class="number">4</span></span><br><span class="line"><span class="built_in">request</span>.readyState;            HTTP状态码</span><br><span class="line"><span class="built_in">request</span>.onreadyStateChange;    回调函数</span><br></pre></td></tr></table></figure></p>
-<h2 id="XML_&amp;&amp;_JSON_(还有罕见的CSV)">XML &amp;&amp; JSON  (还有罕见的CSV)</h2><blockquote>
-<p><strong>XML</strong> (Extensive Markup Language)<br>创建无类型的XML-DOM树<br><strong>JSON</strong>（JavaScript Standard Object Notation)<br>对JavaScript友好，速度快，轻量级数据格式。创建标准的JS对象。</p>
-</blockquote>
-<h2 id="表单验证">表单验证</h2><p>正则表达式</p>
-<blockquote>
-<p>更详尽内容参考《精通正则表达式》</p>
-</blockquote>
-<h2 id="GET_&amp;&amp;_POST">GET &amp;&amp; POST</h2><p>GET  常用于查询信息。直接将数据追加到URL末尾，但必须经过正确的编码”encodeURIComponent()”。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">addURLparam</span>(<span class="params">url,name,value</span>)</span>&#123;</span><br><span class="line">    url += (url.indexOf(<span class="string">"?"</span>)) == -<span class="number">1</span> ? <span class="string">"?"</span> : <span class="string">"&amp;"</span> ); 问号是否存在</span><br><span class="line">    url += <span class="built_in">encodeURIComponent</span>(name) + <span class="string">"="</span> + <span class="built_in">encodeURIComponent</span>(value);</span><br><span class="line">    <span class="keyword">return</span> url;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>POST 常用于应被保存的数据。加密，在浏览器中编码，并在服务器上解码。传递到Request.send()之中。消耗资源比GET多。<br>额外添加<em>Content-Type</em>属性名/值对时使用<strong>“application/x-www-form-urlencoded”</strong>。</p>
-<blockquote>
-<p>等详尽内容参考JS红宝书<br>后记：适合入门，循序渐进。提供的相关的例子很经典，值得揣摩。</p>
-</blockquote>
-
+<h2 id="AJAX_(_Asynchronous_JacaScript_and_XML_)">AJAX ( Asynchronous JacaScript and XML )</h2><p>核心是XHR对象，以异步方式从服务器获取信息<br>
     
   </div>
   <footer class="end-sep">
     
+      
+        <div class="alignleft">
+          <a href="/2015/10/27/AjaxReadingNotes/#more" class="more-link">阅读全文</a>
+        </div>
       
       
     
@@ -460,9 +351,10 @@ $(function(){
   
   <div class="entry">
     
-      <h2 id="书单">书单</h2><h3 id="前端类">前端类</h3><p>Head First HTML&amp;CSS (已读完)<br>JavaScript DOM 编程艺术（2E)(已读完)<br>Head First Ajax(已读完)<br>高性能网站建设指南（已读完）</p>
-<p>JavaScript 高级程序设计（3E)(反复研读)<br>精通正则表达式（3E)（在读）<br>CSS权威指南（3E)（在读）<br>HTM5程序设计（2E)（在读）<br>Node.js开发指南（在读）<br>HTML5与CSS3基础教程（7E）[最新版：8E]<br>锋利的jQuery（2E)（在读）<br>PHP和MySQLWeb开发（3E）（在读）<br>深入浅出Node.js（在读）</p>
-<p>JavaScript语言精粹<br>JavaScript权威指南<br>HTTP权威指南</p>
+      <h2 id="书单">书单</h2><h3 id="前端类">前端类</h3><p>Head First HTML&amp;CSS (已读)<br>JavaScript DOM 编程艺术（2E)(已读)<br>Head First Ajax(已读)<br>高性能网站建设指南（已读）<br>精通正则表达式（3E)（已读）</p>
+<p>JavaScript 高级程序设计（3E)(反复研读)</p>
+<p>CSS权威指南（3E)（在读）<br>HTM5程序设计（2E)（在读）<br>Node.js开发指南（在读）<br>HTML5与CSS3基础教程（7E）[最新版：8E]<br>锋利的jQuery（2E)（在读）<br>PHP和MySQLWeb开发（3E）（在读）<br>深入浅出Node.js（在读）<br>JavaScript语言精粹（在读）</p>
+<p>JavaScript权威指南（6E）<br>HTTP权威指南（预约）</p>
 <hr>
 <h3 id="程序类">程序类</h3><p>算法导论（在读）<br>编程之美 + 编程珠玑 + 算法导论 + 剑指offer【程序员必读经典】</p>
 <hr>

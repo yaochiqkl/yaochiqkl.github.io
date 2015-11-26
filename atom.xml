@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我的个人博客]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-11-12T14:36:00.058Z</updated>
+  <updated>2015-11-26T14:14:40.243Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -13,6 +13,21 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[当我们访问网站的时候，我们再访问什么]]></title>
+    <link href="http://yoursite.com/2015/11/26/when-we-vist-web/"/>
+    <id>http://yoursite.com/2015/11/26/when-we-vist-web/</id>
+    <published>2015-11-26T14:12:52.000Z</published>
+    <updated>2015-11-26T14:14:40.243Z</updated>
+    <content type="html"><![CDATA[<p>突发奇想想出了这个题目，想聊一聊我的理解。<br><a id="more"></a><br>未完待续。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>突发奇想想出了这个题目，想聊一聊我的理解。<br>]]>
+    
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[锋利的jQuery]]></title>

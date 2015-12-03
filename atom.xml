@@ -75,7 +75,7 @@
     <link href="http://yoursite.com/2015/11/06/SharpJQuery/"/>
     <id>http://yoursite.com/2015/11/06/SharpJQuery/</id>
     <published>2015-11-06T12:12:02.000Z</published>
-    <updated>2015-11-12T14:36:00.058Z</updated>
+    <updated>2015-12-03T06:47:32.522Z</updated>
     <content type="html"><![CDATA[<p><img src="http://img4.douban.com/lpic/s28026858.jpg" alt="锋利的jQuery"><br>每天都在图书馆查这本书，这两天终于等到别人还过来了，这几天借的书还不少，有十本，都快达上限了，就不能借一本自习看一本么！？<br>想起之前在一家IT公司实习的时候用jQuery的随意，殊不知jQuery是如此这般强大！看了两天图书馆已然有人归还第二版，速速换之。<br>书中很多实例很有趣，很值得自己去实现。<br><a id="more"></a></p>
 <h2 id="选择器">选择器</h2><p>1.基本选择器<br>2.层次选择器 &gt; + ~<br>3.过滤选择器<br>    1.基本过滤 :first :not() :qe() :qt() :animated<br>    2.内容过滤 :contains(text) :empty :has() :parent<br>    3.可见性过滤 :hidden :visible<br>    4.属性过滤 [attribute] [attribute^=value]<br>    5.子元素过滤 nth-child(index) :first-child<br>    6.表单对象过滤 :enabled :disabled<br>4.表单选择器 :input(input+button+textarea) :hidden</p>
 <hr>
@@ -130,6 +130,8 @@ $(function(){
     
     </summary>
     
+      <category term="jQuery" scheme="http://yoursite.com/tags/jQuery/"/>
+    
   </entry>
   
   <entry>
@@ -137,7 +139,7 @@ $(function(){
     <link href="http://yoursite.com/2015/11/06/HighPerfomanceWebSites/"/>
     <id>http://yoursite.com/2015/11/06/HighPerfomanceWebSites/</id>
     <published>2015-11-06T10:59:10.000Z</published>
-    <updated>2015-11-12T14:36:44.556Z</updated>
+    <updated>2015-12-03T06:48:17.131Z</updated>
     <content type="html"><![CDATA[<p><img src="http://img4.douban.com/lpic/s5914296.jpg" alt="High Performance Web Sites"><br>高性能网站建设指南<br><a href="http://stevesouders.com/hpws/rules.php" target="_blank" rel="external">相关例子测试官网</a><br>我真是太爱博文视点O’Reilly系列的书了，很幸运能在前端的领域有这样的一系列经典的书籍。<br>原来雅虎的14条前端优化准则尽在这本书中！</p>
 <hr>
 <p><q>性能黄金法则：只有10%~20%的最终用户响应时间花在了下载HTML文档上。其余的80%~90%时间花在了下载页面中的所有组件上。</q><br><a id="more"></a></p>
@@ -180,14 +182,16 @@ $(function(){
     
     </summary>
     
+      <category term="网站性能优化" scheme="http://yoursite.com/tags/%E7%BD%91%E7%AB%99%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
+    
   </entry>
   
   <entry>
-    <title><![CDATA[HTML5Programming]]></title>
+    <title><![CDATA[HTML5程序设计]]></title>
     <link href="http://yoursite.com/2015/11/05/HTML5Programming/"/>
     <id>http://yoursite.com/2015/11/05/HTML5Programming/</id>
     <published>2015-11-05T11:04:52.000Z</published>
-    <updated>2015-11-12T14:37:04.756Z</updated>
+    <updated>2015-12-03T06:48:30.736Z</updated>
     <content type="html"><![CDATA[<p>HTML程序设计（第二版）<br><img src="http://img3.douban.com/lpic/s9066310.jpg" alt="Pro HTML% Programming"></p>
 <p>曾以为HTML5不过是多了几个语义化的标签，读了这部经典之作，改变了我对HTML5的看法。第一遍只是粗略地概览，并不深入，了解HTML5的新特性，体会到了HTML5提供的新的API的强大之处。<br><a id="more"></a></p>
 <h3 id="Summary">Summary</h3><p>What’s WHATWG<br>1.&lt;!DOCTYPE html&gt; <meta charset="utf-8"><br>2.Semantization tagments:<header><footer><section><article><aside><nav><br>3.Selectors API : <strong>QuerySelector()</strong> **QuerySelectorALL()</nav></aside></article></section></footer></header></p>
@@ -204,6 +208,8 @@ $(function(){
     
     </summary>
     
+      <category term="HTML5" scheme="http://yoursite.com/tags/HTML5/"/>
+    
   </entry>
   
   <entry>
@@ -211,7 +217,7 @@ $(function(){
     <link href="http://yoursite.com/2015/10/29/CSS-TheDefinitiveGuide/"/>
     <id>http://yoursite.com/2015/10/29/CSS-TheDefinitiveGuide/</id>
     <published>2015-10-29T12:05:39.000Z</published>
-    <updated>2015-11-12T14:37:14.894Z</updated>
+    <updated>2015-12-03T06:48:38.303Z</updated>
     <content type="html"><![CDATA[<p>CSS权威指南（第三版）<br><img src="http://img3.douban.com/lpic/s2921314.jpg" alt="CSS:The Definitive Guide (The 3rd Edition)"></p>
 <h2 id="选择器">选择器</h2><h3 id="属性选择器">属性选择器</h3><p>简单属性选择    h1[class]{color:silver;}</p>
 <p>根据部分属性选择  p[class~=”warning”]{font-weight:bold;}<br>(子串匹配属性选择器 [foo^=”bar”] \ [foo$=”bar” \ foo*=”bar”])<br><a id="more"></a></p>
@@ -244,6 +250,8 @@ $(function(){
     
     </summary>
     
+      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
+    
   </entry>
   
   <entry>
@@ -251,7 +259,7 @@ $(function(){
     <link href="http://yoursite.com/2015/10/28/Node_js_DevelopmentGuides/"/>
     <id>http://yoursite.com/2015/10/28/Node_js_DevelopmentGuides/</id>
     <published>2015-10-28T15:10:00.000Z</published>
-    <updated>2015-11-12T14:37:22.683Z</updated>
+    <updated>2015-12-03T06:48:47.167Z</updated>
     <content type="html"><![CDATA[<p>Node.js开发指南-BYVoid</p>
 <h1 id=""><img src="http://img3.doubanio.com/lpic/s10307479.jpg" alt="Node.js开发指南"></h1><p>本打算看朴灵的《深入浅出Node.js》，无奈已被借走，查阅过后找到了这本书。</p>
 <p>前四章干货多，难以消化，国内教材的通病，后面的实际例子很不错，最让我惊喜的是关于JS高级特性的附录，讲解很到位，解决了我之前一直困扰许久的疑惑。<br>网上查了相关资料，才知道作者BYVoid有多牛逼，这本书是他在清华大二时编著的，我不想说什么了，只叹牛人处处有，唯我是闲人。<br><a id="more"></a><br>编程更迭太快，之前的工具可能都已更新，书中案例已无法使用。在豆瓣评论上找到别人写的例子。有空自己尝试搭建迷你博客。<br><a href="https://github.com/lizijie1993/microblog" target="_blank" rel="external">最新实例</a></p>
@@ -266,6 +274,8 @@ $(function(){
     
     </summary>
     
+      <category term="Node" scheme="http://yoursite.com/tags/Node/"/>
+    
   </entry>
   
   <entry>
@@ -273,7 +283,7 @@ $(function(){
     <link href="http://yoursite.com/2015/10/27/AjaxReadingNotes/"/>
     <id>http://yoursite.com/2015/10/27/AjaxReadingNotes/</id>
     <published>2015-10-27T14:36:49.000Z</published>
-    <updated>2015-11-12T14:37:31.159Z</updated>
+    <updated>2015-12-03T06:47:20.787Z</updated>
     <content type="html"><![CDATA[<p>Reading Notes</p>
 <h1 id=""><img src="http://img3.douban.com/lpic/s4245583.jpg" alt="Head First Ajax"></h1><p>总的来说，延续了一贯的HeadFirst风格，文章诙谐幽默，不适令人忍俊不禁，难得一见的好书。</p>
 <h2 id="AJAX_(_Asynchronous_JacaScript_and_XML_)">AJAX ( Asynchronous JacaScript and XML )</h2><p>核心是XHR对象，以异步方式从服务器获取信息<br><a id="more"></a><br><strong>工具函数-创建请求对象（uils.js）</strong> </p>
@@ -300,6 +310,8 @@ $(function(){
 <h2 id="AJAX_(_Asynchronous_JacaScript_and_XML_)">AJAX ( Asynchronous JacaScript and XML )</h2><p>核心是XHR对象，以异步方式从服务器获取信息<br>]]>
     
     </summary>
+    
+      <category term="ajax" scheme="http://yoursite.com/tags/ajax/"/>
     
   </entry>
   
@@ -329,7 +341,7 @@ $(function(){
     <link href="http://yoursite.com/2015/10/23/%E5%88%9D%E5%85%A5%E6%B1%9F%E6%B9%96%E4%B9%8B%E5%89%8D%E7%AB%AF%E6%9C%89%E6%84%9F/"/>
     <id>http://yoursite.com/2015/10/23/初入江湖之前端有感/</id>
     <published>2015-10-23T14:12:28.000Z</published>
-    <updated>2015-10-24T04:24:17.482Z</updated>
+    <updated>2015-12-03T06:47:55.055Z</updated>
     <content type="html"><![CDATA[<p>学习前端有一段时间了，从开始的一无所知，到现在开始入门、自学、并成功地搭建了个人博客，收获了不少。逐渐对这一领域也有了不同的认识和感想。就此记录下来，小弟见解有限，目光短浅，如有贻误，欢迎各路大神指点一二！<br><img src="/images/Shane.jpg" alt="Shane"><br><a id="more"></a></p>
 <hr>
 <h3 id="一不小心">一不小心</h3><p>第一次接触前端是比较<strong>偶然</strong>的，大二下学期刚开学的时候，在年级群里看到了刘老师发布的一个通知，是他的教研室的宣讲会。我抓住了机会，按时去了教研室听宣讲，一起去的有八九个人，都是同年级的。教研室的全程是中医与数据工程实验室(KDECM)，在学姐甜姐的安排下，我们开始了教研室官方网站建设的任务。  </p>
@@ -356,6 +368,8 @@ $(function(){
     <![CDATA[<p>学习前端有一段时间了，从开始的一无所知，到现在开始入门、自学、并成功地搭建了个人博客，收获了不少。逐渐对这一领域也有了不同的认识和感想。就此记录下来，小弟见解有限，目光短浅，如有贻误，欢迎各路大神指点一二！<br><img src="/images/Shane.jpg" alt="Shane"><br>]]>
     
     </summary>
+    
+      <category term="essay" scheme="http://yoursite.com/tags/essay/"/>
     
   </entry>
   
@@ -384,14 +398,14 @@ $(function(){
     <link href="http://yoursite.com/2015/09/23/WaitingForNationalHolidays/"/>
     <id>http://yoursite.com/2015/09/23/WaitingForNationalHolidays/</id>
     <published>2015-09-23T13:47:06.000Z</published>
-    <updated>2015-10-24T05:21:16.553Z</updated>
+    <updated>2015-12-03T06:49:20.888Z</updated>
     <content type="html"><![CDATA[<p>考完了科三，拿到了本本，一心等着假期的到来。<br>正逢中秋佳节，前面有校运会，连着几天没课，翘掉国庆与中秋之间的两三天课，前后加起来有十几天的假期。我终于能回家了！<br>自从上了大学后，才怀念从前待在父母身边无忧无虑的时光。能回家的日子越来越少了，到现在，半年回一次都是正常的。<br>所以抓着机会多在家待会儿，待在我的房间的时间，总感觉要比在外面待的时间要断，那间房就一直空着，为在外求学的我。<br>这还是学生时代，不知道工作了之后，除了春节，哪还有什么暑假、长假回家啊，想想都不开心。<br>特别想我的小侄女悠悠，虽说暑假才在陕西相聚，但是没过几天我就又开始想起她的可爱的顽皮。<br>这学期课比较少，前方的路全靠自己自觉去走。努力培养自己的自制力，带几本书回去，不能让这个假期白白荒废。<br>好好珍惜所拥有的一切，好好对待父母，活在当下，做一个幸福的孩子！</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>考完了科三，拿到了本本，一心等着假期的到来。<br>正逢中秋佳节，前面有校运会，连着几天没课，翘掉国庆与中秋之间的两三天课，前后加起来有十几天的假期。我终于能回家了！<br>自从上了大学后，才怀念从前待在父母身边无忧无虑的时光。能回家的日子越来越少了，到现在，半年回一次都是]]>
     </summary>
     
-      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
+      <category term="essay" scheme="http://yoursite.com/tags/essay/"/>
     
   </entry>
   
@@ -400,7 +414,7 @@ $(function(){
     <link href="http://yoursite.com/2015/09/18/WordPressEstablished/"/>
     <id>http://yoursite.com/2015/09/18/WordPressEstablished/</id>
     <published>2015-09-18T15:49:44.000Z</published>
-    <updated>2015-11-12T14:37:49.266Z</updated>
+    <updated>2015-12-03T06:49:06.062Z</updated>
     <content type="html"><![CDATA[<p>从开始形成建网站的想法到现在，不过数天。然此中辛酸难尽。</p>
 <p>一开始是想翻过GFW，通过在Bandwagon上买的一个VPS上自动搭建的shadowsocks（百度都把这个和谐了，能想象吗）平台，下了软件，输入ip和端口，开启无国界之旅。嘿嘿嘿，从此获取各种内容那简直是如鱼得水啊。shadowsocks实在是神奇，毕竟通常翻墙只是通过浏览器浏览国外主流网站，无需搭建复杂的VPN，在github上膜拜了shadowsocks的主人（居然是个妹子！），不禁感慨差距之大，编程之路，任重道远啊。<br><a id="more"></a><br>当然，后来，我发现VPS上的功能远远不止这些，于是萌生了建一个自己网站的想法。偶然间发现学院某个实验室的招新网站十分精美，刚开始热爱前端的我打开了调试器去看结构和代码，试着自己去仿制一个，直到末尾，发现了Wordpress。没错，至此我才听说过wordpress的存在，也或许从前早有见闻，只是视之为秋风过耳记忆无存了，毕竟从我想向一个合格的程序员发展的想法，开始也没多久。于是就在课余时间查阅资料搜索相关教程和文档，发现一切都没那么简单！搭建LNMP就周折了半天，好在找到了一键安装包，然而安装好之后和wordpress的建立中间有断层，很难找到详尽的资料。卡了一两天在这个地方，最终回到原点努力去看安装包给的文档，尝试着去搭建虚拟服务器。虽然学了计算机网络，也感觉掌握的不错，可是对此依然没有什么概念。好在最后琢磨了出来，搭好服务器后将wordpress移动到指定的文件夹，绑定了域名，成功访问。中间有很多小插曲，都努力去解决并战胜了很多困难，比如一些权限的修改，linux的操作、数据库的操作、配置文件的修改、注册域名等等。功夫不负有心人，我建出来了！我真的建出网站来了！然而这也不过是LNMP一键安装+wordpress罢了。我应该尝试着手动一步步去搭建LNMP或者LAMP的环境，再试着自己搭建前后台的网站程序，这才是真正厉害的，不过现在水平还差的远（233）。后期打算写几个主题试试，一步步学起吧。相信自己能够一点点进步，成为更好的自己。</p>
 <p>这当然不是结尾，到现在我我还没搞懂一个问题。那就是DNS和服务器解析的问题，我曾以为，将注册的域名和ip绑定，只是简简单单的“绑定”而已，也即当我访问域名的时候，实际上访问的就是这个ip，我一直如此理解。然而事实并非如此，通过VPS的ip访问到的不是我绑定域名的wordpress页面，也即服务器将域名连接到了我想要的位置，而不是单单连接这个ip地址。我还不明白这是怎么做到的，难道Nginx接受到了网址作为参数？还是与它所谓的反向代理有关，这一切我还不得而知（废话真多,说特么我还没搞懂不就行了）（我就想多打点字充实下页面不行吗）。感谢玄狗推荐的网易公开课的一节课程《<a href="http://open.163.com/movie/2010/9/J/J/M7S6PN5ED_M7S94TUJJ.html" target="_blank" rel="external">构建动态网站》哈佛大学公开课</a>。我要去补课了，可是明早六点我就要早起换成三趟车奔波到成都学院面对凶神恶煞的教官模拟科目三了，早睡早起，科三必过！加油！</p>
@@ -415,11 +429,7 @@ $(function(){
     
     </summary>
     
-      <category term="LNMP" scheme="http://yoursite.com/tags/LNMP/"/>
-    
       <category term="WordPress" scheme="http://yoursite.com/tags/WordPress/"/>
-    
-      <category term="程序生涯" scheme="http://yoursite.com/categories/%E7%A8%8B%E5%BA%8F%E7%94%9F%E6%B6%AF/"/>
     
   </entry>
   

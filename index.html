@@ -1,15 +1,10 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
   
   <title>鱼池</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  
-    <meta name="author" content="yaochiqkl">
-  
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="My Own Blog on Hexo">
 <meta property="og:type" content="website">
 <meta property="og:title" content="鱼池">
@@ -20,520 +15,786 @@
 <meta name="twitter:title" content="鱼池">
 <meta name="twitter:description" content="My Own Blog on Hexo">
   
-    <link rel="alternate" href="/atom.xml" title="鱼池" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="鱼池" type="application/atom+xml">
   
   
-    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <link rel="icon" href="/favicon.png">
   
   <link rel="stylesheet" href="/css/style.css" type="text/css">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  
-  <div>
-  <!-- lsz -->
-  <script src="/js/trianglify.min.js"></script>
-  <script>
-  window.onload=function(){
-  // set up the base pattern
-  var pattern = Trianglify({
-    height: window.innerHeight,
-    width: window.innerWidth,
-    cell_size: 30 + Math.random() * 100});
-    variance: Math.random()*0.5 +0.5 ;
-    seed: 1;
-  // canvas
-  //document.body.appendChild(pattern.canvas())
-  // svg
-  //document.body.appendChild(pattern.svg())
-  // png
-  var png = document.createElement('img');
-  //png.src = pattern.png();
-  //document.body.appendChild(png);
-  document.body.style.backgroundImage="url("+pattern.png()+")";
-  document.body.style.backgroundAttachment="fixed";
-/*  window.onresize = function(){
-    var t = pattern.generate(window.innerWidth,window.innerHeight);
-    document.body.style.backgroundImage="url("+t.dataUrl+")";
-  };*/
-};
-  </script>
-</div>
-
-<script type="text/javascript">
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?3eb683cb9bda4b8648f1a5528fda4240";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-
-
 </head>
-
 <body>
-  <div class="wrapper">
-    <header id="header">
-  <div class="title">
-    <h1><a href="/">鱼池</a></h1>
-    <p><a href="/">我的个人博客</a></p>
-  </div>
-  <nav class="nav">
-    <ul>
-      
-        <li><a href="/">主页</a></li>
-      
-        <li><a href="/archives">归档</a></li>
-      
-        <li><a href="/about">关于</a></li>
-      
-      
-        <li><a href="/atom.xml">RSS</a></li>
-      
-    </ul>
-    <div class="clearfix"></div>
-  </nav>
-  <div class="clearfix"></div>
-</header>
-    <div class="content">
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="/leehom.jpg" class="js-avatar">
+			
+		</a>
 
+		<hgroup>
+		  <h1 class="header-author"><a href="/">yaochiqkl</a></h1>
+		</hgroup>
 
+		
+		<p class="header-subtitle">我的个人博客</p>
+		
 
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
 
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">归档</a></li>
+				        
+							<li><a href="/about">关于</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/yaochiqkl" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://weibo.com/rhythmfish" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+					        
+								<a class="douban" target="_blank" href="http://www.douban.com/people/rhythmfish/" title="douban">douban</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/LNMP/" style="font-size: 10px;">LNMP</a> <a href="/tags/WordPress/" style="font-size: 10px;">WordPress</a> <a href="/tags/books/" style="font-size: 10px;">books</a>
+					</div>
+				</section>
+				
+				
+				
+
+				
+				
+				<section class="switch-part switch-part3">
+				
+					<div id="js-aboutme">大学生，爱生活，爱前端。立志当一名合格的前端工程师。</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">yaochiqkl</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="/leehom.jpg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">yaochiqkl</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">我的个人博客</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">归档</a></li>
+		        
+					<li><a href="/about">关于</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/yaochiqkl" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/rhythmfish" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+			        
+						<a class="douban" target="_blank" href="http://www.douban.com/people/rhythmfish/" title="douban">douban</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap">
   
-    <article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <a href="/2015/12/01/PublicKeyAndSecretKey/">
-  <time datetime="2015-12-01T11:46:56.000Z">
-    2015-12-01
-  </time>
+    <article id="post-PublicKeyAndSecretKey" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/12/01/PublicKeyAndSecretKey/" class="article-date">
+  	<time datetime="2015-12-01T11:46:56.000Z" itemprop="datePublished">2015-12-01</time>
 </a>
-    
-    
+    </div>
   
-    <h1 class="title"><a href="/2015/12/01/PublicKeyAndSecretKey/">公钥私钥数字证书（转）</a></h1>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/12/01/PublicKeyAndSecretKey/">公钥私钥数字证书（转）</a>
+    </h1>
   
 
-  </header>
-  
-  <div class="entry">
+      </header>
+      
     
-      <p>经常听到有人说，在使用公钥密码学加密与签名时，一定要知道是使用公钥还是使用私钥，否则容易闹笑话。可是，对于一个学过一点密码学的人来说，真的就那么难吗？下面就来讨论一下这个问题。<br>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>经常听到有人说，在使用公钥密码学加密与签名时，一定要知道是使用公钥还是使用私钥，否则容易闹笑话。可是，对于一个学过一点密码学的人来说，真的就那么难吗？下面就来讨论一下这个问题。<br>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a  href="/2015/12/01/PublicKeyAndSecretKey/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
     
   </div>
-  <footer class="end-sep">
-    
-      
-        <div class="alignleft">
-          <a href="/2015/12/01/PublicKeyAndSecretKey/#more" class="more-link">阅读全文</a>
-        </div>
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
+  
 </article>
 
 
+
+
+
+
+
   
-    <article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <a href="/2015/11/26/when-we-vist-web/">
-  <time datetime="2015-11-26T14:12:52.000Z">
-    2015-11-26
-  </time>
+    <article id="post-when-we-vist-web" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/11/26/when-we-vist-web/" class="article-date">
+  	<time datetime="2015-11-26T14:12:52.000Z" itemprop="datePublished">2015-11-26</time>
 </a>
-    
-    
+    </div>
   
-    <h1 class="title"><a href="/2015/11/26/when-we-vist-web/">当我们访问网站的时候，我们再访问什么</a></h1>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/11/26/when-we-vist-web/">当我们访问网站的时候，我们再访问什么</a>
+    </h1>
   
 
-  </header>
-  
-  <div class="entry">
+      </header>
+      
     
-      <p>突发奇想想出了这个题目，想聊一聊我的理解。<br>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>突发奇想想出了这个题目，想聊一聊我的理解。<br>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a  href="/2015/11/26/when-we-vist-web/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
     
   </div>
-  <footer class="end-sep">
-    
-      
-        <div class="alignleft">
-          <a href="/2015/11/26/when-we-vist-web/#more" class="more-link">阅读全文</a>
-        </div>
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
+  
 </article>
 
 
+
+
+
+
+
   
-    <article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <a href="/2015/11/06/SharpJQuery/">
-  <time datetime="2015-11-06T12:12:02.000Z">
-    2015-11-06
-  </time>
+    <article id="post-SharpJQuery" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/11/06/SharpJQuery/" class="article-date">
+  	<time datetime="2015-11-06T12:12:02.000Z" itemprop="datePublished">2015-11-06</time>
 </a>
-    
-    
+    </div>
   
-    <h1 class="title"><a href="/2015/11/06/SharpJQuery/">锋利的jQuery</a></h1>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/11/06/SharpJQuery/">锋利的jQuery</a>
+    </h1>
   
 
-  </header>
-  
-  <div class="entry">
+      </header>
+      
     
-      <p><img src="http://img4.douban.com/lpic/s28026858.jpg" alt="锋利的jQuery"><br>每天都在图书馆查这本书，这两天终于等到别人还过来了，这几天借的书还不少，有十本，都快达上限了，就不能借一本自习看一本么！？<br>想起之前在一家IT公司实习的时候用jQuery的随意，殊不知jQuery是如此这般强大！看了两天图书馆已然有人归还第二版，速速换之。<br>书中很多实例很有趣，很值得自己去实现。<br>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="http://img4.douban.com/lpic/s28026858.jpg" alt="锋利的jQuery"><br>每天都在图书馆查这本书，这两天终于等到别人还过来了，这几天借的书还不少，有十本，都快达上限了，就不能借一本自习看一本么！？<br>想起之前在一家IT公司实习的时候用jQuery的随意，殊不知jQuery是如此这般强大！看了两天图书馆已然有人归还第二版，速速换之。<br>书中很多实例很有趣，很值得自己去实现。<br>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a  href="/2015/11/06/SharpJQuery/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
     
   </div>
-  <footer class="end-sep">
-    
-      
-        <div class="alignleft">
-          <a href="/2015/11/06/SharpJQuery/#more" class="more-link">阅读全文</a>
-        </div>
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
+  
 </article>
 
 
+
+
+
+
+
   
-    <article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <a href="/2015/11/06/HighPerfomanceWebSites/">
-  <time datetime="2015-11-06T10:59:10.000Z">
-    2015-11-06
-  </time>
+    <article id="post-HighPerfomanceWebSites" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/11/06/HighPerfomanceWebSites/" class="article-date">
+  	<time datetime="2015-11-06T10:59:10.000Z" itemprop="datePublished">2015-11-06</time>
 </a>
-    
-    
+    </div>
   
-    <h1 class="title"><a href="/2015/11/06/HighPerfomanceWebSites/">高性能网站建设指南(雅虎优化前端14条准则)</a></h1>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/11/06/HighPerfomanceWebSites/">高性能网站建设指南(雅虎优化前端14条准则)</a>
+    </h1>
   
 
-  </header>
-  
-  <div class="entry">
+      </header>
+      
     
-      <p><img src="http://img4.douban.com/lpic/s5914296.jpg" alt="High Performance Web Sites"><br>高性能网站建设指南<br><a href="http://stevesouders.com/hpws/rules.php">相关例子测试官网</a><br>我真是太爱博文视点O’Reilly系列的书了，很幸运能在前端的领域有这样的一系列经典的书籍。<br>原来雅虎的14条前端优化准则尽在这本书中！</p>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="http://img4.douban.com/lpic/s5914296.jpg" alt="High Performance Web Sites"><br>高性能网站建设指南<br><a href="http://stevesouders.com/hpws/rules.php">相关例子测试官网</a><br>我真是太爱博文视点O’Reilly系列的书了，很幸运能在前端的领域有这样的一系列经典的书籍。<br>原来雅虎的14条前端优化准则尽在这本书中！</p>
 <hr>
 <p><q>性能黄金法则：只有10%~20%的最终用户响应时间花在了下载HTML文档上。其余的80%~90%时间花在了下载页面中的所有组件上。</q><br>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a  href="/2015/11/06/HighPerfomanceWebSites/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
     
   </div>
-  <footer class="end-sep">
-    
-      
-        <div class="alignleft">
-          <a href="/2015/11/06/HighPerfomanceWebSites/#more" class="more-link">阅读全文</a>
-        </div>
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
+  
 </article>
 
 
+
+
+
+
+
   
-    <article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <a href="/2015/11/05/HTML5Programming/">
-  <time datetime="2015-11-05T11:04:52.000Z">
-    2015-11-05
-  </time>
+    <article id="post-HTML5Programming" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/11/05/HTML5Programming/" class="article-date">
+  	<time datetime="2015-11-05T11:04:52.000Z" itemprop="datePublished">2015-11-05</time>
 </a>
-    
-    
+    </div>
   
-    <h1 class="title"><a href="/2015/11/05/HTML5Programming/">HTML5Programming</a></h1>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/11/05/HTML5Programming/">HTML5Programming</a>
+    </h1>
   
 
-  </header>
-  
-  <div class="entry">
+      </header>
+      
     
-      <p>HTML程序设计（第二版）<br><img src="http://img3.douban.com/lpic/s9066310.jpg" alt="Pro HTML% Programming"></p>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>HTML程序设计（第二版）<br><img src="http://img3.douban.com/lpic/s9066310.jpg" alt="Pro HTML% Programming"></p>
 <p>曾以为HTML5不过是多了几个语义化的标签，读了这部经典之作，改变了我对HTML5的看法。第一遍只是粗略地概览，并不深入，了解HTML5的新特性，体会到了HTML5提供的新的API的强大之处。<br>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a  href="/2015/11/05/HTML5Programming/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
     
   </div>
-  <footer class="end-sep">
-    
-      
-        <div class="alignleft">
-          <a href="/2015/11/05/HTML5Programming/#more" class="more-link">阅读全文</a>
-        </div>
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
+  
 </article>
 
 
+
+
+
+
+
   
-    <article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <a href="/2015/10/29/CSS-TheDefinitiveGuide/">
-  <time datetime="2015-10-29T12:05:39.000Z">
-    2015-10-29
-  </time>
+    <article id="post-CSS-TheDefinitiveGuide" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/10/29/CSS-TheDefinitiveGuide/" class="article-date">
+  	<time datetime="2015-10-29T12:05:39.000Z" itemprop="datePublished">2015-10-29</time>
 </a>
-    
-    
+    </div>
   
-    <h1 class="title"><a href="/2015/10/29/CSS-TheDefinitiveGuide/">CSS权威指南读书笔记</a></h1>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/10/29/CSS-TheDefinitiveGuide/">CSS权威指南读书笔记</a>
+    </h1>
   
 
-  </header>
-  
-  <div class="entry">
+      </header>
+      
     
-      <p>CSS权威指南（第三版）<br><img src="http://img3.douban.com/lpic/s2921314.jpg" alt="CSS:The Definitive Guide (The 3rd Edition)"></p>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>CSS权威指南（第三版）<br><img src="http://img3.douban.com/lpic/s2921314.jpg" alt="CSS:The Definitive Guide (The 3rd Edition)"></p>
 <h2 id="选择器">选择器</h2><h3 id="属性选择器">属性选择器</h3><p>简单属性选择    h1[class]{color:silver;}</p>
 <p>根据部分属性选择  p[class~=”warning”]{font-weight:bold;}<br>(子串匹配属性选择器 [foo^=”bar”] \ [foo$=”bar” \ foo*=”bar”])<br>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a  href="/2015/10/29/CSS-TheDefinitiveGuide/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
     
   </div>
-  <footer class="end-sep">
-    
-      
-        <div class="alignleft">
-          <a href="/2015/10/29/CSS-TheDefinitiveGuide/#more" class="more-link">阅读全文</a>
-        </div>
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
+  
 </article>
 
 
+
+
+
+
+
   
-    <article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <a href="/2015/10/28/Node_js_DevelopmentGuides/">
-  <time datetime="2015-10-28T15:10:00.000Z">
-    2015-10-28
-  </time>
+    <article id="post-Node_js_DevelopmentGuides" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/10/28/Node_js_DevelopmentGuides/" class="article-date">
+  	<time datetime="2015-10-28T15:10:00.000Z" itemprop="datePublished">2015-10-28</time>
 </a>
-    
-    
+    </div>
   
-    <h1 class="title"><a href="/2015/10/28/Node_js_DevelopmentGuides/">Node.js开发指南读书笔记</a></h1>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/10/28/Node_js_DevelopmentGuides/">Node.js开发指南读书笔记</a>
+    </h1>
   
 
-  </header>
-  
-  <div class="entry">
+      </header>
+      
     
-      <p>Node.js开发指南-BYVoid</p>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Node.js开发指南-BYVoid</p>
 <h1 id=""><img src="http://img3.doubanio.com/lpic/s10307479.jpg" alt="Node.js开发指南"></h1><p>本打算看朴灵的《深入浅出Node.js》，无奈已被借走，查阅过后找到了这本书。</p>
 <p>前四章干货多，难以消化，国内教材的通病，后面的实际例子很不错，最让我惊喜的是关于JS高级特性的附录，讲解很到位，解决了我之前一直困扰许久的疑惑。<br>网上查了相关资料，才知道作者BYVoid有多牛逼，这本书是他在清华大二时编著的，我不想说什么了，只叹牛人处处有，唯我是闲人。<br>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a  href="/2015/10/28/Node_js_DevelopmentGuides/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
     
   </div>
-  <footer class="end-sep">
-    
-      
-        <div class="alignleft">
-          <a href="/2015/10/28/Node_js_DevelopmentGuides/#more" class="more-link">阅读全文</a>
-        </div>
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
+  
 </article>
 
 
+
+
+
+
+
   
-    <article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <a href="/2015/10/27/AjaxReadingNotes/">
-  <time datetime="2015-10-27T14:36:49.000Z">
-    2015-10-27
-  </time>
+    <article id="post-AjaxReadingNotes" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/10/27/AjaxReadingNotes/" class="article-date">
+  	<time datetime="2015-10-27T14:36:49.000Z" itemprop="datePublished">2015-10-27</time>
 </a>
-    
-    
+    </div>
   
-    <h1 class="title"><a href="/2015/10/27/AjaxReadingNotes/">Head First Ajax 读书笔记</a></h1>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/10/27/AjaxReadingNotes/">Head First Ajax 读书笔记</a>
+    </h1>
   
 
-  </header>
-  
-  <div class="entry">
+      </header>
+      
     
-      <p>Reading Notes</p>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Reading Notes</p>
 <h1 id=""><img src="http://img3.douban.com/lpic/s4245583.jpg" alt="Head First Ajax"></h1><p>总的来说，延续了一贯的HeadFirst风格，文章诙谐幽默，不适令人忍俊不禁，难得一见的好书。</p>
 <h2 id="AJAX_(_Asynchronous_JacaScript_and_XML_)">AJAX ( Asynchronous JacaScript and XML )</h2><p>核心是XHR对象，以异步方式从服务器获取信息<br>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a  href="/2015/10/27/AjaxReadingNotes/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
     
   </div>
-  <footer class="end-sep">
-    
-      
-        <div class="alignleft">
-          <a href="/2015/10/27/AjaxReadingNotes/#more" class="more-link">阅读全文</a>
-        </div>
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
+  
 </article>
 
 
+
+
+
+
+
   
-    <article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <a href="/2015/10/25/books/">
-  <time datetime="2015-10-25T13:45:35.000Z">
-    2015-10-25
-  </time>
+    <article id="post-books" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/10/25/books/" class="article-date">
+  	<time datetime="2015-10-25T13:45:35.000Z" itemprop="datePublished">2015-10-25</time>
 </a>
-    
-    
+    </div>
   
-    <h1 class="title"><a href="/2015/10/25/books/">书单</a></h1>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/10/25/books/">书单</a>
+    </h1>
   
 
-  </header>
-  
-  <div class="entry">
+      </header>
+      
     
-      <h2 id="2015下半年书单">2015下半年书单</h2><h3 id="前端类">前端类</h3><p>Head First HTML&amp;CSS (已读)<br>JavaScript DOM 编程艺术（2E)(已读)<br>Head First Ajax(已读)<br>高性能网站建设指南（已读）<br>精通正则表达式（3E)（已读）<br>Node.js开发指南（已读）<br>Head First PHP &amp; MySQL (已读)<br>锋利的jQuery（2E)（已读）<br>HTML5与CSS3基础教程（7E）[最新版：8E]（已读）<br>PHP和MySQL程序开发（4E）（已读）</p>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="2015下半年书单">2015下半年书单</h2><h3 id="前端类">前端类</h3><p>Head First HTML&amp;CSS (已读)<br>JavaScript DOM 编程艺术（2E)(已读)<br>Head First Ajax(已读)<br>高性能网站建设指南（已读）<br>精通正则表达式（3E)（已读）<br>Node.js开发指南（已读）<br>Head First PHP &amp; MySQL (已读)<br>锋利的jQuery（2E)（已读）<br>HTML5与CSS3基础教程（7E）[最新版：8E]（已读）<br>PHP和MySQL程序开发（4E）（已读）</p>
 <p>HTTP权威指南（粗略已读）<br>CSS权威指南（3E)（粗略已读）<br>HTM5程序设计（2E)（粗略已读）<br>——————————————————————————————————<br>JavaScript 高级程序设计（3E)(反复研读) ★★★★★<br>高性能网站建设进阶指南（在读）<br>JavaScript语言精粹（在读）<br>JavaScript设计模式<br>——————————————————————————————————<br>JavaScript权威指南（6E）（已购）★★★★★<br>深入浅出Node.js（过难）★★★</p>
 <hr>
 <h3 id="程序类">程序类</h3><p>算法导论（在读）<br>编程之美 + 编程珠玑 + 算法导论 + 剑指offer【程序员必读经典】<br>编译原理<br>计算机科学导论</p>
 <hr>
 <h3 id="人文类">人文类</h3><p><strong>已读</strong><br>围城<br>欧亨利短篇精选<br>莫泊桑短篇精选<br>雪国<br>白夜行<br>——————————————————————————————————<br><strong>在读</strong><br>自控力</p>
 
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/books/">books</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
     
   </div>
-  <footer class="end-sep">
-    
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
+  
 </article>
 
 
+
+
+
+
+
   
-    <article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <a href="/2015/10/23/初入江湖之前端有感/">
-  <time datetime="2015-10-23T14:12:28.000Z">
-    2015-10-23
-  </time>
+    <article id="post-初入江湖之前端有感" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/10/23/初入江湖之前端有感/" class="article-date">
+  	<time datetime="2015-10-23T14:12:28.000Z" itemprop="datePublished">2015-10-23</time>
 </a>
-    
-    
+    </div>
   
-    <h1 class="title"><a href="/2015/10/23/初入江湖之前端有感/">初入江湖之前端有感</a></h1>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/10/23/初入江湖之前端有感/">初入江湖之前端有感</a>
+    </h1>
   
 
-  </header>
-  
-  <div class="entry">
+      </header>
+      
     
-      <p>学习前端有一段时间了，从开始的一无所知，到现在开始入门、自学、并成功地搭建了个人博客，收获了不少。逐渐对这一领域也有了不同的认识和感想。就此记录下来，小弟见解有限，目光短浅，如有贻误，欢迎各路大神指点一二！<br><img src="/images/Shane.jpg" alt="Shane"><br>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>学习前端有一段时间了，从开始的一无所知，到现在开始入门、自学、并成功地搭建了个人博客，收获了不少。逐渐对这一领域也有了不同的认识和感想。就此记录下来，小弟见解有限，目光短浅，如有贻误，欢迎各路大神指点一二！<br><img src="/images/Shane.jpg" alt="Shane"><br>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a  href="/2015/10/23/初入江湖之前端有感/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
     
   </div>
-  <footer class="end-sep">
-    
-      
-        <div class="alignleft">
-          <a href="/2015/10/23/初入江湖之前端有感/#more" class="more-link">阅读全文</a>
-        </div>
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
+  
 </article>
 
 
-  
 
-  <nav id="pagination">
-  
-  
-    <a href="/page/2/" class="next">下一页</a>
-  
-  <div class="clearfix"></div>
-</nav>
 
+
+
+
+  
+  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
+  
 </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2015 yaochiqkl
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
   </div>
-  <footer id="footer"><div class="copyright">
-  
-  &copy; 2015 <a href="/">yaochiqkl</a>
-  
-</div>
-<div class="theme-copyright">
-感谢访问
-</div>
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: true,
+		isPost: false,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
 </script>
-<span id="busuanzi_container_site_pv">
-    本站总访问量<span id="busuanzi_value_site_pv"></span>次
-</span>
-<div class="clearfix"></div></footer>
-  <script src="//lib.sinaapp.com/js/jquery/1.8.3/jquery.min.js"></script>
-<script src="/js/scale.fix.js"></script>
-<script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
 
 
-<script type="text/javascript">
-  var duoshuoQuery = { short_name: 'yaochiqkl' };
-  (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';
-    ds.async = true;
-    ds.src = 'http://static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
 
-
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-  (function($){
-    $('.fancybox').fancybox();
-  })(jQuery);
-</script>
-
+  </div>
 </body>
 </html>

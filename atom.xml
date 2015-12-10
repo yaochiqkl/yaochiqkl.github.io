@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我的个人博客]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-12-04T11:19:29.817Z</updated>
+  <updated>2015-12-10T05:07:32.954Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -13,6 +13,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[书单]]></title>
+    <link href="http://yoursite.com/2015/12/25/books/"/>
+    <id>http://yoursite.com/2015/12/25/books/</id>
+    <published>2015-12-25T13:45:35.000Z</published>
+    <updated>2015-12-10T05:07:32.954Z</updated>
+    <content type="html"><![CDATA[<h2 id="2015下半年书单">2015下半年书单</h2><h3 id="前端类">前端类</h3><p>Head First HTML&amp;CSS (已读)<br>JavaScript DOM 编程艺术（2E)(已读)<br>Head First Ajax(已读)<br>高性能网站建设指南（已读）<br>精通正则表达式（3E)（已读）<br>Node.js开发指南（已读）<br>Head First PHP &amp; MySQL (已读)<br>锋利的jQuery（2E)（已读）<br>HTML5与CSS3基础教程（7E）[最新版：8E]（已读）<br>PHP和MySQL程序开发（4E）（已读）</p>
+<p>HTTP权威指南（粗略已读）<br>CSS权威指南（3E)（粗略已读）<br>HTM5程序设计（2E)（粗略已读）<br>——————————————————————————————————<br>JavaScript 高级程序设计（3E)(反复研读) ★★★★★<br>高性能网站建设进阶指南（在读）<br>JavaScript语言精粹（在读）<br>JavaScript设计模式（在读）<br>——————————————————————————————————<br>JavaScript权威指南（6E）（已购）★★★★★<br>深入浅出Node.js（过难）</p>
+<hr>
+<h3 id="前端相关框架">前端相关框架</h3><ul>
+<li>JQuery (已学)</li>
+<li>Bootsrap (粗略已学)</li>
+<li>VUE.js (在学)</li>
+<li>Angular.js</li>
+<li>Backbone.js</li>
+<li>React.js (在学)</li>
+<li>Require.js</li>
+<li>Gulp.js</li>
+<li>Grunt Yoman Bower</li>
+<li>Webpack</li>
+</ul>
+<hr>
+<h3 id="程序类">程序类</h3><p>算法导论（在读）<br>编程之美 + 编程珠玑 + 算法导论 + 剑指offer【程序员必读经典】<br>编译原理<br>计算机科学导论</p>
+<hr>
+<h3 id="人文类">人文类</h3><p><strong>已读</strong><br>围城<br>欧亨利短篇精选<br>莫泊桑短篇精选<br>雪国<br>白夜行<br>——————————————————————————————————<br><strong>在读</strong><br>自控力</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="2015下半年书单">2015下半年书单</h2><h3 id="前端类">前端类</h3><p>Head First HTML&amp;CSS (已读)<br>JavaScript DOM 编程艺术（2E)(已读)<br>Head First Ajax(已读)<]]>
+    </summary>
+    
+      <category term="books" scheme="http://yoursite.com/tags/books/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[百词斩面试经历]]></title>
@@ -311,40 +345,6 @@ $(function(){
     </summary>
     
       <category term="ajax" scheme="http://yoursite.com/tags/ajax/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[书单]]></title>
-    <link href="http://yoursite.com/2015/10/25/books/"/>
-    <id>http://yoursite.com/2015/10/25/books/</id>
-    <published>2015-10-25T13:45:35.000Z</published>
-    <updated>2015-12-07T15:14:27.639Z</updated>
-    <content type="html"><![CDATA[<h2 id="2015下半年书单">2015下半年书单</h2><h3 id="前端类">前端类</h3><p>Head First HTML&amp;CSS (已读)<br>JavaScript DOM 编程艺术（2E)(已读)<br>Head First Ajax(已读)<br>高性能网站建设指南（已读）<br>精通正则表达式（3E)（已读）<br>Node.js开发指南（已读）<br>Head First PHP &amp; MySQL (已读)<br>锋利的jQuery（2E)（已读）<br>HTML5与CSS3基础教程（7E）[最新版：8E]（已读）<br>PHP和MySQL程序开发（4E）（已读）</p>
-<p>HTTP权威指南（粗略已读）<br>CSS权威指南（3E)（粗略已读）<br>HTM5程序设计（2E)（粗略已读）<br>——————————————————————————————————<br>JavaScript 高级程序设计（3E)(反复研读) ★★★★★<br>高性能网站建设进阶指南（在读）<br>JavaScript语言精粹（在读）<br>JavaScript设计模式（在读）<br>——————————————————————————————————<br>JavaScript权威指南（6E）（已购）★★★★★<br>深入浅出Node.js（过难）★★★</p>
-<hr>
-<h3 id="前端相关框架">前端相关框架</h3><ul>
-<li>JQuery (已学)</li>
-<li>Bootsrap (粗略已学)</li>
-<li>VUE.js (在学)</li>
-<li>Angular.js</li>
-<li>Backbone.js</li>
-<li>React.js</li>
-<li>Require.js</li>
-<li>Gulp.js</li>
-<li>Grunt Yoman Bower</li>
-<li>Webpack</li>
-</ul>
-<hr>
-<h3 id="程序类">程序类</h3><p>算法导论（在读）<br>编程之美 + 编程珠玑 + 算法导论 + 剑指offer【程序员必读经典】<br>编译原理<br>计算机科学导论</p>
-<hr>
-<h3 id="人文类">人文类</h3><p><strong>已读</strong><br>围城<br>欧亨利短篇精选<br>莫泊桑短篇精选<br>雪国<br>白夜行<br>——————————————————————————————————<br><strong>在读</strong><br>自控力</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<h2 id="2015下半年书单">2015下半年书单</h2><h3 id="前端类">前端类</h3><p>Head First HTML&amp;CSS (已读)<br>JavaScript DOM 编程艺术（2E)(已读)<br>Head First Ajax(已读)<]]>
-    </summary>
-    
-      <category term="books" scheme="http://yoursite.com/tags/books/"/>
     
   </entry>
   

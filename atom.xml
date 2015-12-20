@@ -53,13 +53,30 @@
     <link href="http://yoursite.com/2015/12/20/cross-domain/"/>
     <id>http://yoursite.com/2015/12/20/cross-domain/</id>
     <published>2015-12-20T07:41:02.000Z</published>
-    <updated>2015-12-20T07:44:34.308Z</updated>
+    <updated>2015-12-20T07:52:02.090Z</updated>
     <content type="html"><![CDATA[<p>这里说的js跨域是指通过js在不同的域之间进行数据传输或通信，比如用ajax向一个不同的域请求数据，或者通过js获取页面中不同域的框架中(iframe)的数据。只要协议、域名、端口有任何一个不同，都被当作是不同的域。</p>
 <p>下表给出了相对<a href="http://store.company.com/dir/page.html同源检测的结果" target="_blank" rel="external">http://store.company.com/dir/page.html同源检测的结果</a>:<br><img src="http://images.cnitblog.com/blog/130623/201307/15184525-747de461b3b14f938b443e72ea25b25a.png" alt=""><br><a id="more"></a></p>
-<h2 id="一、通过jsonp跨域">一、通过jsonp跨域</h2><p>在js中，我们直接用XMLHttpRequest请求不同域上的数据时，是不可以的。但是，在页面上引入不同域上的js脚本文件却是可以的，jsonp正是利用这个特性来实现的。</p>
+<h2 id="1_:_通过jsonp跨域">1 : 通过jsonp跨域</h2><p>在js中，我们直接用XMLHttpRequest请求不同域上的数据时，是不可以的。但是，在页面上引入不同域上的js脚本文件却是可以的，jsonp正是利用这个特性来实现的。</p>
 <p>比如，有个a.html页面，它里面的代码需要利用ajax获取一个不同域上的json数据，假设这个json数据地址是<a href="http://example.com/data.php,那么a.html中的代码就可以这样：" target="_blank" rel="external">http://example.com/data.php,那么a.html中的代码就可以这样：</a></p>
 <p><img src="http://images.cnitblog.com/blog/130623/201307/15184526-bcc1971f27094439b746cb1f52a715be.png" alt=""></p>
+<p>我们看到获取数据的地址后面还有一个callback参数，按惯例是用这个参数名，但是你用其他的也一样。当然如果获取数据的jsonp地址页面不是你自己能控制的，就得按照提供数据的那一方的规定格式来操作了。</p>
+<p>因为是当做一个js文件来引入的，所以<a href="http://example.com/data.php返回的必须是一个能执行的js文件，所以这个页面的php代码可能是这样的" target="_blank" rel="external">http://example.com/data.php返回的必须是一个能执行的js文件，所以这个页面的php代码可能是这样的</a>:<br><img src="http://images.cnitblog.com/blog/130623/201307/15184527-28a9558c3caa424683980a50b8371134.png" alt=""><br>所以通过<a href="http://example.com/data.php?callback=dosomething得到的js文件，就是我们之前定义的dosomething函数,并且它的参数就是我们需要的json数据，这样我们就跨域获得了我们需要的数据。" target="_blank" rel="external">http://example.com/data.php?callback=dosomething得到的js文件，就是我们之前定义的dosomething函数,并且它的参数就是我们需要的json数据，这样我们就跨域获得了我们需要的数据。</a></p>
+<p>这样jsonp的原理就很清楚了，通过script标签引入一个js文件，这个js文件载入成功后会执行我们在url参数中指定的函数，并且会把我们需要的json数据作为参数传入。所以jsonp是需要服务器端的页面进行相应的配合的。</p>
+<p>知道jsonp跨域的原理后我们就可以用js动态生成script标签来进行跨域操作了，而不用特意的手动的书写那些script标签。如果你的页面使用jquery，那么通过它封装的方法就能很方便的来进行jsonp操作了。<br><img src="http://images.cnitblog.com/blog/130623/201307/15184529-f4a5efe2881a40eebbdca2b463e264bf.png" alt=""><br>原理是一样的，只不过我们不需要手动的插入script标签以及定义回掉函数。jquery会自动生成一个全局函数来替换callback=?中的问号，之后获取到数据后又会自动销毁，实际上就是起一个临时代理函数的作用。$.getJSON方法会自动判断是否跨域，不跨域的话，就调用普通的ajax方法；跨域的话，则会以异步加载js文件的形式来调用jsonp的回调函数。</p>
 <hr>
+<h2 id="2_：通过修改document-domain来跨子域">2 ：通过修改document.domain来跨子域</h2><p>浏览器都有一个同源策略，其限制之一就是第一种方法中我们说的不能通过ajax的方法去请求不同源中的文档。 它的第二个限制是浏览器中不同域的框架之间是不能进行js的交互操作的。有一点需要说明，不同的框架之间（父子或同辈），是能够获取到彼此的window对象的，但蛋疼的是你却不能使用获取到的window对象的属性和方法(html5中的postMessage方法是一个例外，还有些浏览器比如ie6也可以使用top、parent等少数几个属性)，总之，你可以当做是只能获取到一个几乎无用的window对象。比如，有一个页面，它的地址是<a href="http://www.example.com/a.html" target="_blank" rel="external">http://www.example.com/a.html</a>  ， 在这个页面里面有一个iframe，它的src是<a href="http://example.com/b.html" target="_blank" rel="external">http://example.com/b.html</a>, 很显然，这个页面与它里面的iframe框架是不同域的，所以我们是无法通过在页面中书写js代码来获取iframe中的东西的：</p>
+<hr>
+<h2 id="3_：使用window-name来进行跨域">3 ：使用window.name来进行跨域</h2><p>window对象有个name属性，该属性有个特征：即在一个窗口(window)的生命周期内,窗口载入的所有的页面都是共享一个window.name的，每个页面对window.name都有读写的权限，window.name是持久存在一个窗口载入过的所有页面中的，并不会因新页面的载入而进行重置。</p>
+<h2 id="4_：使用HTML5中新引进的window-postMessage方法来跨域传送数据">4 ：使用HTML5中新引进的window.postMessage方法来跨域传送数据</h2><p>window.postMessage(message,targetOrigin)  方法是html5新引进的特性，可以使用它来向其它的window对象发送消息，无论这个window对象是属于同源或不同源，目前IE8+、FireFox、Chrome、Opera等浏览器都已经支持window.postMessage方法。</p>
+<p>调用postMessage方法的window对象是指要接收消息的那一个window对象，该方法的第一个参数message为要发送的消息，类型只能为字符串；第二个参数targetOrigin用来限定接收消息的那个window对象所在的域，如果不想限定域，可以使用通配符 *  。</p>
+<p>需要接收消息的window对象，可是通过监听自身的message事件来获取传过来的消息，消息内容储存在该事件对象的data属性中。</p>
+<p>上面所说的向其他window对象发送消息，其实就是指一个页面有几个框架的那种情况，因为每一个框架都有一个window对象。在讨论第二种方法的时候，我们说过，不同域的框架间是可以获取到对方的window对象的，而且也可以使用window.postMessage这个方法。下面看一个简单的示例，有两个页面<br>![](<a href="http://images.cnitblog.com/blog/130623/201307/15184544-594f30a8bacd4da0a4a2293f63f53534.png" target="_blank" rel="external">http://images.cnitblog.com/blog/130623/201307/15184544-594f30a8bacd4da0a4a2293f63f53534.png</a></p>
+<p><img src="http://images.cnitblog.com/blog/130623/201307/15184545-4285b632b74c4abea9aba5ecb2587f5a.png" alt=""><br>我们运行a页面后得到的结果:<br><img src="http://images.cnitblog.com/blog/130623/201307/15184547-b7a7e7b771054807b112248f39201e53.png" alt=""><br>我们看到b页面成功的收到了消息。</p>
+<p>使用postMessage来跨域传送数据还是比较直观和方便的，但是缺点是IE6、IE7不支持，所以用不用还得根据实际需要来决定。</p>
+<hr>
+<h3 id="结语">结语</h3><p>除了以上几种方法外，还有flash、在服务器上设置代理页面等跨域方式，这里就不做介绍了。</p>
+<p>以上四种方法，可以根据项目的实际情况来进行选择应用，个人认为window.name的方法既不复杂，也能兼容到几乎所有浏览器，这真是极好的一种跨域方法。</p>
+<p><img src="" alt=""><br><img src="" alt=""></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>这里说的js跨域是指通过js在不同的域之间进行数据传输或通信，比如用ajax向一个不同的域请求数据，或者通过js获取页面中不同域的框架中(iframe)的数据。只要协议、域名、端口有任何一个不同，都被当作是不同的域。</p>

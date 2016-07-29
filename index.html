@@ -109,7 +109,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/HTML5/" style="font-size: 10px;">HTML5</a> <a href="/tags/Node/" style="font-size: 10px;">Node</a> <a href="/tags/WordPress/" style="font-size: 10px;">WordPress</a> <a href="/tags/ajax/" style="font-size: 15px;">ajax</a> <a href="/tags/books/" style="font-size: 10px;">books</a> <a href="/tags/essay/" style="font-size: 15px;">essay</a> <a href="/tags/https/" style="font-size: 10px;">https</a> <a href="/tags/interview/" style="font-size: 20px;">interview</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/网站性能优化/" style="font-size: 10px;">网站性能优化</a>
+						<a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/ES7-JavaScript/" style="font-size: 10px;">ES7 JavaScript</a> <a href="/tags/HTML5/" style="font-size: 10px;">HTML5</a> <a href="/tags/Node/" style="font-size: 10px;">Node</a> <a href="/tags/WordPress/" style="font-size: 10px;">WordPress</a> <a href="/tags/ajax/" style="font-size: 15px;">ajax</a> <a href="/tags/books/" style="font-size: 10px;">books</a> <a href="/tags/essay/" style="font-size: 15px;">essay</a> <a href="/tags/https/" style="font-size: 10px;">https</a> <a href="/tags/interview/" style="font-size: 20px;">interview</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/网站性能优化/" style="font-size: 10px;">网站性能优化</a>
 					</div>
 				</section>
 				
@@ -174,6 +174,118 @@
 	</div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-javascript-upgrade-will-nix-object-observation-feature" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/07/30/javascript-upgrade-will-nix-object-observation-feature/" class="article-date">
+  	<time datetime="2016-07-29T16:10:52.000Z" itemprop="datePublished">2016-07-30</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/30/javascript-upgrade-will-nix-object-observation-feature/">javascript-upgrade-will-nix-object-observation-feature</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>最近在看一些前端MV*框架的实现原理，按照我的理解来看，在模板渲染方式上目前实现的方式有以下几种：<br>1.基于脏检查的模式，包括熟悉的RegularJS和AngularJS<br>2.基于defineOwnProperty的getter和setter模式，比如avalon<br>3.基于Vitual Dom的diff并局部替换真实DOM Tree的模式，大名鼎鼎的React<br>在去年的这个时候，Chrome的V8引擎实现了(O.o)，被认为对将来的前端框架的一次革新，它更新页面模板性能上提高了很多倍。相关文章诸如<a href="http://www.w3ctech.com/topic/1097" target="_blank" rel="external">Object.observe() 引爆数据绑定革命</a>，在RegularJS中，其作者（郑海波大神）甚至还在Regular上留下了待更新的部分。<br><code>regular正是在这种百花齐放的时候产生, 最终在实现上采取了angular的数据更新策略(但是提取了表达式的依赖关系以便在Object.observe正式到来时切换到脏检查+observe的形式)提倡极致的声明式和裸数据操作, 依赖于基于字符串的模板描述结构结合更规范性的类式继承的组件体系来定义数据层的业务逻辑.</code><br><a href="http://www.tuicool.com/articles/uMZzU3j" target="_blank" rel="external">RegularJS —— 来自网易的JavaScript MVC框架</a><br>当我在(CanIuse)[www.canIuse.com]去查询它的实现的范围时，发现只有Chrome的特定版本（45）实现，并在其后的版本删除了这个特性。<br>然而却尴尬地发现这个特性已经被移除草案了。详见：(Object.observe是否被移除ES7草案？)[<a href="https://www.zhihu.com/question/39224538" target="_blank" rel="external">https://www.zhihu.com/question/39224538</a>]<br>在(JavaScript upgrade will nix object observation feature)[<a href="http://www.infoworld.com/article/3002186/javascript/javascript-upgrade-will-nix-object-observation-feature.html]这篇文章中介绍了其背景。" target="_blank" rel="external">http://www.infoworld.com/article/3002186/javascript/javascript-upgrade-will-nix-object-observation-feature.html]这篇文章中介绍了其背景。</a></p>
+<p>大概的意思是说情况有所变更，导致其不再适用，随着三年过去，基于数据绑定的组件是很难去匹配(O.o)的，这将会导致前端更混乱的场面。</p>
+<p>Object.observe, a planned feature for JavaScript that would allow for direct observation of changes to objects, will be removed from a planned update to the ECMAScript specification under a plan floated this week.</p>
+<p>The plan, offered by Object.observe proponent Adam Klein on the ECMAScript discussion archives site, says circumstances surrounding the technology have changed, making it unfeasible.</p>
+<p>Object-observe has been slated for inclusion in ECMAScript 7, also known as ECMAScript 2016. Klein wants to withdraw Object.observe from the TC39 committee, which has jurisdiction over ECMAScript, the technical specification underlying JavaScript. He also said he’ll remove support for it from Google’s V8 JavaScript engine.</p>
+<p>“Over three years ago, Rafael Weinstein, Erik Arvidsson, and I set out to design and implement what we believed to be the primitive underlying the data-binding system of MDV (model-driven views),” Klein said in a blog post. “We prototyped an implementation in a branch of V8, then got agreement from the V8 team to build a real version upstream, while pushing Object.observe (O.o) as a part of the upcoming ES7 standard and working with the Polymer team to build their data-binding system on top of O.o.</p>
+<p>“Three years later, the world has changed in a variety of ways,” he said. While data-binding frameworks such as Ember and Angular showed interest, it was difficult to see how they could evolve their existing model to match O.o. “Polymer rewrote from the ground up for its 1.0 release, and in that rebuilding did not utilize O.o. And React’s processing model, which tries to avoid the mutable state inherent in data-binding systems, has become quite popular on the Web.”</p>
+<p>Klein recommends developers who have experimented with Object.observe instead consider a polyfill such as MaxArt2501/object-observe or a wrapper library such as polymer/observe-js, for observing changes in JavaScript data.</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ES7-JavaScript/">ES7 JavaScript</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-FunctionCurryingAndBindInJavascript" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/03/15/FunctionCurryingAndBindInJavascript/" class="article-date">
+  	<time datetime="2016-03-15T15:38:22.000Z" itemprop="datePublished">2016-03-15</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/15/FunctionCurryingAndBindInJavascript/">FunctionCurryingAndBindInJavascript</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
   
     <article id="post-iqiyi-interview" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -635,124 +747,6 @@
       
         <p class="article-more-link">
           <a  href="/2015/11/26/when-we-vist-web/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-SharpJQuery" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/11/06/SharpJQuery/" class="article-date">
-  	<time datetime="2015-11-06T12:12:02.000Z" itemprop="datePublished">2015-11-06</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/06/SharpJQuery/">锋利的jQuery</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="http://img4.douban.com/lpic/s28026858.jpg" alt="锋利的jQuery"><br>每天都在图书馆查这本书，这两天终于等到别人还过来了，这几天借的书还不少，有十本，都快达上限了，就不能借一本自习看一本么！？<br>想起之前在一家IT公司实习的时候用jQuery的随意，殊不知jQuery是如此这般强大！看了两天图书馆已然有人归还第二版，速速换之。<br>书中很多实例很有趣，很值得自己去实现。<br>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jQuery/">jQuery</a></li></ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a  href="/2015/11/06/SharpJQuery/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-HighPerfomanceWebSites" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/11/06/HighPerfomanceWebSites/" class="article-date">
-  	<time datetime="2015-11-06T10:59:10.000Z" itemprop="datePublished">2015-11-06</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/06/HighPerfomanceWebSites/">高性能网站建设指南(雅虎优化前端14条准则)</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="http://img4.douban.com/lpic/s5914296.jpg" alt="High Performance Web Sites"><br>高性能网站建设指南<br><a href="http://stevesouders.com/hpws/rules.php">相关例子测试官网</a><br>我真是太爱博文视点O’Reilly系列的书了，很幸运能在前端的领域有这样的一系列经典的书籍。<br>原来雅虎的14条前端优化准则尽在这本书中！</p>
-<hr>
-<p><q>性能黄金法则：只有10%~20%的最终用户响应时间花在了下载HTML文档上。其余的80%~90%时间花在了下载页面中的所有组件上。</q><br>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/网站性能优化/">网站性能优化</a></li></ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a  href="/2015/11/06/HighPerfomanceWebSites/#more">more >></a>
         </p>
       
       <div class="clearfix"></div>

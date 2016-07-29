@@ -3,32 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>关于我 | 鱼池</title>
+  <title>javascript-upgrade-will-nix-object-observation-feature | 鱼池</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="个人信息网名：烙鱼，英文名：Homsam，进击的前端爱好者，就读于西南某985高校。
-时间简线2013-2017 电子科技大学（软件工程）本科201503-201509 KDECM实验室
-联系方式邮箱：301100849#qq.com站点：yaochiqkl.github.io
-二维码个人签名
-盘根错节，可以验我之才；波流风靡，可以验我之操；艰难险阻，可以验我之思；震撼折衡，可以验我之力；含垢忍辱">
-<meta property="og:type" content="website">
-<meta property="og:title" content="关于我">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+  <meta name="description" content="最近在看一些前端MV*框架的实现原理，按照我的理解来看，在模板渲染方式上目前实现的方式有以下几种：1.基于脏检查的模式，包括熟悉的RegularJS和AngularJS2.基于defineOwnProperty的getter和setter模式，比如avalon3.基于Vitual Dom的diff并局部替换真实DOM Tree的模式，大名鼎鼎的React在去年的这个时候，Chrome的V8引擎实现">
+<meta property="og:type" content="article">
+<meta property="og:title" content="javascript-upgrade-will-nix-object-observation-feature">
+<meta property="og:url" content="http://yoursite.com/2016/07/30/javascript-upgrade-will-nix-object-observation-feature/index.html">
 <meta property="og:site_name" content="鱼池">
-<meta property="og:description" content="个人信息网名：烙鱼，英文名：Homsam，进击的前端爱好者，就读于西南某985高校。
-时间简线2013-2017 电子科技大学（软件工程）本科201503-201509 KDECM实验室
-联系方式邮箱：301100849#qq.com站点：yaochiqkl.github.io
-二维码个人签名
-盘根错节，可以验我之才；波流风靡，可以验我之操；艰难险阻，可以验我之思；震撼折衡，可以验我之力；含垢忍辱">
-<meta property="og:image" content="http://yoursite.com/images/2.jpg">
-<meta property="og:image" content="http://yoursite.com/images/3.jpg">
-<meta property="og:updated_time" content="2015-11-29T13:28:50.398Z">
+<meta property="og:description" content="最近在看一些前端MV*框架的实现原理，按照我的理解来看，在模板渲染方式上目前实现的方式有以下几种：1.基于脏检查的模式，包括熟悉的RegularJS和AngularJS2.基于defineOwnProperty的getter和setter模式，比如avalon3.基于Vitual Dom的diff并局部替换真实DOM Tree的模式，大名鼎鼎的React在去年的这个时候，Chrome的V8引擎实现">
+<meta property="og:updated_time" content="2016-07-29T16:27:27.712Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关于我">
-<meta name="twitter:description" content="个人信息网名：烙鱼，英文名：Homsam，进击的前端爱好者，就读于西南某985高校。
-时间简线2013-2017 电子科技大学（软件工程）本科201503-201509 KDECM实验室
-联系方式邮箱：301100849#qq.com站点：yaochiqkl.github.io
-二维码个人签名
-盘根错节，可以验我之才；波流风靡，可以验我之操；艰难险阻，可以验我之思；震撼折衡，可以验我之力；含垢忍辱">
+<meta name="twitter:title" content="javascript-upgrade-will-nix-object-observation-feature">
+<meta name="twitter:description" content="最近在看一些前端MV*框架的实现原理，按照我的理解来看，在模板渲染方式上目前实现的方式有以下几种：1.基于脏检查的模式，包括熟悉的RegularJS和AngularJS2.基于defineOwnProperty的getter和setter模式，比如avalon3.基于Vitual Dom的diff并局部替换真实DOM Tree的模式，大名鼎鼎的React在去年的这个时候，Chrome的V8引擎实现">
   
     <link rel="alternative" href="/atom.xml" title="鱼池" type="application/atom+xml">
   
@@ -188,11 +174,11 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-javascript-upgrade-will-nix-object-observation-feature" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/about/index.html" class="article-date">
-  	<time datetime="2015-10-22T08:20:41.000Z" itemprop="datePublished">2015-10-22</time>
+      <a href="/2016/07/30/javascript-upgrade-will-nix-object-observation-feature/" class="article-date">
+  	<time datetime="2016-07-29T16:10:52.000Z" itemprop="datePublished">2016-07-30</time>
 </a>
     </div>
   
@@ -205,7 +191,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      关于我
+      javascript-upgrade-will-nix-object-observation-feature
     </h1>
   
 
@@ -213,6 +199,10 @@
       
       <div class="article-info article-info-post">
         
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ES7-JavaScript/">ES7 JavaScript</a></li></ul>
+	</div>
+
         
 
         <div class="clearfix"></div>
@@ -221,12 +211,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="个人信息">个人信息</h1><p>网名：烙鱼，英文名：Homsam，进击的前端爱好者，就读于西南某985高校。</p>
-<h2 id="时间简线">时间简线</h2><p>2013-2017 电子科技大学（软件工程）本科<br>201503-201509 KDECM实验室</p>
-<h2 id="联系方式">联系方式</h2><p>邮箱：301100849#qq.com<br>站点：yaochiqkl.github.io</p>
-<h2 id="二维码">二维码</h2><h2 id="个人签名">个人签名</h2><blockquote>
-<p>盘根错节，可以验我之才；<br>波流风靡，可以验我之操；<br>艰难险阻，可以验我之思；<br>震撼折衡，可以验我之力；<br>含垢忍辱，可以验我之操.</p>
-</blockquote>
+        <p>最近在看一些前端MV*框架的实现原理，按照我的理解来看，在模板渲染方式上目前实现的方式有以下几种：<br>1.基于脏检查的模式，包括熟悉的RegularJS和AngularJS<br>2.基于defineOwnProperty的getter和setter模式，比如avalon<br>3.基于Vitual Dom的diff并局部替换真实DOM Tree的模式，大名鼎鼎的React<br>在去年的这个时候，Chrome的V8引擎实现了(O.o)，被认为对将来的前端框架的一次革新，它更新页面模板性能上提高了很多倍。相关文章诸如<a href="http://www.w3ctech.com/topic/1097" target="_blank" rel="external">Object.observe() 引爆数据绑定革命</a>，在RegularJS中，其作者（郑海波大神）甚至还在Regular上留下了待更新的部分。<br><code>regular正是在这种百花齐放的时候产生, 最终在实现上采取了angular的数据更新策略(但是提取了表达式的依赖关系以便在Object.observe正式到来时切换到脏检查+observe的形式)提倡极致的声明式和裸数据操作, 依赖于基于字符串的模板描述结构结合更规范性的类式继承的组件体系来定义数据层的业务逻辑.</code><br><a href="http://www.tuicool.com/articles/uMZzU3j" target="_blank" rel="external">RegularJS —— 来自网易的JavaScript MVC框架</a><br>当我在(CanIuse)[www.canIuse.com]去查询它的实现的范围时，发现只有Chrome的特定版本（45）实现，并在其后的版本删除了这个特性。<br>然而却尴尬地发现这个特性已经被移除草案了。详见：(Object.observe是否被移除ES7草案？)[<a href="https://www.zhihu.com/question/39224538" target="_blank" rel="external">https://www.zhihu.com/question/39224538</a>]<br>在(JavaScript upgrade will nix object observation feature)[<a href="http://www.infoworld.com/article/3002186/javascript/javascript-upgrade-will-nix-object-observation-feature.html]这篇文章中介绍了其背景。" target="_blank" rel="external">http://www.infoworld.com/article/3002186/javascript/javascript-upgrade-will-nix-object-observation-feature.html]这篇文章中介绍了其背景。</a></p>
+<p>大概的意思是说情况有所变更，导致其不再适用，随着三年过去，基于数据绑定的组件是很难去匹配(O.o)的，这将会导致前端更混乱的场面。</p>
+<p>Object.observe, a planned feature for JavaScript that would allow for direct observation of changes to objects, will be removed from a planned update to the ECMAScript specification under a plan floated this week.</p>
+<p>The plan, offered by Object.observe proponent Adam Klein on the ECMAScript discussion archives site, says circumstances surrounding the technology have changed, making it unfeasible.</p>
+<p>Object-observe has been slated for inclusion in ECMAScript 7, also known as ECMAScript 2016. Klein wants to withdraw Object.observe from the TC39 committee, which has jurisdiction over ECMAScript, the technical specification underlying JavaScript. He also said he’ll remove support for it from Google’s V8 JavaScript engine.</p>
+<p>“Over three years ago, Rafael Weinstein, Erik Arvidsson, and I set out to design and implement what we believed to be the primitive underlying the data-binding system of MDV (model-driven views),” Klein said in a blog post. “We prototyped an implementation in a branch of V8, then got agreement from the V8 team to build a real version upstream, while pushing Object.observe (O.o) as a part of the upcoming ES7 standard and working with the Polymer team to build their data-binding system on top of O.o.</p>
+<p>“Three years later, the world has changed in a variety of ways,” he said. While data-binding frameworks such as Ember and Angular showed interest, it was difficult to see how they could evolve their existing model to match O.o. “Polymer rewrote from the ground up for its 1.0 release, and in that rebuilding did not utilize O.o. And React’s processing model, which tries to avoid the mutable state inherent in data-binding systems, has become quite popular on the Web.”</p>
+<p>Klein recommends developers who have experimented with Object.observe instead consider a polyfill such as MaxArt2501/object-observe or a wrapper library such as polymer/observe-js, for observing changes in JavaScript data.</p>
 
       
     </div>
@@ -234,6 +226,16 @@
   </div>
   
     
+<nav id="article-nav">
+  
+  
+    <a href="/2016/03/15/FunctionCurryingAndBindInJavascript/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">FunctionCurryingAndBindInJavascript</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
   
 </article>
 
@@ -257,7 +259,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="undefined" data-title="关于我" data-url="http://yoursite.com/about/index.html"></div>
+	<div class="ds-thread" data-thread-key="javascript-upgrade-will-nix-object-observation-feature" data-title="javascript-upgrade-will-nix-object-observation-feature" data-url="http://yoursite.com/2016/07/30/javascript-upgrade-will-nix-object-observation-feature/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -301,7 +303,7 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我的个人博客]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-29T16:39:06.890Z</updated>
+  <updated>2016-07-29T16:46:01.338Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,11 +15,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[javascript-upgrade-will-nix-object-observation-feature]]></title>
+    <title><![CDATA[关于前端模板引擎和曾经被看好的Object.observe的那些事儿]]></title>
     <link href="http://yoursite.com/2016/07/30/javascript-upgrade-will-nix-object-observation-feature/"/>
     <id>http://yoursite.com/2016/07/30/javascript-upgrade-will-nix-object-observation-feature/</id>
     <published>2016-07-29T16:10:52.000Z</published>
-    <updated>2016-07-29T16:39:06.890Z</updated>
+    <updated>2016-07-29T16:46:01.338Z</updated>
     <content type="html"><![CDATA[<p>最近在看一些前端MV*框架的实现原理，按照我的理解来看，在模板渲染方式上实现方式有以下几种：<br>1.基于脏检查的模式，包括熟悉的RegularJS和AngularJS<br>2.基于defineOwnProperty的getter和setter模式，比如avalon<br>3.基于Vitual Dom的diff并局部替换真实DOM Tree的模式，大名鼎鼎的React</p>
 <h1 id="4-基于Object-observe(O-o)直接监听数据的变化（下面讨论的重点）">4.基于Object.observe(O.o)直接监听数据的变化（下面讨论的重点）</h1><p>在去年的这个时候，Chrome的V8引擎实现了(O.o)，被认为对将来的前端框架的一次革新，它更新页面模板性能上提高了很多倍。<br>相关文章诸如<a href="http://www.w3ctech.com/topic/1097" target="_blank" rel="external">Object.observe() 引爆数据绑定革命</a>，在RegularJS中，其作者（郑海波大神）甚至还在Regular上留下了待更新的部分。<br><code>regular正是在这种百花齐放的时候产生, 最终在实现上采取了angular的数据更新策略(但是提取了表达式的依赖关系以便在Object.observe正式到来时切换到脏检查+observe的形式)提倡极致的声明式和裸数据操作, 依赖于基于字符串的模板描述结构结合更规范性的类式继承的组件体系来定义数据层的业务逻辑.</code><br><a href="http://www.tuicool.com/articles/uMZzU3j" target="_blank" rel="external">RegularJS —— 来自网易的JavaScript MVC框架</a><br>当我在 <a href="www.canIuse.com">CanIuse</a> 去查询它的实现的范围时，发现只有Chrome的特定版本（45）实现，并在其后的版本删除了这个特性。<br>然而却尴尬地发现这个特性已经被移除草案了。详见：<a href="https://www.zhihu.com/question/39224538" target="_blank" rel="external">Object.observe是否被移除ES7草案？</a>  </p>
 <p><a href="http://www.infoworld.com/article/3002186/javascript/javascript-upgrade-will-nix-object-observation-feature.html" target="_blank" rel="external">JavaScript upgrade will nix object observation feature</a>这篇文章中介绍了其背景。</p>
@@ -100,11 +100,11 @@
   </entry>
   
   <entry>
-    <title><![CDATA[书单【顶置】]]></title>
+    <title><![CDATA[2015下半年书单]]></title>
     <link href="http://yoursite.com/2015/12/25/books/"/>
     <id>http://yoursite.com/2015/12/25/books/</id>
     <published>2015-12-25T13:45:35.000Z</published>
-    <updated>2015-12-10T05:13:28.427Z</updated>
+    <updated>2016-07-29T16:45:14.023Z</updated>
     <content type="html"><![CDATA[<h2 id="2015下半年书单">2015下半年书单</h2><h3 id="前端类">前端类</h3><p>Head First HTML&amp;CSS (已读)<br>JavaScript DOM 编程艺术（2E)(已读)<br>Head First Ajax(已读)<br>高性能网站建设指南（已读）<br>精通正则表达式（3E)（已读）<br>Node.js开发指南（已读）<br>Head First PHP &amp; MySQL (已读)<br>锋利的jQuery（2E)（已读）<br>HTML5与CSS3基础教程（7E）[最新版：8E]（已读）<br>PHP和MySQL程序开发（4E）（已读）</p>
 <p>HTTP权威指南（粗略已读）<br>CSS权威指南（3E)（粗略已读）<br>HTM5程序设计（2E)（粗略已读）<br>——————————————————————————————————<br>JavaScript 高级程序设计（3E)(反复研读) ★★★★★<br>高性能网站建设进阶指南（在读）<br>JavaScript语言精粹（在读）<br>JavaScript设计模式（在读）<br>——————————————————————————————————<br>JavaScript权威指南（6E）（已购）★★★★★<br>深入浅出Node.js（过难）</p>
 <hr>

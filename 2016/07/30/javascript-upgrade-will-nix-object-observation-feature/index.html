@@ -5,19 +5,19 @@
   
   <title>关于前端模板引擎和曾经被看好的Object.observe的那些事儿 | 鱼池</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="最近在看一些前端MV*框架的实现原理，按照我的理解来看，在模板渲染方式上实现方式有以下几种：1.基于脏检查的模式，包括熟悉的RegularJS和AngularJS2.基于defineOwnProperty的getter和setter模式，比如avalon3.基于Vitual Dom的diff并局部替换真实DOM Tree的模式，大名鼎鼎的React
-4.基于Object.observe(O.o)直">
+  <meta name="description" content="最近在看一些前端MV*框架的实现原理，按照我的理解来看，在模板渲染方式上实现方式有以下几种：1.基于脏检查的模式，包括熟悉的RegularJS和AngularJS2.基于defineOwnProperty的getter和setter模式，比如avalon vue13.基于Vitual Dom的diff并局部替换真实DOM Tree的模式，大名鼎鼎的React
+4.基于Object.observe(">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于前端模板引擎和曾经被看好的Object.observe的那些事儿">
 <meta property="og:url" content="http://yoursite.com/2016/07/30/javascript-upgrade-will-nix-object-observation-feature/index.html">
 <meta property="og:site_name" content="鱼池">
-<meta property="og:description" content="最近在看一些前端MV*框架的实现原理，按照我的理解来看，在模板渲染方式上实现方式有以下几种：1.基于脏检查的模式，包括熟悉的RegularJS和AngularJS2.基于defineOwnProperty的getter和setter模式，比如avalon3.基于Vitual Dom的diff并局部替换真实DOM Tree的模式，大名鼎鼎的React
-4.基于Object.observe(O.o)直">
-<meta property="og:updated_time" content="2016-07-29T16:46:01.338Z">
+<meta property="og:description" content="最近在看一些前端MV*框架的实现原理，按照我的理解来看，在模板渲染方式上实现方式有以下几种：1.基于脏检查的模式，包括熟悉的RegularJS和AngularJS2.基于defineOwnProperty的getter和setter模式，比如avalon vue13.基于Vitual Dom的diff并局部替换真实DOM Tree的模式，大名鼎鼎的React
+4.基于Object.observe(">
+<meta property="og:updated_time" content="2016-08-01T14:20:39.931Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于前端模板引擎和曾经被看好的Object.observe的那些事儿">
-<meta name="twitter:description" content="最近在看一些前端MV*框架的实现原理，按照我的理解来看，在模板渲染方式上实现方式有以下几种：1.基于脏检查的模式，包括熟悉的RegularJS和AngularJS2.基于defineOwnProperty的getter和setter模式，比如avalon3.基于Vitual Dom的diff并局部替换真实DOM Tree的模式，大名鼎鼎的React
-4.基于Object.observe(O.o)直">
+<meta name="twitter:description" content="最近在看一些前端MV*框架的实现原理，按照我的理解来看，在模板渲染方式上实现方式有以下几种：1.基于脏检查的模式，包括熟悉的RegularJS和AngularJS2.基于defineOwnProperty的getter和setter模式，比如avalon vue13.基于Vitual Dom的diff并局部替换真实DOM Tree的模式，大名鼎鼎的React
+4.基于Object.observe(">
   
     <link rel="alternative" href="/atom.xml" title="鱼池" type="application/atom+xml">
   
@@ -113,7 +113,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/ES7-JavaScript/" style="font-size: 10px;">ES7 JavaScript</a> <a href="/tags/HTML5/" style="font-size: 10px;">HTML5</a> <a href="/tags/Node/" style="font-size: 10px;">Node</a> <a href="/tags/WordPress/" style="font-size: 10px;">WordPress</a> <a href="/tags/ajax/" style="font-size: 15px;">ajax</a> <a href="/tags/books/" style="font-size: 10px;">books</a> <a href="/tags/essay/" style="font-size: 15px;">essay</a> <a href="/tags/https/" style="font-size: 10px;">https</a> <a href="/tags/interview/" style="font-size: 20px;">interview</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/网站性能优化/" style="font-size: 10px;">网站性能优化</a>
+						<a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/ES6/" style="font-size: 10px;">ES6</a> <a href="/tags/ES7-JavaScript/" style="font-size: 10px;">ES7 JavaScript</a> <a href="/tags/HTML5/" style="font-size: 10px;">HTML5</a> <a href="/tags/Node/" style="font-size: 10px;">Node</a> <a href="/tags/WordPress/" style="font-size: 10px;">WordPress</a> <a href="/tags/ajax/" style="font-size: 15px;">ajax</a> <a href="/tags/books/" style="font-size: 10px;">books</a> <a href="/tags/essay/" style="font-size: 15px;">essay</a> <a href="/tags/https/" style="font-size: 10px;">https</a> <a href="/tags/interview/" style="font-size: 20px;">interview</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/网站性能优化/" style="font-size: 10px;">网站性能优化</a>
 					</div>
 				</section>
 				
@@ -214,7 +214,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>最近在看一些前端MV*框架的实现原理，按照我的理解来看，在模板渲染方式上实现方式有以下几种：<br>1.基于脏检查的模式，包括熟悉的RegularJS和AngularJS<br>2.基于defineOwnProperty的getter和setter模式，比如avalon<br>3.基于Vitual Dom的diff并局部替换真实DOM Tree的模式，大名鼎鼎的React</p>
+        <p>最近在看一些前端MV*框架的实现原理，按照我的理解来看，在模板渲染方式上实现方式有以下几种：<br>1.基于脏检查的模式，包括熟悉的RegularJS和AngularJS<br>2.基于defineOwnProperty的getter和setter模式，比如avalon vue1<br>3.基于Vitual Dom的diff并局部替换真实DOM Tree的模式，大名鼎鼎的React</p>
 <h1 id="4-基于Object-observe(O-o)直接监听数据的变化（下面讨论的重点）">4.基于Object.observe(O.o)直接监听数据的变化（下面讨论的重点）</h1><p>在去年的这个时候，Chrome的V8引擎实现了(O.o)，被认为对将来的前端框架的一次革新，它更新页面模板性能上提高了很多倍。<br>相关文章诸如<a href="http://www.w3ctech.com/topic/1097" target="_blank" rel="external">Object.observe() 引爆数据绑定革命</a>，在RegularJS中，其作者（郑海波大神）甚至还在Regular上留下了待更新的部分。<br><code>regular正是在这种百花齐放的时候产生, 最终在实现上采取了angular的数据更新策略(但是提取了表达式的依赖关系以便在Object.observe正式到来时切换到脏检查+observe的形式)提倡极致的声明式和裸数据操作, 依赖于基于字符串的模板描述结构结合更规范性的类式继承的组件体系来定义数据层的业务逻辑.</code><br><a href="http://www.tuicool.com/articles/uMZzU3j" target="_blank" rel="external">RegularJS —— 来自网易的JavaScript MVC框架</a><br>当我在 <a href="www.canIuse.com">CanIuse</a> 去查询它的实现的范围时，发现只有Chrome的特定版本（45）实现，并在其后的版本删除了这个特性。<br>然而却尴尬地发现这个特性已经被移除草案了。详见：<a href="https://www.zhihu.com/question/39224538" target="_blank" rel="external">Object.observe是否被移除ES7草案？</a>  </p>
 <p><a href="http://www.infoworld.com/article/3002186/javascript/javascript-upgrade-will-nix-object-observation-feature.html" target="_blank" rel="external">JavaScript upgrade will nix object observation feature</a>这篇文章中介绍了其背景。</p>
 <p>===</p>
@@ -234,6 +234,15 @@
   
     
 <nav id="article-nav">
+  
+    <a href="/2016/08/10/What-is-Symbol-in-ES6/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          What-is-Symbol-in-ES6?
+        
+      </div>
+    </a>
   
   
     <a href="/2016/03/15/FunctionCurryingAndBindInJavascript/" id="article-nav-older" class="article-nav-link-wrap">

@@ -109,7 +109,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/ES7-JavaScript/" style="font-size: 10px;">ES7 JavaScript</a> <a href="/tags/HTML5/" style="font-size: 10px;">HTML5</a> <a href="/tags/Node/" style="font-size: 10px;">Node</a> <a href="/tags/WordPress/" style="font-size: 10px;">WordPress</a> <a href="/tags/ajax/" style="font-size: 15px;">ajax</a> <a href="/tags/books/" style="font-size: 10px;">books</a> <a href="/tags/essay/" style="font-size: 15px;">essay</a> <a href="/tags/https/" style="font-size: 10px;">https</a> <a href="/tags/interview/" style="font-size: 20px;">interview</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/网站性能优化/" style="font-size: 10px;">网站性能优化</a>
+						<a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/ES6/" style="font-size: 10px;">ES6</a> <a href="/tags/ES7-JavaScript/" style="font-size: 10px;">ES7 JavaScript</a> <a href="/tags/HTML5/" style="font-size: 10px;">HTML5</a> <a href="/tags/Node/" style="font-size: 10px;">Node</a> <a href="/tags/WordPress/" style="font-size: 10px;">WordPress</a> <a href="/tags/ajax/" style="font-size: 15px;">ajax</a> <a href="/tags/books/" style="font-size: 10px;">books</a> <a href="/tags/essay/" style="font-size: 15px;">essay</a> <a href="/tags/https/" style="font-size: 10px;">https</a> <a href="/tags/interview/" style="font-size: 20px;">interview</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/网站性能优化/" style="font-size: 10px;">网站性能优化</a>
 					</div>
 				</section>
 				
@@ -175,6 +175,64 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-What-is-Symbol-in-ES6" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/08/10/What-is-Symbol-in-ES6/" class="article-date">
+  	<time datetime="2016-08-10T15:24:08.000Z" itemprop="datePublished">2016-08-10</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/08/10/What-is-Symbol-in-ES6/">What-is-Symbol-in-ES6?</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>what is Symbol in ES6<br>I used to be asked in an interviwe : Do you know Symbol in ES6? And I answered nope and explained other features such as lamda and ClASS. But it doesn’t help, however, the interviwer doesn’t care at all. 😢<br>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ES6/">ES6</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a  href="/2016/08/10/What-is-Symbol-in-ES6/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
     <article id="post-javascript-upgrade-will-nix-object-observation-feature" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -201,7 +259,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>最近在看一些前端MV*框架的实现原理，按照我的理解来看，在模板渲染方式上实现方式有以下几种：<br>1.基于脏检查的模式，包括熟悉的RegularJS和AngularJS<br>2.基于defineOwnProperty的getter和setter模式，比如avalon<br>3.基于Vitual Dom的diff并局部替换真实DOM Tree的模式，大名鼎鼎的React</p>
+        <p>最近在看一些前端MV*框架的实现原理，按照我的理解来看，在模板渲染方式上实现方式有以下几种：<br>1.基于脏检查的模式，包括熟悉的RegularJS和AngularJS<br>2.基于defineOwnProperty的getter和setter模式，比如avalon vue1<br>3.基于Vitual Dom的diff并局部替换真实DOM Tree的模式，大名鼎鼎的React</p>
 <h1 id="4-基于Object-observe(O-o)直接监听数据的变化（下面讨论的重点）">4.基于Object.observe(O.o)直接监听数据的变化（下面讨论的重点）</h1><p>在去年的这个时候，Chrome的V8引擎实现了(O.o)，被认为对将来的前端框架的一次革新，它更新页面模板性能上提高了很多倍。<br>相关文章诸如<a href="http://www.w3ctech.com/topic/1097" target="_blank" rel="external">Object.observe() 引爆数据绑定革命</a>，在RegularJS中，其作者（郑海波大神）甚至还在Regular上留下了待更新的部分。<br><code>regular正是在这种百花齐放的时候产生, 最终在实现上采取了angular的数据更新策略(但是提取了表达式的依赖关系以便在Object.observe正式到来时切换到脏检查+observe的形式)提倡极致的声明式和裸数据操作, 依赖于基于字符串的模板描述结构结合更规范性的类式继承的组件体系来定义数据层的业务逻辑.</code><br><a href="http://www.tuicool.com/articles/uMZzU3j" target="_blank" rel="external">RegularJS —— 来自网易的JavaScript MVC框架</a><br>当我在 <a href="www.canIuse.com">CanIuse</a> 去查询它的实现的范围时，发现只有Chrome的特定版本（45）实现，并在其后的版本删除了这个特性。<br>然而却尴尬地发现这个特性已经被移除草案了。详见：<a href="https://www.zhihu.com/question/39224538" target="_blank" rel="external">Object.observe是否被移除ES7草案？</a>  </p>
 <p><a href="http://www.infoworld.com/article/3002186/javascript/javascript-upgrade-will-nix-object-observation-feature.html" target="_blank" rel="external">JavaScript upgrade will nix object observation feature</a>这篇文章中介绍了其背景。</p>
 <p>===</p>
@@ -701,60 +759,6 @@
       
         <p class="article-more-link">
           <a  href="/2015/12/01/PublicKeyAndSecretKey/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-when-we-vist-web" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/11/26/when-we-vist-web/" class="article-date">
-  	<time datetime="2015-11-26T14:12:52.000Z" itemprop="datePublished">2015-11-26</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/26/when-we-vist-web/">当我们访问网站的时候，我们在访问什么</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>突发奇想想出了这个题目，想聊一聊我的理解。<br>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a  href="/2015/11/26/when-we-vist-web/#more">more >></a>
         </p>
       
       <div class="clearfix"></div>

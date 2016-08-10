@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我的个人博客]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-29T16:46:01.338Z</updated>
+  <updated>2016-08-10T15:24:55.354Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,12 +15,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[What-is-Symbol-in-ES6?]]></title>
+    <link href="http://yoursite.com/2016/08/10/What-is-Symbol-in-ES6/"/>
+    <id>http://yoursite.com/2016/08/10/What-is-Symbol-in-ES6/</id>
+    <published>2016-08-10T15:24:08.000Z</published>
+    <updated>2016-08-10T15:24:55.354Z</updated>
+    <content type="html"><![CDATA[<p>what is Symbol in ES6<br>I used to be asked in an interviwe : Do you know Symbol in ES6? And I answered nope and explained other features such as lamda and ClASS. But it doesn’t help, however, the interviwer doesn’t care at all. 😢<br><a id="more"></a><br>Recent days I’ve tried to learn about Symbol. MDN define it as below:</p>
+<p>A symbol is a unique and immutable data type and may be used as an identifier for object properties. The Symbol object is an implicit object wrapper for the symbol primitive data type.<br>It makes me confused at first. I screamed inside : What th fxxt is it ? What is an implicit object wrapper ? The 7th basic type of data in JavaScript? Where should we use it?</p>
+<p>And I tried to read some articles, most of that were same and translated into Chinese form English apparently. Bad translating and making people confused. What is 这里也有几个可能的问题。他们都与这样的事实相关，那就是你的代码不是唯一一个使用 DOM 的代码。? What does this sentence mean? I couldn’t read it once more.<br>I’d better read it from English cause it’ll be easier for me to understand. I tried to use BABEL to translate symbol to ES5, but it doesn’t help either. It won’t compile this feature.<br>Finally I chose to try this feature in Chrome Devtool and figured out the usage of SYMBOL.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>what is Symbol in ES6<br>I used to be asked in an interviwe : Do you know Symbol in ES6? And I answered nope and explained other features such as lamda and ClASS. But it doesn’t help, however, the interviwer doesn’t care at all. 😢<br>]]>
+    
+    </summary>
+    
+      <category term="ES6" scheme="http://yoursite.com/tags/ES6/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[关于前端模板引擎和曾经被看好的Object.observe的那些事儿]]></title>
     <link href="http://yoursite.com/2016/07/30/javascript-upgrade-will-nix-object-observation-feature/"/>
     <id>http://yoursite.com/2016/07/30/javascript-upgrade-will-nix-object-observation-feature/</id>
     <published>2016-07-29T16:10:52.000Z</published>
-    <updated>2016-07-29T16:46:01.338Z</updated>
-    <content type="html"><![CDATA[<p>最近在看一些前端MV*框架的实现原理，按照我的理解来看，在模板渲染方式上实现方式有以下几种：<br>1.基于脏检查的模式，包括熟悉的RegularJS和AngularJS<br>2.基于defineOwnProperty的getter和setter模式，比如avalon<br>3.基于Vitual Dom的diff并局部替换真实DOM Tree的模式，大名鼎鼎的React</p>
+    <updated>2016-08-01T14:20:39.931Z</updated>
+    <content type="html"><![CDATA[<p>最近在看一些前端MV*框架的实现原理，按照我的理解来看，在模板渲染方式上实现方式有以下几种：<br>1.基于脏检查的模式，包括熟悉的RegularJS和AngularJS<br>2.基于defineOwnProperty的getter和setter模式，比如avalon vue1<br>3.基于Vitual Dom的diff并局部替换真实DOM Tree的模式，大名鼎鼎的React</p>
 <h1 id="4-基于Object-observe(O-o)直接监听数据的变化（下面讨论的重点）">4.基于Object.observe(O.o)直接监听数据的变化（下面讨论的重点）</h1><p>在去年的这个时候，Chrome的V8引擎实现了(O.o)，被认为对将来的前端框架的一次革新，它更新页面模板性能上提高了很多倍。<br>相关文章诸如<a href="http://www.w3ctech.com/topic/1097" target="_blank" rel="external">Object.observe() 引爆数据绑定革命</a>，在RegularJS中，其作者（郑海波大神）甚至还在Regular上留下了待更新的部分。<br><code>regular正是在这种百花齐放的时候产生, 最终在实现上采取了angular的数据更新策略(但是提取了表达式的依赖关系以便在Object.observe正式到来时切换到脏检查+observe的形式)提倡极致的声明式和裸数据操作, 依赖于基于字符串的模板描述结构结合更规范性的类式继承的组件体系来定义数据层的业务逻辑.</code><br><a href="http://www.tuicool.com/articles/uMZzU3j" target="_blank" rel="external">RegularJS —— 来自网易的JavaScript MVC框架</a><br>当我在 <a href="www.canIuse.com">CanIuse</a> 去查询它的实现的范围时，发现只有Chrome的特定版本（45）实现，并在其后的版本删除了这个特性。<br>然而却尴尬地发现这个特性已经被移除草案了。详见：<a href="https://www.zhihu.com/question/39224538" target="_blank" rel="external">Object.observe是否被移除ES7草案？</a>  </p>
 <p><a href="http://www.infoworld.com/article/3002186/javascript/javascript-upgrade-will-nix-object-observation-feature.html" target="_blank" rel="external">JavaScript upgrade will nix object observation feature</a>这篇文章中介绍了其背景。</p>
 <p>===</p>
@@ -34,7 +53,7 @@
 <p>（待翻译）</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>最近在看一些前端MV*框架的实现原理，按照我的理解来看，在模板渲染方式上实现方式有以下几种：<br>1.基于脏检查的模式，包括熟悉的RegularJS和AngularJS<br>2.基于defineOwnProperty的getter和setter模式，比如avalon<b]]>
+    <![CDATA[<p>最近在看一些前端MV*框架的实现原理，按照我的理解来看，在模板渲染方式上实现方式有以下几种：<br>1.基于脏检查的模式，包括熟悉的RegularJS和AngularJS<br>2.基于defineOwnProperty的getter和setter模式，比如avalon v]]>
     </summary>
     
       <category term="ES7 JavaScript" scheme="http://yoursite.com/tags/ES7-JavaScript/"/>

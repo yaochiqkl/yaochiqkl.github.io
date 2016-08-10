@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我的个人博客]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-10T15:24:55.354Z</updated>
+  <updated>2016-08-10T15:34:26.213Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,17 +15,22 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[What-is-Symbol-in-ES6?]]></title>
+    <title><![CDATA[What is Symbol in ES6?]]></title>
     <link href="http://yoursite.com/2016/08/10/What-is-Symbol-in-ES6/"/>
     <id>http://yoursite.com/2016/08/10/What-is-Symbol-in-ES6/</id>
     <published>2016-08-10T15:24:08.000Z</published>
-    <updated>2016-08-10T15:24:55.354Z</updated>
-    <content type="html"><![CDATA[<p>what is Symbol in ES6<br>I used to be asked in an interviwe : Do you know Symbol in ES6? And I answered nope and explained other features such as lamda and ClASS. But it doesn’t help, however, the interviwer doesn’t care at all. 😢<br><a id="more"></a><br>Recent days I’ve tried to learn about Symbol. MDN define it as below:</p>
-<p>A symbol is a unique and immutable data type and may be used as an identifier for object properties. The Symbol object is an implicit object wrapper for the symbol primitive data type.<br>It makes me confused at first. I screamed inside : What th fxxt is it ? What is an implicit object wrapper ? The 7th basic type of data in JavaScript? Where should we use it?</p>
-<p>And I tried to read some articles, most of that were same and translated into Chinese form English apparently. Bad translating and making people confused. What is 这里也有几个可能的问题。他们都与这样的事实相关，那就是你的代码不是唯一一个使用 DOM 的代码。? What does this sentence mean? I couldn’t read it once more.<br>I’d better read it from English cause it’ll be easier for me to understand. I tried to use BABEL to translate symbol to ES5, but it doesn’t help either. It won’t compile this feature.<br>Finally I chose to try this feature in Chrome Devtool and figured out the usage of SYMBOL.</p>
+    <updated>2016-08-10T15:34:26.213Z</updated>
+    <content type="html"><![CDATA[<p>I used to be asked in an interviwe : Do you know Symbol in ES6? And I answered nope and explained other features such as lamda and ClASS. But it doesn’t help, however,  the interviwer doesn’t care at all. :’(<br><a id="more"></a><br>Recent days I’ve tried to learn about <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Symbol" target="_blank" rel="external">Symbol</a>.<br>MDN define it as below:</p>
+<blockquote>
+<p>A symbol is a unique and immutable data type and may be used as an identifier for object properties. The Symbol object is an implicit object wrapper for the symbol primitive data type.  </p>
+</blockquote>
+<p>It makes me confused at first. I screamed inside : What th fxxt is it ?<br>What is <code>an implicit object wrapper</code> ? The 7th basic type of data in JavaScript? Where should we use it?  </p>
+<p>And I tried to read some <a href="http://bubkoo.com/2015/07/24/es6-in-depth-symbols/" target="_blank" rel="external">articles</a>, most of that were same and translated into Chinese form English apparently. Bad translating and making people confused. What is <code>这里也有几个可能的问题。他们都与这样的事实相关，那就是你的代码不是唯一一个使用 DOM 的代码。</code>? What does this sentence mean? I couldn’t read it once more.<br>I’d better read it from English cause it’ll be easier for me to understand.<br>I tried to use <a href="https://babeljs.io/repl/" target="_blank" rel="external">BABEL</a> to translate symbol to ES5, but it doesn’t help either. It won’t compile this feature.<br>Finally I chose to try this feature in Chrome Devtool and figured out the usage of <code>SYMBOL</code>.</p>
+<p>Practice is the best way to comprehend the<br><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable"><span class="keyword">var</span> friend_of_mine</span> = &#123;&#125;</span><br></pre></td></tr></table></figure></p>
+<p>We introduce <code>Symbol</code> in order to prevent the conflict of same property name. Everytime we call the <code>Symbol</code>, it will return a exclusive value for you. You’ll never need to worry about this issue.</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>what is Symbol in ES6<br>I used to be asked in an interviwe : Do you know Symbol in ES6? And I answered nope and explained other features such as lamda and ClASS. But it doesn’t help, however, the interviwer doesn’t care at all. 😢<br>]]>
+    <![CDATA[<p>I used to be asked in an interviwe : Do you know Symbol in ES6? And I answered nope and explained other features such as lamda and ClASS. But it doesn’t help, however,  the interviwer doesn’t care at all. :’(<br>]]>
     
     </summary>
     

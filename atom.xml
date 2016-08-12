@@ -3,9 +3,9 @@
   <title><![CDATA[鱼池]]></title>
   <subtitle><![CDATA[我的个人博客]]></subtitle>
   <link href="/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
-  <updated>2016-08-10T16:25:15.554Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://yaochiqkl.github.io/"/>
+  <updated>2016-08-12T14:57:39.774Z</updated>
+  <id>http://yaochiqkl.github.io/</id>
   
   <author>
     <name><![CDATA[烙鱼]]></name>
@@ -15,9 +15,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[网易半年实习总结&收获&感想]]></title>
+    <link href="http://yaochiqkl.github.io/2016/08/12/intership-summary/"/>
+    <id>http://yaochiqkl.github.io/2016/08/12/intership-summary/</id>
+    <published>2016-08-12T14:52:50.000Z</published>
+    <updated>2016-08-12T14:57:39.774Z</updated>
+    <content type="html"><![CDATA[<p>自一月来网易实习以来，掐指一数已经实习了大半年了。实习内容主要是对内测试平台相关前端开发。这半年时间里，无论是从技能还是心智上，我都成长了很多。总的来说，我所接触的有两个大的项目，下面以项目入手，总结下所学所做、锻炼的能力和遇到的一些问题。<br><a id="more"></a></p>
+<hr>
+<h3 id="渠道发布平台">渠道发布平台</h3><p>前两个月参与制作渠道发布平台的后期迭代开发，该项目采用的是原生的rails erb模板，前端方面采用的是JQuery和JQuery UI框架，该项目是移动应用一键发布更新的平台，为App上线各大主流市场提供了极大的便利。   </p>
+<h4 id="锻炼的能力">锻炼的能力</h4><p>1.<strong>阅读他人源码的能力</strong>：项目已成型，相关目录结构、代码繁杂，代码也几经人手，不是每一段代码都能简单、易读抑或有良好的封装和注释，部分代码甚至让人摸不清头脑，在这样的情况下，如何快速上手、熟悉项目便是成了重中之重。尽管给了一个看似普通的需求，但是如何在正确的位置采用正确的方式来编程还是需要探究一番的。<br>2.<strong>快速适应新的环境</strong>：对代码的规范、相关流程、相关业务等有所熟悉。对git仓库的一些规范，如何提PR，如何去测试和review。<br>3.<strong>快速学习的能力</strong>：这边采用的是JQueryUI框架，中文文档不是很全面（像Highcharts中文网一样坑），调用的时候只能去看官网的文档，这时候发现自己的英语特长发挥了很大的作用。从下拉组件开始到日历组件等，保持新增的页面和内容与之前保持一致。</p>
+<h4 id="遇到的问题">遇到的问题</h4><p>1.阅读英文文档的能力有待提高，尽管四六级考出了excellent的成绩，发现读一些框架的文档时还是有一些吃力，吃力的原因在于对一些计算机专用术语的名词不熟悉，不过这不是问题，只要多读下去，相关术语的词汇量一定会有极大的提高。</p>
+<hr>
+<h3 id="测试用例管理平台">测试用例管理平台</h3><h4 id="锻炼的能力-1">锻炼的能力</h4><p>1.<strong>独立解决问题的能力</strong>：遇到看似难以完成的需求，该去如何实现，不能饭来张手地求人，毕竟每个人都有自己的任务和需求要完成。学会使用搜索引擎，能够找到解决问题的正确方式，不一定一开始就能一蹴而就，踩些坑是很可能的，所以边踩坑边学习边思考。将一个庞大、复杂的问题进行拆分，一步步攻破，以实现最终要解决的问题，在实现的过程中也会突发灵感想到横好的方案，可能会对之前的部分代码重构。能做到，给我一个复杂的问题，我不会随意地说不会，会进行深入的思考和调研，努力去尝试解决，独当一面。</p>
+<p>2.<strong>思考并主动交涉的能力</strong>：一些需求给下来并没有确切的实习方案，这时候需要主动去和别人探讨一些细节问题。一开始的时候我还是比较胆小，怕自己一个小小的前端实习，给个需求，有什么好找那么忙碌的leader交流的，担心会打扰到他。但事实证明并没有，主管是很欢迎我去主动找他交流的，逐渐我也放开了戒备心。当然，去探讨前，还是得做好准备，对一些问题进行一个深入的思考，自己会给出一个大概的解决方案，去询问意见和可行性，听取主管的意见，最后确认最终的方案。</p>
+<h4 id="遇到的问题-1">遇到的问题</h4><p>1.<strong>数据统计页面</strong>：时间短 需求复杂    还是第一次接触前端MV*的大型项目，从前也就是写写Demo没有深入地理解其原理和本质。对于全部组件化+MVVM+Ajax+Restful前后端分离的单页应用，难以直接上手。由于人手的缺少和不知名的原因，也没有一个Mentor抑或导师来带我、给我指点或进行引导，只是给了时间、给了需求，一切都是自己做。我真的能做到吗？在种种压力下仿佛爆发了某种力量，内心的小宇宙开始燃烧：从学习Regualr开始，阅读它的文档，了解它的语法。了解项目的结构和代码，理解组件化的流程和调用方法，学习其路由的方式。熟悉原先调用接口的规则并在内部的NEI平台制定接口规范。熟悉需求并确认实现方案、规划任务的进度。需求并不简单，新增项目的一个数据统计页面，来展示一些统计信息。要实现一个数据展示表格，该表格集成了分条展示、分页、排序、筛选等功能，该表格原先是在另一个项目中通过erb模板+jQuery表格组件来完成的，所以对于此项目来说，不能引入jQuery，没有任何参考性作用，一切都是从头做。如果是用原生js或者jQuery，我一开始就能明确其实现流程，但是放在MV*的模板中实现，一开始我是一头雾水的。从分页开始实现、到排序、到最后的筛选，在实现过程中，我发现了<strong>数据驱动项目</strong>所采用的MV*框架所带来的便利，可以说，进一步解放了生产力，让前端开发人员不再把大量时间花在DOM的选择和代码的拼接等。筛选最后我选用了自己较为擅长的正则来判断，将每一行的数据组织成字符串，匹配的时候筛选出留下的内容展示出来。</p>
+<p>2.<strong>单元测试</strong>： 新领域 新内容<br>Mocha、Karma、Chai？？？一下子涌入三个不熟悉的名词，从一点点开始熟悉，两天的时间学会了前端单元测试的相关内容并开始补偿单元测试。从测试执行管理工具到测试框架，再到断言库、覆盖率，从前看似高神和莫名其妙的，也能从了解个大概开始逐渐上手。</p>
+<p>3.<strong>遗留bug修改</strong><br>修补了大量从前留下来，俗称“填坑”。包括一些浏览器的兼容性bug，一些小细节的bug。其实修bug是不轻松的的。修一些只是样式导致的bug还好，但很多时候会碰到疑难bug，几经转手，如何去复现、去定位bug是第一步，如何去解决、修改是其次，bug修复后又户不会引入新的回归性bug也是一个重要的课题。要做到以最优雅的方式去修复bug，尽力避免hack的方式，很多bug从表面掩盖不如从源头解决，在一些函数代码处理中要做一个整体的调整。</p>
+<p>4.<strong>脑图相关</strong><br>由于缺乏文档、只能直接阅读源码，从源码中找接口和一些实现。从git上拷过来，大致浏览基于angular开发的脑图核心代码实现，解读部分原理，尝试修改部分代码并重新打包，以探究内部实质。</p>
+<hr>
+<p>   很幸运能遇上当前的主管，主管技术精湛，为人也十分幽默风趣，实习的过程中充满欢乐，也很愉快，得到了很多指点，有所长进。愿来日有机会继续合作。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>自一月来网易实习以来，掐指一数已经实习了大半年了。实习内容主要是对内测试平台相关前端开发。这半年时间里，无论是从技能还是心智上，我都成长了很多。总的来说，我所接触的有两个大的项目，下面以项目入手，总结下所学所做、锻炼的能力和遇到的一些问题。<br>]]>
+    
+    </summary>
+    
+      <category term="实习总结" scheme="http://yaochiqkl.github.io/tags/%E5%AE%9E%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[What is Symbol in ES6?]]></title>
-    <link href="http://yoursite.com/2016/08/10/What-is-Symbol-in-ES6/"/>
-    <id>http://yoursite.com/2016/08/10/What-is-Symbol-in-ES6/</id>
+    <link href="http://yaochiqkl.github.io/2016/08/10/What-is-Symbol-in-ES6/"/>
+    <id>http://yaochiqkl.github.io/2016/08/10/What-is-Symbol-in-ES6/</id>
     <published>2016-08-10T15:24:08.000Z</published>
     <updated>2016-08-10T16:25:15.554Z</updated>
     <content type="html"><![CDATA[<p>I used to be asked in an interview : Do you know Symbol in ES6? And I answered nope and explained other features such as lamda and ClASS. But it doesn’t help, however,  the interviwer doesn’t care at all. :’(<br>Recent days I’ve tried to learn about <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Symbol" target="_blank" rel="external">Symbol</a>.<br>MDN define it as below:</p>
@@ -36,14 +66,14 @@
     <![CDATA[<p>I used to be asked in an interview : Do you know Symbol in ES6? And I answered nope and explained other features such as lamda and ClASS.]]>
     </summary>
     
-      <category term="ES6" scheme="http://yoursite.com/tags/ES6/"/>
+      <category term="ES6" scheme="http://yaochiqkl.github.io/tags/ES6/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[关于前端模板引擎和曾经被看好的Object.observe的那些事儿]]></title>
-    <link href="http://yoursite.com/2016/07/30/javascript-upgrade-will-nix-object-observation-feature/"/>
-    <id>http://yoursite.com/2016/07/30/javascript-upgrade-will-nix-object-observation-feature/</id>
+    <link href="http://yaochiqkl.github.io/2016/07/30/javascript-upgrade-will-nix-object-observation-feature/"/>
+    <id>http://yaochiqkl.github.io/2016/07/30/javascript-upgrade-will-nix-object-observation-feature/</id>
     <published>2016-07-29T16:10:52.000Z</published>
     <updated>2016-08-10T16:01:57.879Z</updated>
     <content type="html"><![CDATA[<p>最近在看一些前端MV<em>框架的实现原理，按照我的理解来看，在模板渲染方式上实现方式有以下几种：<br>1.基于脏检查的模式，包括熟悉的RegularJS和AngularJS<br>2.基于defineOwnProperty的getter和setter模式，比如avalon vue1<br>3.基于Vitual Dom的diff并局部替换真实DOM Tree的模式，大名鼎鼎的React<br>4.基于<em>*Object.observe(O.o)</em></em>直接监听数据的变化（下面讨论的重点）</p>
@@ -63,14 +93,14 @@
     <![CDATA[<p>最近在看一些前端MV<em>框架的实现原理，按照我的理解来看，在模板渲染方式上实现方式有以下几种：<br>1.基于脏检查的模式，包括熟悉的RegularJS和AngularJS<br>2.基于defineOwnProperty的getter和setter模式，比如avalo]]>
     </summary>
     
-      <category term="ES7 JavaScript" scheme="http://yoursite.com/tags/ES7-JavaScript/"/>
+      <category term="ES7 JavaScript" scheme="http://yaochiqkl.github.io/tags/ES7-JavaScript/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[FunctionCurryingAndBindInJavascript]]></title>
-    <link href="http://yoursite.com/2016/03/15/FunctionCurryingAndBindInJavascript/"/>
-    <id>http://yoursite.com/2016/03/15/FunctionCurryingAndBindInJavascript/</id>
+    <link href="http://yaochiqkl.github.io/2016/03/15/FunctionCurryingAndBindInJavascript/"/>
+    <id>http://yaochiqkl.github.io/2016/03/15/FunctionCurryingAndBindInJavascript/</id>
     <published>2016-03-15T15:38:22.000Z</published>
     <updated>2016-07-29T16:41:33.929Z</updated>
     <content type="html"><![CDATA[<p>函数柯里化及bind相关<br><a id="more"></a><br>TODO</p>
@@ -84,8 +114,8 @@
   
   <entry>
     <title><![CDATA[爱奇艺面试]]></title>
-    <link href="http://yoursite.com/2016/01/07/iqiyi-interview/"/>
-    <id>http://yoursite.com/2016/01/07/iqiyi-interview/</id>
+    <link href="http://yaochiqkl.github.io/2016/01/07/iqiyi-interview/"/>
+    <id>http://yaochiqkl.github.io/2016/01/07/iqiyi-interview/</id>
     <published>2016-01-07T13:31:28.000Z</published>
     <updated>2016-01-08T01:15:30.377Z</updated>
     <content type="html"><![CDATA[<p>爱奇艺也毕竟是大厂，百度的子厂，投了在线的简历，没有注意到地点，岗位是在上海，而爱奇艺（上海）只是一其个分部。<br><a id="more"></a><br>接到面试官的电话，问我会不会Java，我没有学过…然后说待会儿找其他面试官来跟我面试。</p>
@@ -100,14 +130,14 @@
     
     </summary>
     
-      <category term="interview" scheme="http://yoursite.com/tags/interview/"/>
+      <category term="interview" scheme="http://yaochiqkl.github.io/tags/interview/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[美团面经]]></title>
-    <link href="http://yoursite.com/2016/01/07/mei-tuan-interview/"/>
-    <id>http://yoursite.com/2016/01/07/mei-tuan-interview/</id>
+    <link href="http://yaochiqkl.github.io/2016/01/07/mei-tuan-interview/"/>
+    <id>http://yaochiqkl.github.io/2016/01/07/mei-tuan-interview/</id>
     <published>2016-01-07T13:31:10.000Z</published>
     <updated>2016-01-07T13:47:55.827Z</updated>
     <content type="html"><![CDATA[<p>面试的难度很大，无论是从广度还是深度，都要求很高。<br><a id="more"></a></p>
@@ -121,14 +151,14 @@
     
     </summary>
     
-      <category term="interview" scheme="http://yoursite.com/tags/interview/"/>
+      <category term="interview" scheme="http://yaochiqkl.github.io/tags/interview/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[2015下半年书单]]></title>
-    <link href="http://yoursite.com/2015/12/25/books/"/>
-    <id>http://yoursite.com/2015/12/25/books/</id>
+    <link href="http://yaochiqkl.github.io/2015/12/25/books/"/>
+    <id>http://yaochiqkl.github.io/2015/12/25/books/</id>
     <published>2015-12-25T13:45:35.000Z</published>
     <updated>2016-07-29T16:45:14.023Z</updated>
     <content type="html"><![CDATA[<h2 id="2015下半年书单">2015下半年书单</h2><h3 id="前端类">前端类</h3><p>Head First HTML&amp;CSS (已读)<br>JavaScript DOM 编程艺术（2E)(已读)<br>Head First Ajax(已读)<br>高性能网站建设指南（已读）<br>精通正则表达式（3E)（已读）<br>Node.js开发指南（已读）<br>Head First PHP &amp; MySQL (已读)<br>锋利的jQuery（2E)（已读）<br>HTML5与CSS3基础教程（7E）[最新版：8E]（已读）<br>PHP和MySQL程序开发（4E）（已读）</p>
@@ -155,14 +185,14 @@
     <![CDATA[<h2 id="2015下半年书单">2015下半年书单</h2><h3 id="前端类">前端类</h3><p>Head First HTML&amp;CSS (已读)<br>JavaScript DOM 编程艺术（2E)(已读)<br>Head First Ajax(已读)<]]>
     </summary>
     
-      <category term="books" scheme="http://yoursite.com/tags/books/"/>
+      <category term="books" scheme="http://yaochiqkl.github.io/tags/books/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[网易面经]]></title>
-    <link href="http://yoursite.com/2015/12/22/WangYi-Interview/"/>
-    <id>http://yoursite.com/2015/12/22/WangYi-Interview/</id>
+    <link href="http://yaochiqkl.github.io/2015/12/22/WangYi-Interview/"/>
+    <id>http://yaochiqkl.github.io/2015/12/22/WangYi-Interview/</id>
     <published>2015-12-22T13:30:42.000Z</published>
     <updated>2016-01-10T14:43:30.770Z</updated>
     <content type="html"><![CDATA[<p>尽管已经在百词斩实习了，尽管百词斩的待遇也很好，但是心中仍有一个大公司的梦。<br><a id="more"></a><br>问到我对前端哪块领域掌握较好，答JS，然后就是各种JS了，CSS其实还是不错的，CSS3那些和HTML5的新API都挺感兴趣的，结果没问到。无法像其他大神那样，能够去主动引导面试官对于自己擅长的某些领域进行提问。</p>
@@ -176,14 +206,14 @@
     
     </summary>
     
-      <category term="interview" scheme="http://yoursite.com/tags/interview/"/>
+      <category term="interview" scheme="http://yaochiqkl.github.io/tags/interview/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[js实用的跨域方法及原理详解]]></title>
-    <link href="http://yoursite.com/2015/12/20/cross-domain/"/>
-    <id>http://yoursite.com/2015/12/20/cross-domain/</id>
+    <link href="http://yaochiqkl.github.io/2015/12/20/cross-domain/"/>
+    <id>http://yaochiqkl.github.io/2015/12/20/cross-domain/</id>
     <published>2015-12-20T07:41:02.000Z</published>
     <updated>2015-12-20T07:57:21.028Z</updated>
     <content type="html"><![CDATA[<p>这里说的js跨域是指通过js在不同的域之间进行数据传输或通信，比如用ajax向一个不同的域请求数据，或者通过js获取页面中不同域的框架中(iframe)的数据。只要协议、域名、端口有任何一个不同，都被当作是不同的域。</p>
@@ -226,14 +256,14 @@
     
     </summary>
     
-      <category term="ajax" scheme="http://yoursite.com/tags/ajax/"/>
+      <category term="ajax" scheme="http://yaochiqkl.github.io/tags/ajax/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[百词斩面试经历]]></title>
-    <link href="http://yoursite.com/2015/12/03/BCZ-interview/"/>
-    <id>http://yoursite.com/2015/12/03/BCZ-interview/</id>
+    <link href="http://yaochiqkl.github.io/2015/12/03/BCZ-interview/"/>
+    <id>http://yaochiqkl.github.io/2015/12/03/BCZ-interview/</id>
     <published>2015-12-03T06:25:14.000Z</published>
     <updated>2015-12-04T11:19:29.817Z</updated>
     <content type="html"><![CDATA[<p>顺利通过百词斩技术面试，小激动，HR答应周五前联系我，百词斩的实习Offer已经十拿九稳了（但愿HR面不会被刷掉）（高兴过头了，又开始担忧HR这一关了233，论悲观主义者的日常）<br><a id="more"></a><br>这两天都是一个比较焦虑的状态，总担心失败。下午三点的面试，把握不好时间的我竟又早了一个多小时到天府软件园，真是的，地铁干嘛跑那么快啊。（地铁：怪我咯？）</p>
@@ -249,14 +279,14 @@
     
     </summary>
     
-      <category term="interview" scheme="http://yoursite.com/tags/interview/"/>
+      <category term="interview" scheme="http://yaochiqkl.github.io/tags/interview/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[公钥私钥数字证书（转）]]></title>
-    <link href="http://yoursite.com/2015/12/01/PublicKeyAndSecretKey/"/>
-    <id>http://yoursite.com/2015/12/01/PublicKeyAndSecretKey/</id>
+    <link href="http://yaochiqkl.github.io/2015/12/01/PublicKeyAndSecretKey/"/>
+    <id>http://yaochiqkl.github.io/2015/12/01/PublicKeyAndSecretKey/</id>
     <published>2015-12-01T11:46:56.000Z</published>
     <updated>2015-12-03T06:47:03.981Z</updated>
     <content type="html"><![CDATA[<p>经常听到有人说，在使用公钥密码学加密与签名时，一定要知道是使用公钥还是使用私钥，否则容易闹笑话。可是，对于一个学过一点密码学的人来说，真的就那么难吗？下面就来讨论一下这个问题。<br><a id="more"></a><br>   密码学中要使用Key，而在公钥密码学中，有两个Key，一个公钥PK(Public Key)，一个私钥SK(Secret Key)，其中公钥PK公开，任何人都可以查到，而私钥SK保密，理论上只应该有你一个人知道。这一点是与分组密码算法(DES,AES)不同的(DES的实现可以看我以前的一篇博文)，因为在分组密码算法中，只有一个KEY，且是在通信双方共享的，并且需要保密。下面以公钥密码算法RSA为例（RSA的小数情况实现也可以看我的另一篇文章），来讲一讲在公钥密码学，加密与签名时，key的选择问题。<br>   首先要说一说通信，通信自然要涉及通信双方，当然，你也可以自己和自己通信（如果你这时还加密签名的话，你这是闲得……）。密码学的大师给了通信双方两个好听的名字A(lice)，B(ob)。下面约定一下PK(A),PK(B)分别代表Alice和Bob的公钥，是完全公开的，任何人都可以查到；SK(A)为Alice的私钥，只有Alice自己知道，SK(B)为Bob的私钥，只有Bob一个人知道。下面从Bob的角度来讨论。<br>   加密：<br>   加密，为什么要加密？因为通信的双方使用的是公开的信道，而信道上是可能有窃听者的，如果使用明文传输消息，即不加密，那么窃听者就可以知道消息的内容了，如果你传输的是什么消息的话，你就悲剧了。所以为防止消息被不应该知道的人知道，传输时要加密。<br>   在公钥密码学中，一个消息M，在key1的控制下，经过密码算法，得到密文C，是为加密；而密文C，在另一个Key2的控制下，经过密码算法，可以得到对应的明文M，是为解密。其中一个是公钥PK，一个是私钥SK，这是与分组密码不同的。下面来说Bob要传输消息给Alice，该使用那个Key。这里使用枚举，这个办法很好用。总共用四个key。（你不会还想用其他人的key吧。。。）<br>   1）使用PK(B)吗（自己的公钥）？这个，来分析分析。使用PK(B)加密的消息，只能使用对于的SK(B)来解密，而SK(B)只有你自己知道，Alice不知道，窃听者也不知道。使用这个Key的效果最好，别的人都不能知道消息的内容，窃听者也拿它没办法，但是，通信的另一方Alice也不知道消息的内容了，这样的通信就没有意义了。所以，否定掉。<br>   2）使用SK(B)吗（自己的私钥）？我们来看看，使用SK(B)加密的消息，要使用PK(B)来加密。而PK(B)是公开的，Alice知道，恩，Alice可以解密消息了，这个可以吧！这个真的可以吗？正是因为PK(B)是公开的，Alice知道，窃听者也知道，所以Alice能解密，窃听者也能解密，所以根本就没有保密性。和明文传输没多大的差别了。这个一个悲剧的选择。Pass掉。<br>   3）使用SK(A)吗（对方的私钥）？SK(A)是Alice的私钥，只有Alice知道，Bob不知道，这个不行。假设Alice将私钥偷偷告诉了你，这样你就可以使用了吧。原理和结局同2中的分析。同样……<br>   4）使用PK(A)吗（对方的公钥）？排除法告诉我们，只有这个可以选了，那就选它吧。原理什么的就不用讲了吧，大家也没兴趣的。不行，老夫子教导我们，知其然必知其所以然。我们要知道原理。好吧，讲一讲。使用PK(A)加密的消息，要使用SK(A)来解密，而SK(A)对方是知道的，所以消息是可以解密的；而又因为SK(A)只有Alice知道，别的人包括窃听者是不知道的，所以消息的保密性是可以保证的。满足要求。恩，终于弄懂了。<br>   讲了这么多，口都渴了，喝口水了再来讲。。。。。。下面将签名。<br>   签名：<br>   签名，现实生活中，我们可以使用自己的笔迹来签名的。而电子世界呢？签名，这个是公钥密码学提供的而分组密码是无法与他比的特性。签名，为什么要签名？举个例子，假如你发送一条消息给银行，从你的账号中转1亿出去（反正是举例子，说这么大的数额也没什么关系），银行执行了这条消息，转了账，事后，你跟银行说，你没有转过账，要让银行赔偿，如果银行拿不出证据，那银行就悲剧了、破产了，而银行是可以拿出证据的，证据就在那条消息中，因为你对它签名了，而签名在法律上是有效的证据的。好吧。那么，Bob要对消息签名，他该使用哪个key？枚举法再次闪亮登场……<br>   1）使用PK(A)吗（对方的公钥）？假设可以的话，由于PK(A)是公开的，那么任何都是可以伪造你的签名的，你的银行卡就爆了。。。<br>   2）使用SK(A)吗（对方是私钥）？同样这个你是不知道的。就是对方告诉了你，还是有问题的，因为这个和你的另一个key不匹配，签名是不能验证的，这个问题同样出现在1中。所以，不妥。。。<br>   3）使用PK(B)吗（自己的公钥）？同样有问题，第一，原理同1，由于是公开的，任何人都可以伪造，银行卡再次爆掉了；第二，原理同2，要验证，就需要使用你的另一个key，即你的私钥，而这个只有你自己知道，所以签名无法验证。这又是一个失败的例子。。。<br>   4）私钥SK(B)吗（自己的私钥）？还是说说原理吧。签名要使用唯一能确认是你的东西来签名，譬如笔迹。因为SK(B)只有你自己知道，所以满足要求的；其次，使用SK(B)签名的东西，是可以用PK(B)验证的，因为它是公开的。所以也满足要求。Jackpot！<br>   写了这么多，终于写完了。由于昨天的失误，今天算是重新敲了一遍，我还以为只有几百字呢，没想到竟有2k多的字。不过上面的都是废话，下面来总结一下，接下来的这句才是重点。<br>   <strong>在公钥密码学中，加密使用对方的公钥，签名使用自己的私钥。</strong></p>
@@ -266,14 +296,14 @@
     
     </summary>
     
-      <category term="https" scheme="http://yoursite.com/tags/https/"/>
+      <category term="https" scheme="http://yaochiqkl.github.io/tags/https/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[当我们访问网站的时候，我们在访问什么]]></title>
-    <link href="http://yoursite.com/2015/11/26/when-we-vist-web/"/>
-    <id>http://yoursite.com/2015/11/26/when-we-vist-web/</id>
+    <link href="http://yaochiqkl.github.io/2015/11/26/when-we-vist-web/"/>
+    <id>http://yaochiqkl.github.io/2015/11/26/when-we-vist-web/</id>
     <published>2015-11-26T14:12:52.000Z</published>
     <updated>2015-12-03T06:46:55.495Z</updated>
     <content type="html"><![CDATA[<p>突发奇想想出了这个题目，想聊一聊我的理解。<br><a id="more"></a><br>未完待续。</p>
@@ -287,8 +317,8 @@
   
   <entry>
     <title><![CDATA[锋利的jQuery]]></title>
-    <link href="http://yoursite.com/2015/11/06/SharpJQuery/"/>
-    <id>http://yoursite.com/2015/11/06/SharpJQuery/</id>
+    <link href="http://yaochiqkl.github.io/2015/11/06/SharpJQuery/"/>
+    <id>http://yaochiqkl.github.io/2015/11/06/SharpJQuery/</id>
     <published>2015-11-06T12:12:02.000Z</published>
     <updated>2015-12-03T06:47:32.522Z</updated>
     <content type="html"><![CDATA[<p><img src="http://img4.douban.com/lpic/s28026858.jpg" alt="锋利的jQuery"><br>每天都在图书馆查这本书，这两天终于等到别人还过来了，这几天借的书还不少，有十本，都快达上限了，就不能借一本自习看一本么！？<br>想起之前在一家IT公司实习的时候用jQuery的随意，殊不知jQuery是如此这般强大！看了两天图书馆已然有人归还第二版，速速换之。<br>书中很多实例很有趣，很值得自己去实现。<br><a id="more"></a></p>
@@ -345,14 +375,14 @@ $(function(){
     
     </summary>
     
-      <category term="jQuery" scheme="http://yoursite.com/tags/jQuery/"/>
+      <category term="jQuery" scheme="http://yaochiqkl.github.io/tags/jQuery/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[高性能网站建设指南(雅虎优化前端14条准则)]]></title>
-    <link href="http://yoursite.com/2015/11/06/HighPerfomanceWebSites/"/>
-    <id>http://yoursite.com/2015/11/06/HighPerfomanceWebSites/</id>
+    <link href="http://yaochiqkl.github.io/2015/11/06/HighPerfomanceWebSites/"/>
+    <id>http://yaochiqkl.github.io/2015/11/06/HighPerfomanceWebSites/</id>
     <published>2015-11-06T10:59:10.000Z</published>
     <updated>2015-12-03T06:48:17.131Z</updated>
     <content type="html"><![CDATA[<p><img src="http://img4.douban.com/lpic/s5914296.jpg" alt="High Performance Web Sites"><br>高性能网站建设指南<br><a href="http://stevesouders.com/hpws/rules.php" target="_blank" rel="external">相关例子测试官网</a><br>我真是太爱博文视点O’Reilly系列的书了，很幸运能在前端的领域有这样的一系列经典的书籍。<br>原来雅虎的14条前端优化准则尽在这本书中！</p>
@@ -397,14 +427,14 @@ $(function(){
     
     </summary>
     
-      <category term="网站性能优化" scheme="http://yoursite.com/tags/%E7%BD%91%E7%AB%99%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
+      <category term="网站性能优化" scheme="http://yaochiqkl.github.io/tags/%E7%BD%91%E7%AB%99%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[HTML5程序设计]]></title>
-    <link href="http://yoursite.com/2015/11/05/HTML5Programming/"/>
-    <id>http://yoursite.com/2015/11/05/HTML5Programming/</id>
+    <link href="http://yaochiqkl.github.io/2015/11/05/HTML5Programming/"/>
+    <id>http://yaochiqkl.github.io/2015/11/05/HTML5Programming/</id>
     <published>2015-11-05T11:04:52.000Z</published>
     <updated>2015-12-03T06:48:30.736Z</updated>
     <content type="html"><![CDATA[<p>HTML程序设计（第二版）<br><img src="http://img3.douban.com/lpic/s9066310.jpg" alt="Pro HTML% Programming"></p>
@@ -423,14 +453,14 @@ $(function(){
     
     </summary>
     
-      <category term="HTML5" scheme="http://yoursite.com/tags/HTML5/"/>
+      <category term="HTML5" scheme="http://yaochiqkl.github.io/tags/HTML5/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[CSS权威指南读书笔记]]></title>
-    <link href="http://yoursite.com/2015/10/29/CSS-TheDefinitiveGuide/"/>
-    <id>http://yoursite.com/2015/10/29/CSS-TheDefinitiveGuide/</id>
+    <link href="http://yaochiqkl.github.io/2015/10/29/CSS-TheDefinitiveGuide/"/>
+    <id>http://yaochiqkl.github.io/2015/10/29/CSS-TheDefinitiveGuide/</id>
     <published>2015-10-29T12:05:39.000Z</published>
     <updated>2015-12-03T06:48:38.303Z</updated>
     <content type="html"><![CDATA[<p>CSS权威指南（第三版）<br><img src="http://img3.douban.com/lpic/s2921314.jpg" alt="CSS:The Definitive Guide (The 3rd Edition)"></p>
@@ -465,14 +495,14 @@ $(function(){
     
     </summary>
     
-      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
+      <category term="CSS" scheme="http://yaochiqkl.github.io/tags/CSS/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Node.js开发指南读书笔记]]></title>
-    <link href="http://yoursite.com/2015/10/28/Node_js_DevelopmentGuides/"/>
-    <id>http://yoursite.com/2015/10/28/Node_js_DevelopmentGuides/</id>
+    <link href="http://yaochiqkl.github.io/2015/10/28/Node_js_DevelopmentGuides/"/>
+    <id>http://yaochiqkl.github.io/2015/10/28/Node_js_DevelopmentGuides/</id>
     <published>2015-10-28T15:10:00.000Z</published>
     <updated>2015-12-03T06:48:47.167Z</updated>
     <content type="html"><![CDATA[<p>Node.js开发指南-BYVoid</p>
@@ -489,14 +519,14 @@ $(function(){
     
     </summary>
     
-      <category term="Node" scheme="http://yoursite.com/tags/Node/"/>
+      <category term="Node" scheme="http://yaochiqkl.github.io/tags/Node/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Head First Ajax 读书笔记]]></title>
-    <link href="http://yoursite.com/2015/10/27/AjaxReadingNotes/"/>
-    <id>http://yoursite.com/2015/10/27/AjaxReadingNotes/</id>
+    <link href="http://yaochiqkl.github.io/2015/10/27/AjaxReadingNotes/"/>
+    <id>http://yaochiqkl.github.io/2015/10/27/AjaxReadingNotes/</id>
     <published>2015-10-27T14:36:49.000Z</published>
     <updated>2015-12-03T06:47:20.787Z</updated>
     <content type="html"><![CDATA[<p>Reading Notes</p>
@@ -526,14 +556,14 @@ $(function(){
     
     </summary>
     
-      <category term="ajax" scheme="http://yoursite.com/tags/ajax/"/>
+      <category term="ajax" scheme="http://yaochiqkl.github.io/tags/ajax/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[初入江湖之前端有感]]></title>
-    <link href="http://yoursite.com/2015/10/23/%E5%88%9D%E5%85%A5%E6%B1%9F%E6%B9%96%E4%B9%8B%E5%89%8D%E7%AB%AF%E6%9C%89%E6%84%9F/"/>
-    <id>http://yoursite.com/2015/10/23/初入江湖之前端有感/</id>
+    <link href="http://yaochiqkl.github.io/2015/10/23/%E5%88%9D%E5%85%A5%E6%B1%9F%E6%B9%96%E4%B9%8B%E5%89%8D%E7%AB%AF%E6%9C%89%E6%84%9F/"/>
+    <id>http://yaochiqkl.github.io/2015/10/23/初入江湖之前端有感/</id>
     <published>2015-10-23T14:12:28.000Z</published>
     <updated>2015-12-03T06:47:55.055Z</updated>
     <content type="html"><![CDATA[<p>学习前端有一段时间了，从开始的一无所知，到现在开始入门、自学、并成功地搭建了个人博客，收获了不少。逐渐对这一领域也有了不同的认识和感想。就此记录下来，小弟见解有限，目光短浅，如有贻误，欢迎各路大神指点一二！<br><img src="/images/Shane.jpg" alt="Shane"><br><a id="more"></a></p>
@@ -563,14 +593,14 @@ $(function(){
     
     </summary>
     
-      <category term="essay" scheme="http://yoursite.com/tags/essay/"/>
+      <category term="essay" scheme="http://yaochiqkl.github.io/tags/essay/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[期待国庆长假]]></title>
-    <link href="http://yoursite.com/2015/09/23/WaitingForNationalHolidays/"/>
-    <id>http://yoursite.com/2015/09/23/WaitingForNationalHolidays/</id>
+    <link href="http://yaochiqkl.github.io/2015/09/23/WaitingForNationalHolidays/"/>
+    <id>http://yaochiqkl.github.io/2015/09/23/WaitingForNationalHolidays/</id>
     <published>2015-09-23T13:47:06.000Z</published>
     <updated>2015-12-03T06:49:20.888Z</updated>
     <content type="html"><![CDATA[<p>考完了科三，拿到了本本，一心等着假期的到来。<br>正逢中秋佳节，前面有校运会，连着几天没课，翘掉国庆与中秋之间的两三天课，前后加起来有十几天的假期。我终于能回家了！<br>自从上了大学后，才怀念从前待在父母身边无忧无虑的时光。能回家的日子越来越少了，到现在，半年回一次都是正常的。<br>所以抓着机会多在家待会儿，待在我的房间的时间，总感觉要比在外面待的时间要断，那间房就一直空着，为在外求学的我。<br>这还是学生时代，不知道工作了之后，除了春节，哪还有什么暑假、长假回家啊，想想都不开心。<br>特别想我的小侄女悠悠，虽说暑假才在陕西相聚，但是没过几天我就又开始想起她的可爱的顽皮。<br>这学期课比较少，前方的路全靠自己自觉去走。努力培养自己的自制力，带几本书回去，不能让这个假期白白荒废。<br>好好珍惜所拥有的一切，好好对待父母，活在当下，做一个幸福的孩子！</p>
@@ -579,31 +609,7 @@ $(function(){
     <![CDATA[<p>考完了科三，拿到了本本，一心等着假期的到来。<br>正逢中秋佳节，前面有校运会，连着几天没课，翘掉国庆与中秋之间的两三天课，前后加起来有十几天的假期。我终于能回家了！<br>自从上了大学后，才怀念从前待在父母身边无忧无虑的时光。能回家的日子越来越少了，到现在，半年回一次都是]]>
     </summary>
     
-      <category term="essay" scheme="http://yoursite.com/tags/essay/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[历尽千辛万苦个人网站终于建好了!]]></title>
-    <link href="http://yoursite.com/2015/09/18/WordPressEstablished/"/>
-    <id>http://yoursite.com/2015/09/18/WordPressEstablished/</id>
-    <published>2015-09-18T15:49:44.000Z</published>
-    <updated>2015-12-03T06:49:06.062Z</updated>
-    <content type="html"><![CDATA[<p>从开始形成建网站的想法到现在，不过数天。然此中辛酸难尽。</p>
-<p>一开始是想翻过GFW，通过在Bandwagon上买的一个VPS上自动搭建的shadowsocks（百度都把这个和谐了，能想象吗）平台，下了软件，输入ip和端口，开启无国界之旅。嘿嘿嘿，从此获取各种内容那简直是如鱼得水啊。shadowsocks实在是神奇，毕竟通常翻墙只是通过浏览器浏览国外主流网站，无需搭建复杂的VPN，在github上膜拜了shadowsocks的主人（居然是个妹子！），不禁感慨差距之大，编程之路，任重道远啊。<br><a id="more"></a><br>当然，后来，我发现VPS上的功能远远不止这些，于是萌生了建一个自己网站的想法。偶然间发现学院某个实验室的招新网站十分精美，刚开始热爱前端的我打开了调试器去看结构和代码，试着自己去仿制一个，直到末尾，发现了Wordpress。没错，至此我才听说过wordpress的存在，也或许从前早有见闻，只是视之为秋风过耳记忆无存了，毕竟从我想向一个合格的程序员发展的想法，开始也没多久。于是就在课余时间查阅资料搜索相关教程和文档，发现一切都没那么简单！搭建LNMP就周折了半天，好在找到了一键安装包，然而安装好之后和wordpress的建立中间有断层，很难找到详尽的资料。卡了一两天在这个地方，最终回到原点努力去看安装包给的文档，尝试着去搭建虚拟服务器。虽然学了计算机网络，也感觉掌握的不错，可是对此依然没有什么概念。好在最后琢磨了出来，搭好服务器后将wordpress移动到指定的文件夹，绑定了域名，成功访问。中间有很多小插曲，都努力去解决并战胜了很多困难，比如一些权限的修改，linux的操作、数据库的操作、配置文件的修改、注册域名等等。功夫不负有心人，我建出来了！我真的建出网站来了！然而这也不过是LNMP一键安装+wordpress罢了。我应该尝试着手动一步步去搭建LNMP或者LAMP的环境，再试着自己搭建前后台的网站程序，这才是真正厉害的，不过现在水平还差的远（233）。后期打算写几个主题试试，一步步学起吧。相信自己能够一点点进步，成为更好的自己。</p>
-<p>这当然不是结尾，到现在我我还没搞懂一个问题。那就是DNS和服务器解析的问题，我曾以为，将注册的域名和ip绑定，只是简简单单的“绑定”而已，也即当我访问域名的时候，实际上访问的就是这个ip，我一直如此理解。然而事实并非如此，通过VPS的ip访问到的不是我绑定域名的wordpress页面，也即服务器将域名连接到了我想要的位置，而不是单单连接这个ip地址。我还不明白这是怎么做到的，难道Nginx接受到了网址作为参数？还是与它所谓的反向代理有关，这一切我还不得而知（废话真多,说特么我还没搞懂不就行了）（我就想多打点字充实下页面不行吗）。感谢玄狗推荐的网易公开课的一节课程《<a href="http://open.163.com/movie/2010/9/J/J/M7S6PN5ED_M7S94TUJJ.html" target="_blank" rel="external">构建动态网站》哈佛大学公开课</a>。我要去补课了，可是明早六点我就要早起换成三趟车奔波到成都学院面对凶神恶煞的教官模拟科目三了，早睡早起，科三必过！加油！</p>
-<p><a href="http://lishuangzhuang.tk/wp-content/uploads/2015/09/20090716093848-1265250845.jpg" target="_blank" rel="external"><img src="http://lishuangzhuang.tk/wp-content/uploads/2015/09/20090716093848-1265250845-300x215.jpg" alt="Shane Filan"></a></p>
-<p>我只是随便上传一张试试</p>
-<p>年轻时候的头子（Shane Filan - Westlife主唱）</p>
-<p>期待一下二专</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>从开始形成建网站的想法到现在，不过数天。然此中辛酸难尽。</p>
-<p>一开始是想翻过GFW，通过在Bandwagon上买的一个VPS上自动搭建的shadowsocks（百度都把这个和谐了，能想象吗）平台，下了软件，输入ip和端口，开启无国界之旅。嘿嘿嘿，从此获取各种内容那简直是如鱼得水啊。shadowsocks实在是神奇，毕竟通常翻墙只是通过浏览器浏览国外主流网站，无需搭建复杂的VPN，在github上膜拜了shadowsocks的主人（居然是个妹子！），不禁感慨差距之大，编程之路，任重道远啊。<br>]]>
-    
-    </summary>
-    
-      <category term="WordPress" scheme="http://yoursite.com/tags/WordPress/"/>
+      <category term="essay" scheme="http://yaochiqkl.github.io/tags/essay/"/>
     
   </entry>
   

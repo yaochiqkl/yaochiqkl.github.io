@@ -598,18 +598,21 @@ $(function(){
   </entry>
   
   <entry>
-    <title><![CDATA[期待国庆长假]]></title>
-    <link href="http://yaochiqkl.github.io/2015/09/23/WaitingForNationalHolidays/"/>
-    <id>http://yaochiqkl.github.io/2015/09/23/WaitingForNationalHolidays/</id>
-    <published>2015-09-23T13:47:06.000Z</published>
-    <updated>2015-12-03T06:49:20.888Z</updated>
-    <content type="html"><![CDATA[<p>考完了科三，拿到了本本，一心等着假期的到来。<br>正逢中秋佳节，前面有校运会，连着几天没课，翘掉国庆与中秋之间的两三天课，前后加起来有十几天的假期。我终于能回家了！<br>自从上了大学后，才怀念从前待在父母身边无忧无虑的时光。能回家的日子越来越少了，到现在，半年回一次都是正常的。<br>所以抓着机会多在家待会儿，待在我的房间的时间，总感觉要比在外面待的时间要断，那间房就一直空着，为在外求学的我。<br>这还是学生时代，不知道工作了之后，除了春节，哪还有什么暑假、长假回家啊，想想都不开心。<br>特别想我的小侄女悠悠，虽说暑假才在陕西相聚，但是没过几天我就又开始想起她的可爱的顽皮。<br>这学期课比较少，前方的路全靠自己自觉去走。努力培养自己的自制力，带几本书回去，不能让这个假期白白荒废。<br>好好珍惜所拥有的一切，好好对待父母，活在当下，做一个幸福的孩子！</p>
+    <title><![CDATA[基于Hexo的个人博客终于建成了！]]></title>
+    <link href="http://yaochiqkl.github.io/2015/10/22/Hexo%20Finished/"/>
+    <id>http://yaochiqkl.github.io/2015/10/22/Hexo Finished/</id>
+    <published>2015-10-21T16:59:18.000Z</published>
+    <updated>2016-08-13T07:40:23.226Z</updated>
+    <content type="html"><![CDATA[<p>建一个个人网站其实也没有那么难<br>建成了<br><strong>建成了</strong><br><img src="https://avatars3.githubusercontent.com/u/13565033?v=3&amp;s=460" alt="GitHub Mark" title="GitHub photo"><br>不敢相信。<br>之前基于WordPress建成的网站莫非被我抛弃了吗？<br>还是搭建在Github上更靠谱些，Hexo搭建在Github上，要比WordPress搭建在VPS上快许多。<br>无需搭建烦冗的LNMP环境，Hexo直接生成的是静态的页面，挂在Github上，真的是太炫酷了。<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">hello</span> hexo</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>真方便<br>开始逐步做自己的主题吧</p>
+</blockquote>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>考完了科三，拿到了本本，一心等着假期的到来。<br>正逢中秋佳节，前面有校运会，连着几天没课，翘掉国庆与中秋之间的两三天课，前后加起来有十几天的假期。我终于能回家了！<br>自从上了大学后，才怀念从前待在父母身边无忧无虑的时光。能回家的日子越来越少了，到现在，半年回一次都是]]>
+    <![CDATA[<p>建一个个人网站其实也没有那么难<br>建成了<br><strong>建成了</strong><br><img src="https://avatars3.githubusercontent.com/u/13565033?v=3&amp;s=460" alt="GitHub ]]>
     </summary>
     
-      <category term="essay" scheme="http://yaochiqkl.github.io/tags/essay/"/>
+      <category term="hexo" scheme="http://yaochiqkl.github.io/tags/hexo/"/>
     
   </entry>
   

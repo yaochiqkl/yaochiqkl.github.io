@@ -249,6 +249,10 @@ a {
   background-color: #000;
   position: absolute;
   opacity: 0.7;
+  background: url("/img/bg.jpeg") center no-repeat #aaf;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 #container .left-col .intrude-less {
   width: 76%;
